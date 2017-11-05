@@ -4,6 +4,10 @@ import cv2
 import easygui
 import threading
 
+import sys
+
+from form import form
+
 cameraLocation = '/dev/video0'
 #cameraLocation = 'rtsp://192.168.1.103/live1.sdp'
 cap = cv2.VideoCapture(cameraLocation)
@@ -11,14 +15,14 @@ cap = cv2.VideoCapture(cameraLocation)
 # Variables
 text_info = 'Test of subtitle'
 
-
 def text_box():
     global text_info
     while (True):
-        text_info = easygui.enterbox(text_info, "Title", "Score 1 - 10")
+        test = easygui.enterbox(text_info, "Title", "Score 1 - 10")
 
 
-t1 = threading.Thread(target=text_box, args=[])
+t1 = form()
+#t1 = threading.Thread(target=text_box, args=[])
 t1.start()
 
 while (True):
@@ -31,7 +35,7 @@ while (True):
     # Write text
     font = cv2.FONT_HERSHEY_COMPLEX
 
-    cv2.putText(gray, text_info,
+    cv2.putText(gray, t1.getText(),
                 (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH) / 4), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT) - 30)), font, 1,
                 (100, 200, 100), 2, cv2.LINE_AA)
 
@@ -43,3 +47,5 @@ while (True):
 # When everything done, release the capture
 cap.release()
 cv2.destroyAllWindows()
+sys.exit(1)
+
