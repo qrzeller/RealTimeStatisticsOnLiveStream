@@ -8,18 +8,11 @@ text = "default"
 
 
 class form(threading.Thread):
-
     def __init__(self):
         threading.Thread.__init__(self)
 
-
     def run(self):
-        try:
-            self.text_box()
-        except KeyboardInterrupt:
-            pass
-
-
+        self.text_box()
 
     def text_box(self):
         global text

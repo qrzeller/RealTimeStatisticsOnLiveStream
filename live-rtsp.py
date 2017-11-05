@@ -4,6 +4,9 @@ import cv2
 import easygui
 import threading
 
+import transcoder
+from flask import Flask, render_template, Response
+
 import sys
 
 from form import form
@@ -11,7 +14,7 @@ from form import form
 cameraLocation = '/dev/video0'
 #cameraLocation = 'rtsp://192.168.1.103/live1.sdp'
 cap = cv2.VideoCapture(cameraLocation)
-
+global cap
 # Variables
 text_info = 'Test of subtitle'
 
@@ -38,6 +41,12 @@ while (True):
     cv2.putText(gray, t1.getText(),
                 (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH) / 4), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT) - 30)), font, 1,
                 (100, 200, 100), 2, cv2.LINE_AA)
+
+
+    ## Broadcast mjpeg
+    transcoder.setframe(frame)
+
+
 
     # Display the resulting frame
     cv2.imshow('frame', gray)
