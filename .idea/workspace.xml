@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14a8122f-9f40-4f8b-a2a2-aef99906b77e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flask.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/form.py" afterPath="$PROJECT_DIR$/form.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/live-rtsp.py" afterPath="$PROJECT_DIR$/live-rtsp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/transcoder.py" afterPath="$PROJECT_DIR$/transcoder.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -200,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509883351643</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="try to add stream mjpeg">
+      <created>1509885609591</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1509885609591</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -236,7 +239,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reformatting code and add transcoder class" />
-    <option name="LAST_COMMIT_MESSAGE" value="reformatting code and add transcoder class" />
+    <MESSAGE value="try to add stream mjpeg" />
+    <option name="LAST_COMMIT_MESSAGE" value="try to add stream mjpeg" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
