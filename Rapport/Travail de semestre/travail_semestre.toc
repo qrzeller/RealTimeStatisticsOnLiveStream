@@ -6,8 +6,8 @@
 \contentsline {section}{\numberline {1.1}Section}{1}{section.1.1}
 \contentsline {subsection}{\numberline {1.1.1}Subsection}{1}{subsection.1.1.1}
 \contentsline {chapter}{\chapternumberline {2}HBBTV}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Fonctionnement général}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Environnement de développement}{5}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Emulateurs}{5}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.1}Fonctionnement général}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Environnement de développement}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Emulateurs}{6}{subsection.2.2.1}
 \contentsline {appendix}{\chapternumberline {A}Appendix A}{9}{appendix.A}
 \contentsline {chapter}{Bibliographie}{11}{section*.7}
