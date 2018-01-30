@@ -1,0 +1,598 @@
+var deployments_map, bounds;
+
+if(deployments) {
+  var simplemaps_worldmap_mapdata = {
+    main_settings: {
+      width: 'responsive',
+      background_color: '#e3eaf3',
+      border_size: '0.3',
+      border_color: '#ffffff',
+      zoom: 'yes',
+      popups: 'on_hover',
+      state_description: 'Click for details',
+      state_color: '#c9d7e4',
+      state_hover_color: '#1d5eb7',
+      state_url: 'http://simplemaps.com',
+      all_states_inactive: 'yes',
+      location_description: 'Location description',
+      location_color: '#FF0067',
+      location_opacity: '1',
+      location_url: 'http://simplemaps.com',
+      location_size: '30',
+      location_type: 'circle',
+      all_locations_inactive: 'no',
+      url_new_tab: 'no',
+      initial_zoom: '-1',
+      initial_zoom_solo: 'no',
+      auto_load: 'yes',
+      hide_labels: 'no',
+      popup_nocss: 'no'
+  },
+
+  state_specific: deployments,
+
+  locations:{ 
+  },
+
+  regions: {
+    0: {
+      name: "North America",
+      states: ["MX","CA","US","GL"]
+    },
+    1: {
+      name: "South America",
+      states: ["EC","AR","VE","BR","CO","BO","PE","CL", "GY","GF","PY","SR","UY"]
+
+    },
+    2: {
+      name: "Central America",
+      states: ["PR","JM","HT", "BZ","CR","DO","GT","HN","NI","BS","CU","PA","SV"]
+    },
+    3: {
+      name: "Europe",
+      states: ["IT", "NL","NO","DK","IE","GB","RO","DE","FR","AL","AM","AT","BY","BE","LU","BG","CZ","EE","GE","GR","HU","IS","LV","LT","MD","PL","PT","RS","SI","HR","BA","ME","MK","SK","ES","FI","SE","CH","TR","CY","UA"]
+      },
+    4: {
+      name: "Africa",
+      states: ["NE","AO","EG","TN","GA","DZ","LY","CG","GQ","BJ","BW","BF","BI","CM","CF","TD","CI","CD","DJ","ET","GM","GH","GN","GW","KE","LS","LR","MG","MW","ML","MA","MR","MZ","NA","NG","ER","RW","SN","SL","SO","ZA","SD","SS","SZ","TZ","TG","UG","EH","ZM","ZW"]
+      },
+    5: {
+      name: "Middle East",
+      states: ["QA","SA","AE","SY","OM","KW","PK","AZ","AF","IR","IQ","IL","PS","JO","LB","YE","TJ","TM","UZ","KG"]
+      },	
+    6: {
+      name: "South Asia",
+      states: ["TW", "IN", "NP", "TH", "BN", "JP", "VN", "LK", "SB", "BD", "BT", "KH", "LA", "MM", "KP", "PH", "KR", "CN"]
+      },
+    7: {
+      name: "Oceania",
+      states: ["ID", "AU", "MY","PG", "FJ", "NZ"]
+      },	
+    8:	{
+      name: "North Asia",
+      states: ["MN", "RU", "KZ"]
+      }
+    }
+  };
+}
+
+function triggerCountryClick(country) {
+  if(jQuery('.deployments-list a[href="'+country+'"]').length) {
+    jQuery('#deployments-map-custom').addClass('loading-on');
+    jQuery('.deployments-list a[href="'+country+'"]').eq(0).trigger('click');
+  }
+}
+
+var gmap_styles=[{featureType:"administrative",elementType:"all",stylers:[{visibility:"on"}]},{featureType:"administrative",elementType:"geometry.fill",stylers:[{visibility:"simplified"}]},{featureType:"administrative.country",elementType:"geometry",stylers:[{visibility:"on"}]},{featureType:"administrative.country",elementType:"labels",stylers:[{visibility:"off"}]},{featureType:"administrative.province",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"administrative.province",elementType:"labels",stylers:[{visibility:"off"}]},{featureType:"administrative.locality",elementType:"labels",stylers:[{visibility:"off"}]},{featureType:"administrative.neighborhood",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"administrative.land_parcel",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"landscape",elementType:"geometry.fill",stylers:[{color:"#c9d7e4"}]},{featureType:"poi",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"road",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"transit",elementType:"all",stylers:[{visibility:"off"}]},{featureType:"water",elementType:"geometry.fill",stylers:[{color:"#e3eaf3"}]}];
+
+var supportsTouch = false;
+if ('ontouchstart' in window) {
+  supportsTouch = true;
+} else if(window.navigator.msPointerEnabled) {
+  supportsTouch = true;
+}
+
+jQuery(function($){
+  $(document).on('click', '.deployments-list .deployment-item a', function(e) {
+    e.preventDefault();
+    
+    var t = $(this);
+    var target = $(this).attr('data-id');
+    var info_row = $('<div class="deployment-info-row"><div class="deployment-info-row-content"><div class="loading"><i class="fa fa-spin fa-spinner"></i></div></div></div>');
+    var wait = 0;
+    var next_found = false;
+    
+    if($('.deployment-info-row:visible').length) {
+      $('.deployment-info-row:visible .deployment-info-row-content').slideUp(400, function() {
+        $(this).closest('.deployment-info-row').remove();
+      });
+      wait = 500;
+    }
+    
+    setTimeout(function() {
+      var this_offset = t.offset();
+      
+      t.closest('.deployment-item').nextAll('.deployment-item-available').each(function() {
+        if(this_offset.top < $(this).offset().top) {
+          info_row.insertBefore($(this));
+          next_found = true;
+          return false;
+        }
+      });
+
+      if(!next_found) {
+        info_row.insertAfter(t.closest('.deployments-list').find('.deployment-item-available:last'));
+      }
+
+      info_row.find('.deployment-info-row-content').slideDown('normal');
+
+      $.ajax({
+        type : 'POST',
+        url : ajaxurl,
+        data : {
+          action: 'load_deployment_info',
+          deployment: target
+        },
+        success : function(data){
+          info_row.find('.loading').slideUp('fast');
+          
+          jQuery('#deployments-map-custom').removeClass('loading-on');
+
+          if(data.deployment) {
+            info_row.find('.deployment-info-row-content').append($(data.deployment));
+            $('html,body').stop().animate({
+              'scrollTop': info_row.offset().top - $('#header').height()
+            }, 'fast');
+          }
+        },
+        error : function(){
+
+        },
+        dataType : 'json'
+      });
+    }, wait);
+  });
+  
+  $(document).on('click', '.deployment-info .deployment-close a', function(e) {
+    e.preventDefault();
+    
+    $(this).closest('.deployment-info-row').find('.deployment-info-row-content').slideUp('slow', function() {
+      $(this).closest('.deployment-info-row').remove();
+    });
+  });
+  
+  $(document).on('click', '.accordion > li > a', function(e) {
+    e.preventDefault();
+    
+    var parent = $(this).closest('li');
+    
+    if(parent.hasClass('expanded')) {
+      parent.removeClass('expanded').find('> div').slideUp('normal');
+    }
+    else {
+      parent.addClass('expanded').find('> div').slideDown('normal');
+    }
+  });
+  
+  watchTargetScroll();
+
+  $(window).load(function() {
+    watchTargetScroll();
+  });
+  
+  if($('body').hasClass('page-deployments')) {
+    if(window.location.hash && $(window.location.hash).length) {
+      $(window.location.hash).click();
+    }
+  }
+  
+  function watchTargetScroll() {
+    if(window.location.hash && $(window.location.hash).length) {
+      if(is_resources_page) {
+        $('.page-section-tabs a[href="'+window.location.hash+'"]').click();
+        return false;
+      }
+      
+      $('html,body').stop().animate({
+        'scrollTop': $(window.location.hash).offset().top - $('#header').height()
+      }, 'slow');
+    }
+  }
+  
+  $('a[href^="'+current_url+'#"], a[href^="'+trim_url+'#"]').on('click', function(e) {
+    var t = $(this).attr('href').replace(current_url, '');
+    t = t.replace(trim_url, '');
+    var target = $(t);
+    
+    if(target.length) {
+      e.preventDefault();
+      
+      if($(window).width() < 992) {
+        $('#menu-toggle').click();
+      }
+      
+      $('html,body').stop().animate({
+        'scrollTop': target.offset().top - $('#header').height()
+      }, 'slow');
+      
+      if($('body').hasClass('page-deployments')) {
+        target.click();
+      }
+    }
+  });
+  
+  if(is_resources_page) {
+    $(document).on('click', '.menu-resource-library .dropdown-menu a', function(e) {
+      var href = $(this).attr('href');
+      
+      if(href.indexOf('#') >= 0) {
+        var t = $(this).attr('href').replace(current_url, '');
+        t = t.replace(trim_url, '');
+        
+        if($('.page-section-tabs a[href="'+t+'"]').length) {
+          e.preventDefault();
+          
+          $('.page-section-tabs a[href="'+t+'"]').click();
+        }
+      }
+    });
+  }
+  
+  $('#menu-toggle').on('click', function(e) {
+    e.preventDefault();
+    $('#navigation').slideToggle('normal');
+  });
+  
+  $('#navigation .caret').on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).closest('a').next('.dropdown-menu').slideToggle('normal');
+  });
+  
+  watchPageScroll();
+  
+  $(window).on('resize scroll', function() {
+    watchPageScroll();
+  });
+  
+  function watchPageScroll() {
+    if($(window).scrollTop() > 0) {
+      $('#header').addClass('scrolled');
+    }
+    else {
+      $('#header').removeClass('scrolled');
+    }
+  }
+  
+  $('#bottom-row .bottom-circles .circle .text-big span').each(function() {
+    var count = parseInt($(this).text());
+    
+    $(this).countTo({
+      from: 0,
+      to: count,
+      speed: 1500,
+      refreshInterval: 10
+    });
+  });
+  
+  $('.video-popup').magnificPopup({
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false
+  });
+  
+  $('#services-list').magnificPopup({
+    delegate: '.service-box a',
+    type: 'image',
+    tLoading: 'Loading image #%curr%...',
+    mainClass: 'mfp-img-mobile',
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+    },
+    zoom: {
+      enabled: true,
+      duration: 300, // don't foget to change the duration also in CSS
+      opener: function(element) {
+        return element.find('img');
+      }
+    },
+    image: {
+      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+      titleSrc: function(item) {
+				return '<strong>'+item.el.attr('data-title') + '</strong><br>'+item.el.attr('data-text');
+			}
+    }
+  });
+  
+  $(document).on('click', '.load-more-services a', function(e) {
+    e.preventDefault();
+    
+    $(this).closest('.load-more-services').hide();
+    
+    $('#services-list .service-box.hidden-box').slideDown('fast');
+  });
+  
+  $('#members-list .member-box').tooltipster({
+    'animation': 'fade',
+    'maxWidth': 200,
+    'offsetY': -10
+  });
+  
+  $('#services-carousel').slick({
+    centerMode: true,
+    centerPadding: '0',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    prevArrow: '<span class="carousel-arrow arrow-left"><i class="fa fa-angle-left"></i></span>',
+    nextArrow: '<span class="carousel-arrow arrow-right"><i class="fa fa-angle-right"></i></span>',
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          centerMode: false,
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+  
+  $('.additional-text-toggle a').on('click', function(e) {
+    e.preventDefault();
+    
+    $(this).closest('.additional-text-toggle').next('.additional-text').slideToggle('normal');
+  });
+  
+  $(document).on('click', '.load-more-button' ,function(e) {
+    e.preventDefault();
+    
+    var container = $(this).prev('.ajax-load-list');
+    
+    if($(this).hasClass('loading')) {
+      return false;
+    }
+    
+    var t = $(this);
+    
+    $.ajax({
+			type : 'POST',
+			url : ajaxurl,
+			data : {
+        action: 'load_posts',
+        ppp: container.attr('data-ppp'),
+        page: container.attr('data-page'),
+        cat: container.attr('data-cat')
+      },
+      beforeSend: function() {
+        t.addClass('loading');
+      },
+			success : function(data){
+        t.removeClass('loading');
+        
+        if(data.posts) {
+          container.append($(data.posts));
+        }
+        
+        if(data.no_more_posts) {
+          t.hide();
+        }
+        
+        container.attr('data-page', parseInt(container.attr('data-page'))+1);
+      },
+			error : function(){
+        t.removeClass('loading');
+      },
+			dataType : 'json'
+		});
+  });
+  
+  if($('#deployments-map').length) {
+    initializeDeploymentsMap($);
+  }
+  
+  $('.search-toggle').on('click', function(e) {
+    e.preventDefault();
+    
+    $('#s').focus();
+    
+    $('#search-wrapper').addClass('visible');
+  });
+  
+  $('.search-close').on('click', function(e) {
+    e.preventDefault();
+    
+    $('#search-wrapper').removeClass('visible');
+  });
+  
+  $('#load-more-news-press').on('click', function(e) {
+    e.preventDefault();
+    var t = $(this);
+    
+    $('.news-press-list .news-press-item.hidden').slice(0, 5).fadeIn('slow', function() {
+      $(this).removeClass('hidden');
+      
+      if(!$('.news-press-list .news-press-item.hidden').length) {
+        t.addClass('hidden');
+      }
+    });
+  });
+  
+  $('.page-sections .page-section').each(function() {
+    $(this).find('.section-content .container').prepend('<a href="#" class="section-close"><span class="hbbtv-icon-close"></span> CLOSE</a>');
+  });
+  
+  $(document).on('click', '.page-section-tabs a', function(e) {
+    e.preventDefault();
+    
+    if($(this).hasClass('active')) {
+      $(this).removeClass('active');
+      $('.page-sections .page-section:visible').slideUp('fast');
+      return false;
+    }
+    
+    var target = $( $(this).attr('href') );
+    
+    if(target.length) {
+      $(this).closest('.page-section-tabs').find('a.active').removeClass('active');
+      $(this).addClass('active');
+      
+      $('.page-sections .page-section:visible').slideUp('fast');
+      
+      target.slideDown('fast', function() {
+        $('html,body').animate({
+          'scrollTop': target.offset().top - $('#header').height()
+        }, 'fast');
+      });
+    }
+  });
+  
+  $(document).on('click', '.page-sections .page-section .section-close', function(e) {
+    e.preventDefault();
+    
+    $('.page-section-tabs a.active').removeClass('active');
+    
+    $('.page-sections .page-section:visible').slideUp('fast');
+  });
+  
+  $.extend(true, $.magnificPopup.defaults, {  
+    iframe: {
+      patterns: {
+        youtube_short: {
+          index: 'youtu.be/',
+          id: 'youtu.be/',
+          src: '//www.youtube.com/embed/%id%?autoplay=1'
+        }
+      }
+    }
+  });
+  
+  if(typeof  simplemaps_worldmap !== "undefined") {
+    simplemaps_worldmap.hooks.complete = function() {
+      $('#deployments-map-custom').removeClass('loading-on');
+    };
+  }
+});
+
+function initializeDeploymentsMap($) {
+  var styles = gmap_styles;
+
+  var styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
+  
+  bounds = new google.maps.LatLngBounds();
+
+  var myOptions = {
+//    disableDefaultUI: true,
+    draggable: (supportsTouch ? false : true),
+    panControl: true,
+    zoomControl: true,
+    streetViewControl: false,
+    zoomControlOptions: {
+      style: google.maps.ZoomControlStyle.SMALL
+    },
+    mapTypeControlOptions: {
+      mapTypeId: [google.maps.MapTypeId.ROADMAP, 'map_style']
+    },
+    zoom: 16,
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    scrollwheel: false
+  };
+
+  deployments_map = new google.maps.Map(document.getElementById("deployments-map"), myOptions);
+  deployments_map.mapTypes.set('map_style', styledMap);
+  deployments_map.setMapTypeId('map_style');
+  
+  var map_icon = new google.maps.MarkerImage('/wp-content/themes/hbbtv/images/map-marker.png', null, null, null, new google.maps.Size(21,28));
+  var map_icon_orange = new google.maps.MarkerImage('/wp-content/themes/hbbtv/images/map-marker-orange.png', null, null, null, new google.maps.Size(21,28));
+  
+  if(deployments.length) {
+    for (i = 0; i < deployments.length; i++) {
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(deployments[i]['lat'], deployments[i]['lng']),
+        map: deployments_map,
+//        icon: '/wp-content/themes/hbbtv/images/map-marker'+(deployments[i]['type'] === 'under-construction' ? '-orange' : '')+'.png',
+        icon: deployments[i]['type'] === 'under-construction' ? map_icon_orange : map_icon,
+        title: deployments[i]['title'],
+        name: deployments[i]['name'],
+        id: deployments[i]['id']
+      });
+
+      bounds.extend(marker.position);
+
+      google.maps.event.addListener(marker, 'click', (function (marker, i) {
+        return function () {
+          loadDeploymentInfo(marker.id, marker.name, $);
+        };
+      })(marker, i));
+    }
+  }
+  
+  deployments_map.fitBounds(bounds);
+}
+
+function loadDeploymentInfo(id, name, $) {
+  $('#'+name).trigger('click');
+  
+  $('html,body').stop().animate({
+    'scrollTop': $('#'+name).offset().top - $('#header').height()
+  }, 'normal');
+}
+
+function commaSeparateNumber(val){
+	while (/(\d+)(\d{3})/.test(val.toString())){
+		val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+	}
+	return val;
+}
+
+(function ($) {
+  $.fn.countTo = function (options) {
+    // merge the default plugin settings with the custom options
+    options = $.extend({}, $.fn.countTo.defaults, options || {});
+
+    // how many times to update the value, and how much to increment the value on each update
+    var loops = Math.ceil(options.speed / options.refreshInterval),
+            increment = (options.to - options.from) / loops;
+
+    return $(this).each(function () {
+      var _this = this,
+              loopCount = 0,
+              value = options.from,
+              interval = setInterval(updateTimer, options.refreshInterval);
+
+      function updateTimer() {
+        value += increment;
+        loopCount++;
+        $(_this).html(commaSeparateNumber(Math.round(value))); //value.toFixed(options.decimals));
+
+        if (typeof (options.onUpdate) == 'function') {
+          options.onUpdate.call(_this, value);
+        }
+
+        if (loopCount >= loops) {
+          clearInterval(interval);
+          value = commaSeparateNumber(Math.round(options.to));
+          //value = options.to;
+
+          if (typeof (options.onComplete) == 'function') {
+            options.onComplete.call(_this, value);
+          }
+        }
+      }
+    });
+  };
+
+  $.fn.countTo.defaults = {
+    from: 0, // the number the element should start at
+    to: 100, // the number the element should end at
+    speed: 1000, // how long it should take to count between the target numbers
+    refreshInterval: 100, // how often the element should be updated
+    decimals: 0, // the number of decimal places to show
+    onUpdate: null, // callback method for every time the element is updated,
+    onComplete: null, // callback method for when the element finishes updating
+  };
+})(jQuery);

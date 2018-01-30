@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "grabson";
+  src:url("grabson.eot");
+  src:url("grabson.eot?#iefix") format("embedded-opentype"),
+    url("grabson.woff") format("woff"),
+    url("grabson.ttf") format("truetype"),
+    url("grabson.svg#grabson") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "grabson" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "grabson" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-html5:before {
+  content: "\61";
+}
+.icon-device:before {
+  content: "\62";
+}
+.icon-live:before {
+  content: "\63";
+}
+.icon-minus:before {
+  content: "\64";
+}
+.icon-ok:before {
+  content: "\65";
+}
+.icon-pending:before {
+  content: "\66";
+}
+.icon-plus:before {
+  content: "\67";
+}
+.icon-snap:before {
+  content: "\68";
+}
+.icon-testing:before {
+  content: "\69";
+}
+.icon-user:before {
+  content: "\6a";
+}
+.icon-edit:before {
+  content: "\6c";
+}
+.icon-stats:before {
+  content: "\6d";
+}
+.icon-drm:before {
+  content: "\6e";
+}
+.icon-ce-html:before {
+  content: "\6f";
+}
+.icon-promotions:before {
+  content: "\70";
+}
+.icon-message:before {
+  content: "\72";
+}
+.icon-message-new:before {
+  content: "\73";
+}
+.icon-list:before {
+  content: "\74";
+}
+.icon-grid:before {
+  content: "\75";
+}
+.icon-regions:before {
+  content: "\6b";
+}
+.icon-home:before {
+  content: "\71";
+}
+.icon-app:before {
+  content: "\76";
+}
+.icon-payments:before {
+  content: "\77";
+}
+.icon-guidelines:before {
+  content: "\78";
+}
+.icon-search:before {
+  content: "\79";
+}
+.icon-arrow-down:before {
+  content: "\7a";
+}
+.icon-arrow-left:before {
+  content: "\41";
+}
+.icon-arrow-right:before {
+  content: "\42";
+}
+.icon-arrow-up:before {
+  content: "\43";
+}
+.icon-help:before {
+  content: "\44";
+}
+.icon-rejected:before {
+  content: "\45";
+}
+.icon-circle-warning:before {
+  content: "\46";
+}
+.icon-circle-next:before {
+  content: "\48";
+}
+.icon-circle-ok:before {
+  content: "\49";
+}
+.icon-circle-prev:before {
+  content: "\4a";
+}
+.icon-circle-empty:before {
+  content: "\47";
+}
+.icon-circle-skip:before {
+  content: "\4b";
+}
+.icon-circle-unavailable:before {
+  content: "\4c";
+}
+.icon-download:before {
+  content: "\4d";
+}

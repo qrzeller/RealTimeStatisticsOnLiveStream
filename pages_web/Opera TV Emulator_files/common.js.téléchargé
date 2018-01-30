@@ -1,0 +1,223 @@
+var agreeFunction;
+var ws_url;
+var ws;
+function ReloadWebSocketURL(callback, timeout) {
+    timeout = timeout || 2000;
+    setTimeout(function() {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onload = function(e) {
+            if (ws && ws.readyState == WebSocket.OPEN) {
+                return;
+            } else {
+                ws_url = xmlhttp.responseText;
+                checkDisabledComponents();
+            }
+            if (callback)
+                callback();
+        };
+        xmlhttp.open("GET", '/base/scripts/php/ws_url.php', true);
+        xmlhttp.send();
+    }, timeout);
+}
+
+function waitAndSend(msg) {
+    // if socket new, or closed, recreate socket
+    if (!ws || ws.readyState == WebSocket.CLOSED) {
+        ws = new WebSocket(ws_url);
+        ws.onopen = function(e) {
+            waitAndSend(msg);
+        }
+    // else if socket already open, use it
+    } else if (ws.readyState == WebSocket.OPEN) {
+        ws.send(msg);
+    // else if its either opening or closing, wait for it
+    } else {
+        setTimeout(waitAndSend.bind(null, msg), 100);
+    }
+}
+
+function sendMessage(msg, callback) {
+    msg = JSON.stringify(msg);
+    waitAndSend(msg)
+    ws.onmessage = function(e) {
+        if (callback)
+            callback(e);
+    };
+}
+
+if (logger === undefined) {
+    var logger = new function() {
+        this.stateEnum = {
+            PLAY:    1,
+            PAUSE:   2
+        };
+        this.pos = 0;
+        this.state = this.stateEnum.PLAY;
+        this.logging_callbacks = [];
+        this.line_count = 0;
+        this.max_lines = 100;
+        this.setStylizedOutput = function() {
+            this.outputstream.classList.add("log");
+        }
+        this.setNormalOutput = function() {
+            this.outputstream.classList.remove("log");
+        }
+        this.showOutputStream = function(stylized_output) {
+            if (stylized_output)
+                this.outputstream.classList.add("log");
+            else
+                this.outputstream.classList.remove("log");
+            this.loggingtitle.classList.add("active");
+            this.loggingpanel.classList.add("show");
+        }
+        this.appendOutputStream = function(response, linecount) {
+            if (linecount === undefined)
+                linecount = (response.match(/<br>/g) || []).length;
+            var prevScrollTop = this.outputstream.scrollTop;
+            var shouldScrollToBottom = (this.outputstream.scrollTop + this.outputstream.clientHeight) === this.outputstream.scrollHeight;
+            this.outputstream.innerHTML = this.outputstream.innerHTML + response;
+            this.line_count += linecount;
+            if (this.line_count > this.max_lines) {
+                var trimcount = this.line_count - this.max_lines;
+                var children = [].slice.call(this.outputstream.childNodes);
+                var removedcount = 0;
+                for (var i=0; i<children.length; i++) {
+                    this.outputstream.removeChild(children[i]);
+                    if (children[i].nodeName == "BR")
+                        removedcount += 1;
+                    if (removedcount == trimcount)
+                        break;
+                }
+                this.line_count -= removedcount;
+                var lineHeight = parseInt(window.getComputedStyle(this.outputstream).lineHeight);
+                this.outputstream.scrollTop = prevScrollTop - removedcount*lineHeight;
+            }
+            if (shouldScrollToBottom)
+                this.outputstream.scrollTop = this.outputstream.scrollHeight;
+        }
+        this.updateOutputStream = function(response, linecount) {
+            if (linecount === undefined)
+                linecount = (response.match(/<br>/g) || []).length;
+            this.outputstream.innerHTML = response;
+            this.outputstream.scrollTop = this.outputstream.scrollHeight;
+            this.line_count = linecount;
+        }
+        this.addLoggingCallback = function(callback) {
+            this.logging_callbacks.push(callback);
+        }
+        this.reset = function() {
+            this.pos = 0;
+        }
+        this.pause = function() {
+            this.state = this.stateEnum.PAUSE;
+        }
+        this.resume = function() {
+            this.state = this.stateEnum.PLAY;
+        }
+        this.startLogging = function(discard_first) {
+            this.outputstream = document.getElementById("output-stream");
+            this.loggingtitle = document.getElementById("logging-title");
+            this.loggingpanel = document.getElementById("logging-panel");
+            var callbacks = this.logging_callbacks;
+            setInterval(function() {
+                            if (logger.state !== logger.stateEnum.PLAY)
+                                return;
+                            StreamFile('logging.php?pos='+logger.pos,
+                                function(text) {
+                                    if (text.length > 0) {
+                                        if (discard_first === true)
+                                            discard_first = false;
+                                        else
+                                            callbacks.forEach(function(cb) {
+                                                                 cb(text);
+                                                              });
+                                    }
+                                    logger.pos += text.length;
+                                }, false, null, true, "base", false);
+                        }, 1000);
+        }
+    }
+}
+
+function StreamFile(url, completed_callback, output, progress_callback, stylized_output, version, reset_logging) {
+    output = output !== false;
+    reset_logging = reset_logging !== false;
+
+    var xmlhttp = new XMLHttpRequest();
+    var curpos = 0;
+    if (output)
+        logger.showOutputStream(stylized_output);
+    if (reset_logging) {
+        logger.reset();
+        logger.pause();
+    }
+    xmlhttp.onprogress = function(e) {
+        var responseText = xmlhttp.responseText;
+        if (xmlhttp.status !== 200)
+            return;
+        if (output)
+            logger.updateOutputStream(responseText);
+        if (progress_callback)
+            progress_callback(responseText.substring(curpos));
+        curpos = e.loaded;
+    }
+    xmlhttp.onload = function(e) {
+        if (reset_logging)
+            setTimeout(function() { logger.resume(); }, 2000);
+        if (xmlhttp.status !== 200)
+            return;
+        ReloadWebSocketURL();
+        if (completed_callback)
+            completed_callback(xmlhttp.responseText);
+    };
+    xmlhttp.onreadystatechange = function (e) {
+        if (xmlhttp.readyState === 4) {
+            if (xmlhttp.status === 404) {
+                full_url = "/base/scripts/" + type + "/" + url;
+                xmlhttp.open("GET", full_url, true);
+                xmlhttp.send();
+            }
+        }
+    };
+    var type = url.match(/\.[^?]*/g)[0];
+    type = type.substr(1);
+    full_url = url;
+    var version_to_use = opera_version;
+    if (version !== undefined) {
+        version_to_use = version;
+    }
+    if (type == "php" || type == "sh" || type == "js")
+        full_url = "/" + version_to_use + "/scripts/" + type + "/" + url;
+    xmlhttp.open("GET", full_url, true);
+    xmlhttp.send();
+}
+
+function changeOperaVersion(version) {
+    StreamFile('set_opera_version.php?version=' + version,
+                function(response) { setTimeout(function() {
+                    location.reload();
+                }, 2000);});
+}
+
+function updateSectionClickHandlers() {
+    // Activate "section-title" onclick togglers
+    var titles = document.getElementsByClassName("section-title");
+    for (var i = 0; i < titles.length; i++) {
+        titles[i].onclick = function(){
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+        }
+    }
+}
+
+function checkDisabledComponents() {
+    if (ws && ws.readyState == WebSocket.OPEN)
+        return;
+    var show = "block";
+    if (ws_url != "")
+        show = "none";
+    document.getElementById('devtools-link').href = 'http://localhost:9222/devtools/inspector.html?ws=' + ws_url.substring(5);
+    var components = document.getElementsByClassName("disabled");
+    for (var i = 0; i < components.length; i++)
+        components[i].style.display = show;
+}

@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body 
+{
+	/* most backgrounds are transparent, but there is at least on terminal which has a white color as the default background*/
+	background-color: transparent;
+
+	/* we explicitly set the size of the body element. This avoids that browser show scroll bars or that pages are floating if they are
+	bigger than the logical screen size */
+	width: 1280px;
+	height: 720px;
+	overflow: hidden;
+}
+
+/* set application area invisble as initial state */
+div#app_area 
+{
+    visibility: hidden;
+}
+
+div.safe_area 
+{
+    position: absolute;
+
+    /* Border of the safe area:
+           10%         5%            80%            90% 
+    */
+    left: 128px; top: 36px; width: 1024px; height: 648px;
+}
+
+a 
+{
+	/* According to the OIPF DAE specification this shall prevent that a browser draws there default highlighting */
+	outline-style: none;
+	text-decoration: none;
+}
+
+#info_field 
+{
+    background-color: #FFFFFF;
+    color: #000000;
+    position: absolute;
+    top: 0;
+    right: 0; text-align : center;
+    font-size: 12px;
+    text-align: left;
+    padding: 8px;
+    border: solid 1px #000000;
+}
+
+#background_plane
+{
+    position: absolute;
+    /* Border of the safe area:
+           10%         5%            80%            90% 
+    */
+    left: 0px; top: 0px; width: 1024px; height: 648px;
+	background: white;
+	opacity: .80; 
+}
+
+
+#header_field
+{
+    position: relative;
+    width: 50%;
+    margin-top: 130px;
+    left: 50%;
+    margin-left: -25%;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    background: rgba(0,0,255,0.4);
+}
+
+#content_field
+{
+    position: relative;
+    width: 50%;
+    margin-top: 30px;
+    left: 50%;
+    margin-left: -25%;
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    background: rgba(0,0,255,0.4);
+}
+
+
+#logo_field
+{
+    position: relative;
+    width: 50%;
+    margin-top: 30px;
+    left: 50%;
+    margin-left: -25%;
+    text-align: center;
+}
+
+#tvring_logo
+{
+	position: relative;
+	height: 40px;  
+}
+
+#irt_logo
+{	
+	position: relative;	  
+	width: 40px;
+	height: 40px;
+}

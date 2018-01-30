@@ -1,0 +1,147 @@
+/**
+ * Opera TV Emulator (c) 2016
+ */
+
+// This implements a chart for real-time performance monitoring
+// using Chart.js library (see http://www.chartjs.org/)
+// Currently it displays CPU and Memory graphs.
+// Send XHR request with url = "performance.php" to get performance data
+// as a JSON string, e.g.: { "time":1472565703000, "cpu":19.7, "memory":30.8 }
+
+var performanceGraphConfig = {
+    type: 'line',
+    data: {
+        datasets: [{
+            label: "CPU",
+            borderWidth: 2,
+            pointRadius: 2,
+            pointHoverRadius: 2,
+            borderColor: "#ff0000",
+            backgroundColor: "#ff8888",
+            pointBorderColor: "#ff0000",
+            pointBackgroundColor: "#ff8888",
+            pointBorderWidth: 1,
+            data: [],
+            yAxisID: "cpu-axis",
+            fill: false
+        }, {
+            label: "Memory (RSS)",
+            borderWidth: 2,
+            pointRadius: 2,
+            pointHoverRadius: 2,
+            borderColor: "#0000ff",
+            backgroundColor: "#8888ff",
+            pointBorderColor: "#0000ff",
+            pointBackgroundColor: "#8888ff",
+            pointBorderWidth: 1,
+            data: [],
+            yAxisID: "memory-axis",
+            fill: false
+        }]
+    },
+    options: {
+        responsive: true,
+        animation:{
+            easing: "linear",
+            duration: 100
+        },
+        title:{
+            display: false,
+            text: "Performance Monitor"
+        },
+        scales: {
+            xAxes: [{
+                type: "time",
+                time: {
+                    unit: 'second',
+                    displayFormats: {
+                        second: 'HH:mm:ss'
+                    },
+                    tooltipFormat: 'HH:mm:ss'
+                },
+                display: true,
+                scaleLabel: {
+                    display: false,
+                    labelString: 'Time'
+                }
+            }],
+            yAxes: [{
+                display: true,
+                id: "cpu-axis",
+                ticks: {
+                    min: 0,
+                    max: 100,
+                    fontColor: "#ff0000"
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: 'CPU (%)',
+                    fontColor: "#ff0000"
+                }
+            }, {
+                display: true,
+                id: "memory-axis",
+                position: "right",
+                ticks: {
+                    min: 0,
+                    max: 500,
+                    fontColor: "#0000ff"
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Memory (MB)',
+                    fontColor: "#0000ff"
+                }
+            }]
+        }
+    }
+};
+
+function requestPerformanceData() {
+    var url = "/base/scripts/php/performance.php";
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onload = function(e) {
+        var point = JSON.parse(xmlhttp.responseText);
+
+        performanceGraphConfig.data.datasets[0].data.push({
+            x: point.time,
+            y: point.cpu
+        });
+        performanceGraphConfig.data.datasets[1].data.push({
+            x: point.time,
+            y: point.memory
+        });
+        if (performanceGraphConfig.data.datasets[0].data.length > 200) {
+            // Limit data length
+            performanceGraphConfig.data.datasets[0].data.shift();
+            performanceGraphConfig.data.datasets[1].data.shift();
+            performanceGraph.options.animation.duration = 0;
+        } else
+        if (performanceGraphConfig.data.datasets[0].data.length > 50) {
+            // Shrink X axis and points
+            performanceGraphConfig.options.scales.xAxes[0].time.unitStepSize = 10;
+            performanceGraphConfig.data.datasets[0].pointRadius = 1;
+            performanceGraphConfig.data.datasets[1].pointRadius = 1;
+        } else
+        if (performanceGraphConfig.data.datasets[0].data.length > 20) {
+            // Shrink X axis and points
+            performanceGraphConfig.options.scales.xAxes[0].time.unitStepSize = 5;
+            performanceGraphConfig.data.datasets[0].pointRadius = 2;
+            performanceGraphConfig.data.datasets[1].pointRadius = 2;
+        }
+        // Updating the graph
+        window.performanceGraph.update();
+
+        // Call it again after one second
+        setTimeout(requestPerformanceData, 1000);
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+}
+
+function launchPerformanceMonitor() {
+    var canvas = document.getElementById("canvas");
+    var canvasContext = canvas.getContext("2d");
+    window.performanceGraph = new Chart(canvasContext, performanceGraphConfig);
+    requestPerformanceData();
+}

@@ -1,0 +1,258 @@
+/**
+ * Opera TV Emulator (c) 2016
+ */
+
+var rcKeys_base = {
+    "Backspace": new ActionKey("Backspace", "VK_BACK_SPACE"),
+    "Enter": new ActionKey("Enter", "VK_ENTER", true),
+
+    "Left": new ActionKey("Left", "VK_LEFT", false, "ArrowLeft"),
+    "Up": new ActionKey("Up", "VK_UP", false, "ArrowUp"),
+    "Right": new ActionKey("Right", "VK_RIGHT", false, "ArrowRight"),
+    "Down": new ActionKey("Down", "VK_DOWN", false, "ArrowDown"),
+
+    "Digit0": new ActionKey("Digit0", "VK_0", true, "0"),
+    "Digit1": new ActionKey("Digit1", "VK_1", true, "1"),
+    "Digit2": new ActionKey("Digit2", "VK_2", true, "2"),
+    "Digit3": new ActionKey("Digit3", "VK_3", true, "3"),
+    "Digit4": new ActionKey("Digit4", "VK_4", true, "4"),
+    "Digit5": new ActionKey("Digit5", "VK_5", true, "5"),
+    "Digit6": new ActionKey("Digit6", "VK_6", true, "6"),
+    "Digit7": new ActionKey("Digit7", "VK_7", true, "7"),
+    "Digit8": new ActionKey("Digit8", "VK_8", true, "8"),
+    "Digit9": new ActionKey("Digit9", "VK_9", true, "9"),
+
+    "MediaRed": new ActionKey("MediaRed", "VK_RED"),
+    "MediaGreen": new ActionKey("MediaGreen", "VK_GREEN"),
+    "MediaYellow": new ActionKey("MediaYellow", "VK_YELLOW"),
+    "MediaBlue": new ActionKey("MediaBlue", "VK_BLUE"),
+
+    "MediaRewind": new ActionKey("MediaRewind", "VK_REWIND"),
+    "MediaStop": new ActionKey("MediaStop", "VK_STOP"),
+    "MediaFastForward": new ActionKey("MediaFastForward", "VK_FAST_FWD"),
+    "MediaPlay": new ActionKey("MediaPlay", "VK_PLAY"),
+    "MediaPause": new ActionKey("MediaPause", "VK_PAUSE"),
+
+    "RC_MENU": new ActionKey("Menu", "VK_MENU"),
+    "RC_ESCAPE": new ExitMenuKey(),
+    "RC_POWER": new PowerMenuKey(),
+
+    "OP_BACKWARD": new BackwardKey(),
+    "OP_FORWARD": new ForwardKey(),
+    "OP_OPENURL": new HomeKey(),
+    "OP_RELOAD": new ReloadKey()
+};
+
+var rcKeys_map = setRCKeysMap(rcKeys_base);
+
+var keyboard_map = {
+    50: "Down",
+    52: "Left",
+    53: "Enter",
+    54: "Right",
+    55: "Backspace",
+    56: "Up"
+};
+
+/**
+* A 2d array that defines properties of "area" DOM elements, which in turn
+* correspond to clickable parts of the remote control image (buttons).
+*/
+var rcAreas = [
+    ['rect', '113,26,138,51', 'RC_POWER'],
+    ['rect', '80,413,103,428', 'OP_SETTINGS'],
+    ['circle', '76,276,24', 'Enter'],
+    ['rect', '34,263,49,288', 'Left'],
+    ['rect', '105,263,121,288', 'Right'],
+    ['rect', '59,232,90,250', 'Up'],
+    ['rect', '59,303,90,320', 'Down'],
+    ['circle', '33,231,9', 'Backspace'],
+    ['rect', '19,89,52,110', 'Digit1'],
+    ['rect', '60,89,93,110', 'Digit2'],
+    ['rect', '101,89,134,110', 'Digit3'],
+    ['rect', '19,118,52,139', 'Digit4'],
+    ['rect', '60,118,93,139', 'Digit5'],
+    ['rect', '101,118,134,139', 'Digit6'],
+    ['rect', '19,146,52,168', 'Digit7'],
+    ['rect', '60,146,93,168', 'Digit8'],
+    ['rect', '101,146,134,168', 'Digit9'],
+    ['rect', '60,177,92,196', 'Digit0'],
+    ['rect', '111,389,134,405', 'OP_RELOAD'],
+    ['rect', '80,389,104,405', 'OP_OPENURL'],
+    ['rect', '49,389,73,405', 'OP_FORWARD'],
+    ['rect', '19,389,43,405', 'OP_BACKWARD'],
+    ['rect', '111,413,134,428', 'OP_DEBUG'],
+    ['rect', '19,335,42,350', 'MediaRed'],
+    ['rect', '49,335,72,350', 'MediaGreen'],
+    ['rect', '79,335,103,350', 'MediaYellow'],
+    ['rect', '111,335,134,350', 'MediaBlue'],
+    ['rect', '19,469,42,482', 'MediaPlay'],
+    ['rect', '19,492,42,507', 'MediaPause'],
+    ['rect', '49,469,72,482', 'MediaStop'],
+    ['rect', '79,469,103,482', 'MediaRewind'],
+    ['rect', '16,31,56,49', 'RC_ESCAPE'],
+    ['circle', '120,231,8', 'RC_MENU'],
+    ['rect', '111,469,134,482', 'MediaFastForward'],
+];
+
+function cloneMap(map, enable_list) {
+    var newmap = {};
+    for (var i in map) {
+        if (!enable_list || enable_list.indexOf(i) >=0)
+            newmap[i] = map[i];
+    }
+    return newmap;
+}
+
+function setRCKeysMap(base_map) {
+    var profile_map = {};
+
+    var otvsmap = cloneMap(base_map);
+    profile_map['otvs'] = otvsmap;
+
+    var acpmap = cloneMap(base_map);
+    acpmap["Backspace"] = new ActionKey("Back", "VK_BACK");
+    profile_map['acp'] = acpmap;
+
+    var acp2_enable_list = ['Backspace', 'Enter', 'Left', 'Up', 'Right', 'Down', 'RC_POWER'];
+    var acp2map = cloneMap(acpmap, acp2_enable_list);
+    profile_map['acp_restricted'] = acp2map;
+
+    return profile_map;
+}
+
+function createHighlightDiv(parent) {
+    highlight_div = document.createElement('div');
+    highlight_div.classList.add("button-highlight");
+    parent.appendChild(highlight_div);
+    return highlight_div;
+}
+
+function createDisabledDiv(parent) {
+    var disabled_div = document.createElement('div');
+    disabled_div.classList.add("button-disabled");
+    parent.appendChild(disabled_div);
+    return disabled_div;
+}
+
+function createDiv(shape, coords, func) {
+    switch(shape) {
+        case "circle":
+            var newdiv = func();
+            var coords = coords.split(",");
+            newdiv.style.left = String(parseInt(coords[0]) - parseInt(coords[2])) + "px";
+            newdiv.style.top = String(parseInt(coords[1]) - parseInt(coords[2])) + "px";
+            newdiv.style.width = String(2*parseInt(coords[2])) + "px";
+            newdiv.style.height = String(2*parseInt(coords[2])) + "px";
+            newdiv.style.borderRadius = "50%";
+            return newdiv;
+            break;
+        case "rect":
+            var newdiv = func();
+            var coords = coords.split(",");
+            newdiv.style.left = coords[0] + "px";
+            newdiv.style.top = coords[1] + "px";
+            newdiv.style.width = String(parseInt(coords[2]) - parseInt(coords[0])) + "px";
+            newdiv.style.height = String(parseInt(coords[3]) - parseInt(coords[1])) + "px";
+            return newdiv;
+            break;
+        default:
+            break;
+    }
+}
+
+function handleRCKey(profile, keyCode) {
+    var rcKeys = rcKeys_map[profile];
+    var rcKey = rcKeys[keyboard_map[keyCode]];
+    if (rcKey)
+        rcKey.dispatch(3);
+}
+
+function initRC(profile) {
+    var remote_div = document.getElementById('rc-img');
+    var map_div = document.getElementById('remote_map');
+    var rcToolTip = document.getElementById('rc-tooltip');
+    var rcKeys = rcKeys_map[profile];
+    var highlight_div = null;
+
+    function onClick() {
+        if (!rcKeys[this.id]) {
+            console.log("Key: " + this.id + " is unsupported.");
+            return;
+        }
+
+        var rcKey = rcKeys[this.id];
+        rcKey.dispatch(2);
+    }
+
+    function onMouseOut() {
+        if (highlight_div == null)
+            return;
+        remote_div.removeChild(highlight_div);
+        highlight_div = null;
+        rcToolTip.innerHTML = "";
+        rcToolTip.style.display = "none";
+    }
+    function onMouseDown() {
+        if (highlight_div == null)
+            return;
+        highlight_div.classList.remove("button-highlight");
+        highlight_div.classList.add("button-pressed");
+    }
+    function onMouseUp() {
+        if (highlight_div == null)
+            return;
+        highlight_div.classList.remove("button-pressed");
+        highlight_div.classList.add("button-highlight");
+    }
+
+    function onMouseOver() {
+        if (highlight_div != null)
+            return;
+        highlight_div = createDiv(this.shape, this.coords, createHighlightDiv.bind(null, remote_div));
+        if (this.tooltip !== undefined) {
+            rcToolTip.style.display = "block";
+            rcToolTip.innerHTML = this.tooltip;
+        }
+    }
+
+    // first clear out the map and any disabled button divs before recreating them
+    while (map_div.firstChild) {
+        map_div.removeChild(map_div.firstChild);
+    }
+    var elements = remote_div.getElementsByClassName("button-disabled");
+    while (elements[0]) {
+        elements[0].parentNode.removeChild(elements[0]);
+    }
+
+    // (re)create map areas and disabled button divs
+    for (var i = 0; i < rcAreas.length; ++i) {
+        if (rcKeys[rcAreas[i][2]] === undefined) {
+            createDiv(rcAreas[i][0], rcAreas[i][1], createDisabledDiv.bind(null, remote_div));
+            continue;
+        }
+        newArea = document.createElement('area');
+        newArea.setAttribute('shape', rcAreas[i][0]);
+        newArea.setAttribute('coords', rcAreas[i][1]);
+        newArea.setAttribute('id', rcAreas[i][2]);
+        newArea.setAttribute('class', 'remote');
+        newArea.setAttribute('href', 'http://');
+        newArea.setAttribute('onclick', 'return false;');
+        if (rcKeys[rcAreas[i][2]].vk_name)
+            newArea.tooltip = rcKeys[rcAreas[i][2]].vk_name;
+
+        map_div.appendChild(newArea);
+
+        // RC button event listeners
+        document.getElementById(rcAreas[i][2])
+            .addEventListener('click', onClick);
+        document.getElementById(rcAreas[i][2])
+            .addEventListener('mouseover', onMouseOver);
+        document.getElementById(rcAreas[i][2])
+            .addEventListener('mouseout', onMouseOut);
+        document.getElementById(rcAreas[i][2])
+            .addEventListener('mousedown', onMouseDown);
+        document.getElementById(rcAreas[i][2])
+            .addEventListener('mouseup', onMouseUp);
+    }
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+	As DOCTYPE either 
+	the strict XHTML declaration or 
+	"-//HbbTV//1.1.1//EN" "http://www.hbbtv.org/dtd/HbbTV-1.1.1.dtd"
+	shall be used as described in the HbbTV-standard: A.2.6.2.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- 
+	Required XML-namespace as described in the HbbTV-standard: A.2.6.2. 
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<!-- 
+			Required MIME content type as described in the HbbTV-standard: A.2.6.2.
+		-->
+		<meta http-equiv="Content-Type" content="application/vnd.hbbtv.xml+xhtml; utf-8" />
+		<script type="text/javascript" src="HelloWorld.js"></script>
+    	<link rel="stylesheet" href="HelloWorld.css" />
+    	<title>Hello World HbbTV Application</title>
+	</head>
+
+	<body onload="initApp();">
+
+		<div>
+			<!--
+				ApplicationManager extracts information out of the AIT (such as lifecycle, autostart, etc.) 
+			-->
+    		<object style="width:0;height:0;position: absolute;" id="appMan" type="application/oipfApplicationManager"></object>
+		</div>
+
+		<div class="safe_area" id="app_area">
+		
+			<div id="background_plane"></div>
+			<div id="header_field"></div>
+			<div id="content_field"></div>
+			<div id="info_field">nububu</div>
+			
+			<div id="logo_field">
+				<img id="tvring_logo" src="logo_tvring.png" alt=""></img>
+				<img id="irt_logo" src="logo_irt.jpg" alt=""></img>
+			</div>
+		
+		</div>
+
+	</body>
+
+</html>
+
+

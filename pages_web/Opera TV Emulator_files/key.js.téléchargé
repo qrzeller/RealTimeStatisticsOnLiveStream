@@ -1,0 +1,175 @@
+/**
+ * This file defines the possible remote control keys. Each key can
+ * "dispatch" itself as a websocket message.
+ */
+
+var vk_keys = {
+    "VK_BACK_SPACE": 8,
+    "VK_BACK": 461,
+    "VK_ENTER": 13,
+
+    "VK_LEFT": 37,
+    "VK_UP": 38,
+    "VK_RIGHT": 39,
+    "VK_DOWN": 40,
+
+    "VK_0": 48,
+    "VK_1": 49,
+    "VK_2": 50,
+    "VK_3": 51,
+    "VK_4": 52,
+    "VK_5": 53,
+    "VK_6": 54,
+    "VK_7": 55,
+    "VK_8": 56,
+    "VK_9": 57,
+
+    "VK_RED": 403,
+    "VK_GREEN": 404,
+    "VK_YELLOW": 405,
+    "VK_BLUE": 406,
+
+    "VK_REWIND": 412,
+    "VK_STOP": 413,
+    "VK_FAST_FWD": 417,
+    "VK_PLAY": 415,
+    "VK_PAUSE": 19,
+
+    "VK_MENU": 462,
+}
+
+function Key(id, vk_name, is_char, key) {
+    this.id = id;
+    this.vk_name = vk_name;
+    this.nativeCode = vk_keys[vk_name];
+    this.windowsCode = vk_keys[vk_name];
+    this.text = String.fromCharCode(this.nativeCode);
+    this.is_char = is_char === true;
+    if (key !== undefined)
+        this.key = key;
+    else
+        this.key = this.id;
+    this.enabled = true;
+}
+
+function ActionKey(id, vk_name, is_char, key) {
+    Key.call(this, id, vk_name, is_char, key);
+}
+
+ActionKey.prototype = Object.create(Key.prototype);
+ActionKey.prototype.dispatch = function(clientID) {
+    var msgKeyDown = {
+        method: "Input.dispatchKeyEvent",
+        params: {
+            type: "keyDown",
+            nativeVirtualKeyCode: this.nativeCode,
+            windowsVirtualKeyCode: this.windowsCode,
+            key:this.key,
+            keyIdentifier: this.id,
+        },
+        id: clientID
+    };
+
+    var msgKeyPress = {
+        method: "Input.dispatchKeyEvent",
+        params: {
+            type: "char",
+            nativeVirtualKeyCode: this.nativeCode,
+            windowsVirtualKeyCode: this.windowsCode,
+            text:this.text,
+            keyIdentifier: this.id
+        },
+        id: clientID
+    };
+
+    var msgKeyUp = {
+        method: "Input.dispatchKeyEvent",
+        params: {
+            type: "keyUp",
+            nativeVirtualKeyCode: this.nativeCode,
+            windowsVirtualKeyCode: this.windowsCode,
+            key:this.key,
+            keyIdentifier: this.id
+        },
+        id: clientID
+    };
+
+    sendMessage(msgKeyDown);
+    if (this.is_char) {
+        sendMessage(msgKeyPress);
+    }
+    sendMessage(msgKeyUp);
+};
+
+function ExitMenuKey() {
+}
+ExitMenuKey.prototype.dispatch = function(clientID) {
+    StreamFile('reset.php');
+}
+
+function PowerMenuKey() {
+}
+PowerMenuKey.prototype.dispatch = function(clientID) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", '/base/scripts/php/shutdown.php', true);
+    xmlhttp.send();
+}
+
+function navigateToEntry(id, clientID) {
+    var msg = {
+        method: "Page.navigateToHistoryEntry",
+        params: {entryId: id},
+        id: clientID
+    };
+    sendMessage(msg);
+}
+
+function BackwardKey() {
+}
+BackwardKey.prototype.dispatch = function(clientID) {
+    var msg = {
+        method: "Page.getNavigationHistory",
+        id: clientID
+    };
+    sendMessage(msg, function(e) {
+        var response = JSON.parse(e.data);
+        var currentIndex = response['result']['currentIndex'];
+        var entries = response['result']['entries'];
+        var entry = entries[Math.max(currentIndex - 1, 0)];
+        console.log('Navigating to ' + entry.url);
+        navigateToEntry(entry.id, clientID);
+    });
+}
+
+function ForwardKey() {
+}
+ForwardKey.prototype.dispatch = function(clientID) {
+    var msg = {
+        method: "Page.getNavigationHistory",
+        id: clientID
+    };
+    sendMessage(msg, function(e) {
+        var response = JSON.parse(e.data);
+        var currentIndex = response['result']['currentIndex'];
+        var entries = response['result']['entries'];
+        var entry = entries[Math.min(currentIndex + 1, entries.length - 1)];
+        console.log('Navigating to ' + entry.url);
+        navigateToEntry(entry.id, clientID);
+    });
+}
+
+function ReloadKey() {
+}
+ReloadKey.prototype.dispatch = function(clientID) {
+    var msg = {
+        method: "Page.reload",
+        id: clientID
+    };
+    sendMessage(msg);
+}
+
+function HomeKey() {
+}
+HomeKey.prototype.dispatch = function(clientID) {
+    goHome();
+}
