@@ -7,15 +7,18 @@
 \chapter{HBBTV}
 \label{chap:HBBTV}
 
-\initial{H}ybrid Broadcast Broadband TV, plus connu sous l'acronyme HbbTV est un standard permettant le partage d'information et de services en complément a un flux multimédias destinés a l'utilisateur final. \\
+\initial{H}ybrid Broadcast Broadband TV, plus connu sous l'acronyme HbbTV est un standard européen permettant le partage d'information et de services en complément à un flux multimédias destinés a l'utilisateur final. 
 
-Il fait partie des outils ou protocols TV OTT, acronyme signifiant télévision Over The Top ou services par contournement en français et qui définissent les contenus ne passant pas par le bouquet proposé par l'opérateur internet / télévision. C'est donc l'antithèse de la télévision linéaire, mode de consommation traditionnel. \cite{OTT}\\
+
+Il fait partie des outils ou protocoles TV OTT, acronyme signifiant télévision Over The Top ou services par contournement en français et qui définissent les contenus ne passant pas par le bouquet proposé par l'opérateur internet / télévision. C'est donc l'antithèse de la télévision linéaire, mode de consommation traditionnel. \cite{OTT}
 \begin{figure}
 %	HbbTV - Broadcast \("redbutton"\) vs broadband \("Web TV\).
-	\includegraphics[width=\linewidth]{fig01/hbbtv-red-web}
+	\includegraphics[width=\linewidth]{pdf/broadcast-broadband}
 	\caption{HbbTV Broadband vs Broadcast}
 	\label{fig:hbbtv1}
 \end{figure}
+
+Le but du consortium est de créer un seul standard permettant d'acheminer du contenu broadcast et broadband à travers une seule interface de type web. Le but étant donc d'empêcher l'émergence de multiples standards propriétaires ainsi que les désavantages qui en incombe.\cite{operaHBBTV} Les services proposés peuvent être infini, passant de la vidéo à la demande, se dissociant donc du contenu vidéo de base jusqu'au quiz interactif lors d'une émission télévisée.
 
 %=======
 \section{Fonctionnement général}
@@ -25,10 +28,28 @@ Il fait partie des outils ou protocols TV OTT, acronyme signifiant télévision Ov
 
 Begins a section.
 
-\subsection{Emulateurs}
+\subsection{Opera TV Emulator}
 \label{subsec:subsec02}
+L'émulateur Opera TV rend possible le développement de contenu HTML5 et CE-HTML pour différents apareils que sont ; Smart TV, lecteurs Blue-ray, Box et aussi les ordinateurs.\cite{operaEmulator} La position sur le marché du leader Opera rend quasi indispensable cet environnement de développement, du moins pour les tests.
 
-Begins a subsection.
+
+
+
+L'environnement de développent se caractérise dans une machine virtuelle tournant sur le bien connu, VirtualBox. Il permet de s'abstraire de l'accès physique à une machine/TV ainsi que de rendre plus prédictif les protocoles de tests.
+Il dispose de deux interfaces graphique, la première étant le flux vidéo de la sortie standard qui propose une interface "TV-like" et dont la sortie sera celle de notre application développée.
+\begin{figure}
+	%	HbbTV - Broadcast \("redbutton"\) vs broadband \("Web TV\).
+	\includegraphics[width=\linewidth]{pdf/broadcast-broadband}
+	\caption{Interface vidéo de départ - Opera TV Emulator}
+	\label{fig:operaTVemulator}
+\end{figure}
+
+
+\section{Environnement de production}
+\label{sec:sec03}
+\subsection{The Opera hybrid TV option}
+\label{subsec:subsec03}
+The Opera hybrid TV option est un basée sur leur propre Opera Devices SDK (Standard Developpement Kit) qui est une technologie déjà bien répandue sur le marché avec plusieurs millions de set-up box dans le monde. Ce kit de développement implémente plusieurs module de compatibilité tel que (OIPF, CE-HTML, CEA-2014...) et de ce fait supporte toute les applications HbbTV. Ils se targuent aussi d'avoir une technologie éprouvée permettant des performances et intégration supérieur a ce que propose le marché.\cite{operaHBBTV}
 
 %A figures matrix.
 \begin{figure}[t!]
