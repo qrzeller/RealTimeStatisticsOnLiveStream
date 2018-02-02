@@ -11,7 +11,7 @@
 
 
 Il fait partie des outils ou protocoles TV OTT, acronyme signifiant télévision Over The Top ou services par contournement en français et qui définissent les contenus ne passant pas par le bouquet proposé par l'opérateur internet / télévision. C'est donc l'antithèse de la télévision linéaire, mode de consommation traditionnel. \cite{OTT}
-\begin{figure}
+\begin{figure}[h]
 %	HbbTV - Broadcast \("redbutton"\) vs broadband \("Web TV\).
 	\includegraphics[width=\linewidth]{pdf/broadcast-broadband}
 	\caption{HbbTV Broadband vs Broadcast}
@@ -37,11 +37,90 @@ L'émulateur Opera TV rend possible le développement de contenu HTML5 et CE-HTML 
 
 L'environnement de développent se caractérise dans une machine virtuelle tournant sur le bien connu, VirtualBox. Il permet de s'abstraire de l'accès physique à une machine/TV ainsi que de rendre plus prédictif les protocoles de tests.
 Il dispose de deux interfaces graphique, la première étant le flux vidéo de la sortie standard qui propose une interface "TV-like" et dont la sortie sera celle de notre application développée.
-\begin{figure}
+Sur la figure [\ref{fig:emue}] ci-après nous voyons la "landingpage" de l'émulateur opera. Celui-ci nous permet d'enter le lien du l'application HbbTV que nous souhaitons grâce à un clavier virtuel. Cependant cet interface n'est pas très ergonomique et gère mal l'interaction clavier-souris.
+
+
+\iffalse
+\begin{figure}[h]%h mean at the very place
 	%	HbbTV - Broadcast \("redbutton"\) vs broadband \("Web TV\).
-	\includegraphics[width=\linewidth]{pdf/broadcast-broadband}
+	
+	\includegraphics[width=\linewidth]{fig01//emulator/multi1/landing_emulator}
 	\caption{Interface vidéo de départ - Opera TV Emulator}
 	\label{fig:operaTVemulator}
+\end{figure}
+\fi
+
+Une autre interface beaucoup plus efficaces nous est proposée. Elle dispose notamment de fonctions utiles au debugging (fps counter, paint regions, terminal event, javascript event, performance monitor...) [\ref{fig:emu2}], et un certain nombre paramètre de fonctionnement de l'émulateur [\ref{fig:emua} \ref{fig:emub}] et du SDK ainsi que les différentes compatibilités assurées. Cette interface propose aussi une télécommande virtuelle [\ref{fig:emuf}] nous permettant de tester les différentes réactions au événements boutons.
+\begin{figure}[h]
+	\centering
+	\begin{minipage}{0.50\linewidth}
+		\centering
+		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/control_panel_1}\label{fig:emua}}
+	\end{minipage}
+\hfill
+	\begin{minipage}{0.43\linewidth}
+	\centering
+	\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/control_panel_2}\label{fig:emub}}
+\end{minipage}
+\hfill
+	%\hspace{0.5cm}
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/das_erste_video}\label{fig:emuc}}
+	\end{minipage}
+\hfill
+	%\hspace{1.3cm}
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/das_erste_popup}\label{fig:emud}}
+	\end{minipage}
+	%\\ \vspace{0.1cm}
+	\begin{minipage}[10cm]{0.6\linewidth}
+		\centering
+		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/landing_emulator}\label{fig:emue}}
+	\end{minipage}
+\hfill
+	%\\ \vspace{0.1cm}
+	\begin{minipage}[10cm]{0.35\linewidth}
+		\centering
+		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/remote_control_annotated}\label{fig:emuf}}
+	\end{minipage}
+	\mycaption[Interface utilisateur]{Some text caption}
+	\label{fig:emu}
+	
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi2/emulator_640_gstreamer_puel}\label{fig:emu2a}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi2/emulator_640_libav_puel}\label{fig:emu2b}}
+	\end{minipage}
+	\hfill
+	%\hspace{0.5cm}
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi2/emulator_640_virtualbox_puel}\label{fig:emu2c}}
+	\end{minipage}
+	\hfill
+	%\hspace{1.3cm}
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi2/emulator_640_welcome}\label{fig:emu2d}}
+	\end{minipage}
+	%\\ \vspace{0.1cm}
+	\begin{minipage}{0.6\linewidth}
+		\centering
+		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi2/virtualbox}\label{fig:emu2e}}
+	\end{minipage}
+	\mycaption[Installation]{Installation et configuration des add-ons.}
+	\label{fig:emu2}
+	
 \end{figure}
 
 
@@ -50,44 +129,5 @@ Il dispose de deux interfaces graphique, la première étant le flux vidéo de la s
 \subsection{The Opera hybrid TV option}
 \label{subsec:subsec03}
 The Opera hybrid TV option est un basée sur leur propre Opera Devices SDK (Standard Developpement Kit) qui est une technologie déjà bien répandue sur le marché avec plusieurs millions de set-up box dans le monde. Ce kit de développement implémente plusieurs module de compatibilité tel que (OIPF, CE-HTML, CEA-2014...) et de ce fait supporte toute les applications HbbTV. Ils se targuent aussi d'avoir une technologie éprouvée permettant des performances et intégration supérieur a ce que propose le marché.\cite{operaHBBTV}
-
-%A figures matrix.
-\begin{figure}[t!]
-\centering
-\begin{minipage}{3.3cm}
-    \centering
-    \subtop[]{\includegraphics[height=0.28\textheight]{fig01/Nswellings}\label{sf:multiRH02a}}
-\end{minipage}
-\hspace{0.5cm}
-\begin{minipage}{3.3cm}
-    \centering
-    \subtop[]{\includegraphics[height=0.27\textheight]{fig01/Mswellings}\label{sf:multiRH02b}}
-\end{minipage}
-\hspace{1.3cm}
-\begin{minipage}{3.3cm}
-    \centering
-    \subtop[]{\includegraphics[height=0.27\textheight]{fig01/rhd1}\label{sf:multiRH02c}}
-\end{minipage}
-\\ \vspace{0.1cm}
-\begin{minipage}{10cm}
-    \centering
-    \subtop[]{\includegraphics[height=0.145\textheight]{fig01/mutantrhd6}\label{sf:multiRH02d}}
-\end{minipage}
-\\ \vspace{0.1cm}
-\begin{minipage}{10cm}
-    \centering
-    \subtop[]{\includegraphics[height=0.16\textheight]{fig01/auxab}\label{sf:multiRH02e}}
-\end{minipage}
-\mycaption[Hair-forming mutant cells.]{(a) A mutant RH cell. Asterisks show multiple sites of RH initiation in a single root hair cell (indicated by the arrows). Figure reproduced from \cite{rigas01}. (b)~Hair-forming cell with three RH initiation locations. The bar represents $50\mu m$. Figure reproduced from \cite{massuci01}. (c) Large bump in mutant {\itshape rhd1}. Figure reproduced from \cite{griersonRH}. (d) Mutant overexpressing gene {\itshape ROP2}; from right-hand to left-hand, numbers indicate progressive snapshots at different times. RH initiation sites are indicated by the arrows. The bar represents $75\mu m$. Figure reproduced from~\cite{mjones01}. (e)~Mutants affected by auxin. On the left-hand side, RH site is farther away from the apical end (left arrow cap); on the right-hand side, multiple RH locations (arrows). Figure reproduced from~\cite{payne01}.}
-\label{fig:multiRH02}
-\end{figure}
-
-% A single figure
-\begin{figure}[t!]
-	\centering
-	\includegraphics[height=0.35\textheight]{fig01/devepzones}
-	\mycaption[Developmental zones of an Arabidopsis root.]{Developmental zones of an Arabidopsis root. Figure reproduced from \cite{griersonRH}.}
-	\label{fig:RHP02}
-\end{figure}
 
 %=========================================================

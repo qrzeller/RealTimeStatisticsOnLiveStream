@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.5)  31 JAN 2018 12:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.5)  2 FEB 2018 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1683,42 +1683,6 @@ s
 
 LaTeX Warning: Label `sec:sec01' multiply defined.
 
-
-LaTeX Warning: Label `sf:multiRH02a' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02a' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02b' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02b' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02c' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02c' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02d' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02d' multiply defined.
-
-
-LaTeX Warning: Label `sf:multiRH02e' multiply defined.
-
-
-LaTeX Warning: Label `sub@sf:multiRH02e' multiply defined.
-
-
-LaTeX Warning: Label `fig:multiRH02' multiply defined.
-
-
-LaTeX Warning: Label `fig:RHP02' multiply defined.
-
 )
 \openout1 = `travail_semestre.aux'.
 
@@ -2143,160 +2107,188 @@ File: chapters/HBBTV/pdf/broadcast-broadband.pdf Graphic file (type pdf)
 Package pdftex.def Info: chapters/HBBTV/pdf/broadcast-broadband.pdf  used on in
 put line 16.
 (pdftex.def)             Requested size: 448.0pt x 261.95615pt.
-
-Underfull \vbox (badness 1077) has occurred while \output is active []
-
- [5
+[5
 
  <./chapters/HBBTV/pdf/broadcast-broadband.pdf>]
 
 Package natbib Warning: Citation `operaEmulator' on page 6 undefined on input l
 ine 33.
 
-File: chapters/HBBTV/pdf/broadcast-broadband.pdf Graphic file (type pdf)
-<use chapters/HBBTV/pdf/broadcast-broadband.pdf>
-Package pdftex.def Info: chapters/HBBTV/pdf/broadcast-broadband.pdf  used on in
-put line 42.
-(pdftex.def)             Requested size: 448.0pt x 261.95615pt.
-[6]pdfTeX warning (ext4): destination with the same identifier (name{subfigure.
-1}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
+ has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.61     \subtop
-                []{\includegraphics[height=0.28\textheight]{fig01/Nswellings...
-<chapters/HBBTV/fig01/Nswellings.jpeg, id=267, 282.30469pt x 472.76625pt>
-File: chapters/HBBTV/fig01/Nswellings.jpeg Graphic file (type jpg)
-<use chapters/HBBTV/fig01/Nswellings.jpeg>
-Package pdftex.def Info: chapters/HBBTV/fig01/Nswellings.jpeg  used on input li
-ne 61.
-(pdftex.def)             Requested size: 106.4369pt x 178.2473pt.
-
-Overfull \hbox (12.54272pt too wide) in paragraph at lines 61--62
- [][] 
- []
-
+l.58 		\subtop
+              []{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/c...
+<chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png, id=267, 740.09833pt 
+x 701.95583pt>
+File: chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png Graphic file (ty
+pe png)
+<use chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png>
+Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/control_panel_1.p
+ng  used on input line 58.
+(pdftex.def)             Requested size: 224.0pt x 212.45207pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.66     \subtop
-                []{\includegraphics[height=0.27\textheight]{fig01/Mswellings...
-<chapters/HBBTV/fig01/Mswellings.jpeg, id=268, 117.43875pt x 154.32657pt>
-File: chapters/HBBTV/fig01/Mswellings.jpeg Graphic file (type jpg)
-<use chapters/HBBTV/fig01/Mswellings.jpeg>
-Package pdftex.def Info: chapters/HBBTV/fig01/Mswellings.jpeg  used on input li
-ne 66.
-(pdftex.def)             Requested size: 130.8101pt x 171.88478pt.
-
-Overfull \hbox (36.91592pt too wide) in paragraph at lines 66--67
- [][] 
- []
-
+l.63 	\subtop
+             []{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/co...
+<chapters/HBBTV/fig01/emulator/multi1/control_panel_2.png, id=269, 570.63188pt 
+x 630.10406pt>
+File: chapters/HBBTV/fig01/emulator/multi1/control_panel_2.png Graphic file (ty
+pe png)
+<use chapters/HBBTV/fig01/emulator/multi1/control_panel_2.png>
+Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/control_panel_2.p
+ng  used on input line 63.
+(pdftex.def)             Requested size: 192.63672pt x 212.71344pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.3})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.71     \subtop
-                []{\includegraphics[height=0.27\textheight]{fig01/rhd1}\labe...
-<chapters/HBBTV/fig01/rhd1.jpeg, id=269, 164.86594pt x 246.1697pt>
-File: chapters/HBBTV/fig01/rhd1.jpeg Graphic file (type jpg)
-<use chapters/HBBTV/fig01/rhd1.jpeg>
-Package pdftex.def Info: chapters/HBBTV/fig01/rhd1.jpeg  used on input line 71.
-
-(pdftex.def)             Requested size: 115.12108pt x 171.88478pt.
-
-Overfull \hbox (21.2269pt too wide) in paragraph at lines 71--72
- [][] 
- []
-
+l.69 		\subtop
+              []{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/d...
+<chapters/HBBTV/fig01/emulator/multi1/das_erste_video.png, id=270, 410.19917pt 
+x 234.20833pt>
+File: chapters/HBBTV/fig01/emulator/multi1/das_erste_video.png Graphic file (ty
+pe png)
+<use chapters/HBBTV/fig01/emulator/multi1/das_erste_video.png>
+Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/das_erste_video.p
+ng  used on input line 69.
+(pdftex.def)             Requested size: 215.03809pt x 122.77893pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.4})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.76     \subtop
-                []{\includegraphics[height=0.145\textheight]{fig01/mutantrhd...
-<chapters/HBBTV/fig01/mutantrhd6.jpeg, id=270, 894.34125pt x 240.9pt>
-File: chapters/HBBTV/fig01/mutantrhd6.jpeg Graphic file (type jpg)
-<use chapters/HBBTV/fig01/mutantrhd6.jpeg>
-Package pdftex.def Info: chapters/HBBTV/fig01/mutantrhd6.jpeg  used on input li
-ne 76.
-(pdftex.def)             Requested size: 342.69168pt x 92.30975pt.
-
-Overfull \hbox (58.16412pt too wide) in paragraph at lines 76--77
- [][] 
- []
-
+l.75 		\subtop
+              []{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/d...
+<chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.png, id=271, 642.4pt x 36
+1.35pt>
+File: chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.png Graphic file (ty
+pe png)
+<use chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.png>
+Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.p
+ng  used on input line 75.
+(pdftex.def)             Requested size: 215.03809pt x 120.95512pt.
 pdfTeX warning (ext4): destination with the same identifier (name{subfigure.5})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.81     \subtop
-                []{\includegraphics[height=0.16\textheight]{fig01/auxab}\lab...
-<chapters/HBBTV/fig01/auxab.jpeg, id=271, 315.42844pt x 93.34875pt>
-File: chapters/HBBTV/fig01/auxab.jpeg Graphic file (type jpg)
-<use chapters/HBBTV/fig01/auxab.jpeg>
-Package pdftex.def Info: chapters/HBBTV/fig01/auxab.jpeg  used on input line 81
-.
-(pdftex.def)             Requested size: 344.20003pt x 101.85837pt.
+l.80 		\subtop
+              []{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/l...
+<chapters/HBBTV/fig01/emulator/multi1/landing_emulator.png, id=272, 1286.8075pt
+ x 796.9775pt>
+File: chapters/HBBTV/fig01/emulator/multi1/landing_emulator.png Graphic file (t
+ype png)
+<use chapters/HBBTV/fig01/emulator/multi1/landing_emulator.png>
+Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/landing_emulator.
+png  used on input line 80.
+(pdftex.def)             Requested size: 268.80273pt x 166.48247pt.
+<chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png, id=273, 548
+.0475pt x 423.08063pt>
+File: chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png Graphic
+ file (type png)
+<use chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png>
+Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/remote_control_an
+notated.png  used on input line 86.
+(pdftex.def)             Requested size: 156.80273pt x 121.05049pt.
 
-Overfull \hbox (59.67247pt too wide) in paragraph at lines 81--82
- [][] 
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.97 		\subtop
+              []{\includegraphics[width=1\linewidth]{fig01/emulator/multi2/e...
+<chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstreamer_puel.png, id=274, 
+644.4075pt x 556.0775pt>
+File: chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstreamer_puel.png Grap
+hic file (type png)
+<use chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstreamer_puel.png>
+Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstr
+eamer_puel.png  used on input line 97.
+(pdftex.def)             Requested size: 215.03809pt x 185.55952pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.102 		\subtop
+               []{\includegraphics[width=1\linewidth]{fig01/emulator/multi2/...
+<chapters/HBBTV/fig01/emulator/multi2/emulator_640_libav_puel.png, id=275, 644.
+4075pt x 556.0775pt>
+File: chapters/HBBTV/fig01/emulator/multi2/emulator_640_libav_puel.png Graphic 
+file (type png)
+<use chapters/HBBTV/fig01/emulator/multi2/emulator_640_libav_puel.png>
+Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/emulator_640_liba
+v_puel.png  used on input line 102.
+(pdftex.def)             Requested size: 215.03809pt x 185.55952pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.3})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.108 		\subtop
+               []{\includegraphics[width=1\linewidth]{fig01/emulator/multi2/...
+<chapters/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_puel.png, id=276,
+ 644.4075pt x 556.0775pt>
+File: chapters/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_puel.png Gra
+phic file (type png)
+<use chapters/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_puel.png>
+Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/emulator_640_virt
+ualbox_puel.png  used on input line 108.
+(pdftex.def)             Requested size: 215.03809pt x 185.55952pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.4})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.114 		\subtop
+               []{\includegraphics[width=1\linewidth]{fig01/emulator/multi2/...
+<chapters/HBBTV/fig01/emulator/multi2/emulator_640_welcome.png, id=277, 644.407
+5pt x 556.0775pt>
+File: chapters/HBBTV/fig01/emulator/multi2/emulator_640_welcome.png Graphic fil
+e (type png)
+<use chapters/HBBTV/fig01/emulator/multi2/emulator_640_welcome.png>
+Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/emulator_640_welc
+ome.png  used on input line 114.
+(pdftex.def)             Requested size: 215.03809pt x 185.55952pt.
+pdfTeX warning (ext4): destination with the same identifier (name{subfigure.5})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.119 		\subtop
+               []{\includegraphics[width=1\linewidth]{fig01/emulator/multi2/...
+<chapters/HBBTV/fig01/emulator/multi2/virtualbox.png, id=278, 970.62625pt x 765
+.86125pt>
+File: chapters/HBBTV/fig01/emulator/multi2/virtualbox.png Graphic file (type pn
+g)
+<use chapters/HBBTV/fig01/emulator/multi2/virtualbox.png>
+Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/virtualbox.png  u
+sed on input line 119.
+(pdftex.def)             Requested size: 268.80273pt x 212.09077pt.
+
+LaTeX Warning: Float too large for page by 39.49219pt on input line 124.
 
 
-Package natbib Warning: Citation `griersonRH' on page 7 undefined on input line
- 83.
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [6] [7 <./chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png> <./chapte
+rs/HBBTV/fig01/emulator/multi1/control_panel_2.png> <./chapters/HBBTV/fig01/emu
+lator/multi1/das_erste_video.png> <./chapters/HBBTV/fig01/emulator/multi1/das_e
+rste_popup.png (PNG copy)> <./chapters/HBBTV/fig01/emulator/multi1/landing_emul
+ator.png> <./chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png>
+] [8 <./chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstreamer_puel.png> <
+./chapters/HBBTV/fig01/emulator/multi2/emulator_640_libav_puel.png> <./chapters
+/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_puel.png> <./chapters/HBBT
+V/fig01/emulator/multi2/emulator_640_welcome.png> <./chapters/HBBTV/fig01/emula
+tor/multi2/virtualbox.png>] (./chapters/appendices/app0A.tex) [9
 
 
-Package natbib Warning: Citation `mjones01' on page 7 undefined on input line 8
-3.
+] [10
 
-
-Package natbib Warning: Citation `griersonRH' on page 7 undefined on input line
- 83.
-
-
-Package natbib Warning: Citation `mjones01' on page 7 undefined on input line 8
-3.
-
-<chapters/HBBTV/fig01/devepzones.jpeg, id=278, 317.68687pt x 481.8pt>
-File: chapters/HBBTV/fig01/devepzones.jpeg Graphic file (type jpg)
-<use chapters/HBBTV/fig01/devepzones.jpeg>
-Package pdftex.def Info: chapters/HBBTV/fig01/devepzones.jpeg  used on input li
-ne 90.
-(pdftex.def)             Requested size: 146.91817pt x 222.81398pt.
-
-Package natbib Warning: Citation `griersonRH' on page 7 undefined on input line
- 91.
-
-
-Package natbib Warning: Citation `griersonRH' on page 7 undefined on input line
- 91.
-
-) [7]
-
-LaTeX Warning: Text page 8 contains only floats.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8 <./chapters/HBBTV/fig01/Nswellings.jpeg> <./chapters/HBBTV/fig01/Mswellings
-.jpeg> <./chapters/HBBTV/fig01/rhd1.jpeg> <./chapters/HBBTV/fig01/mutantrhd6.jp
-eg> <./chapters/HBBTV/fig01/auxab.jpeg>] [9 <./chapters/HBBTV/fig01/devepzones.
-jpeg>]
-[10
-
-] (./chapters/appendices/app0A.tex) [11
-
-] [12
-
-] (./travail_semestre.bbl
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 4.
-
+]
+(./travail_semestre.bbl
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 4.
-(c:/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
+ (c:/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -2310,37 +2302,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 n/10.95 https : / / en . wikipedia . org / wiki /
  []
 
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 7.
+) [11
 
 
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 10.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 15.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 20.
-
-
-Package nag Warning: Command \sc is an old LaTeX 2.09 command. 
-(nag)                Use \scshape or \textsc instead on input line 26.
-
-) [13
-
-
-] [14
+] [12
 
 ]
 
 Package natbib Warning: There were undefined citations.
 
 
-Package nag Warning: 7 complaints in total.
+Package nag Warning: 1 complaints in total.
 
 \tf@toc=\write7
 \openout7 = `travail_semestre.toc'.
@@ -2356,29 +2328,23 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 412.
 (./travail_semestre.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 412.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 412.
+Package rerunfilecheck Info: File `travail_semestre.out' has not changed.
+(rerunfilecheck)             Checksum: 9AA0F84905E8F6042B4FBCE4A7C1DA98;775.
 
-
-Package rerunfilecheck Warning: File `travail_semestre.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `travail_semestre.out':
-(rerunfilecheck)             Before: 2D6B307752689925E5DA6FB331B18CC8;768
-(rerunfilecheck)             After:  9AA0F84905E8F6042B4FBCE4A7C1DA98;775.
 
 LaTeX Warning: There were multiply-defined labels.
 
  )
-(\end occurred when \ifx on line 91 was incomplete)
-(\end occurred when \ifx on line 83 was incomplete)
+(\end occurred when \ifx on line 121 was incomplete)
+(\end occurred when \ifx on line 88 was incomplete)
 (\end occurred when \ifx on line 58 was incomplete)
 (\end occurred when \ifx on line 50 was incomplete) 
 Here is how much of TeX's memory you used:
- 29926 strings out of 492980
- 552074 string characters out of 6136208
- 833664 words of memory out of 5000000
- 32571 multiletter control sequences out of 15000+600000
- 79538 words of font info for 208 fonts, out of 8000000 for 9000
+ 29985 strings out of 492980
+ 554614 string characters out of 6136208
+ 835427 words of memory out of 5000000
+ 32615 multiletter control sequences out of 15000+600000
+ 79656 words of font info for 210 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  52i,14n,80p,1018b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2017/texmf-dist/
@@ -2388,10 +2354,10 @@ r-mlit.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb
 ><c:/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb><c:/texlive/20
 17/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><c:/texlive/2017/texmf-dist/f
 onts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on travail_semestre.pdf (28 pages, 1484314 bytes).
+Output written on travail_semestre.pdf (26 pages, 2897708 bytes).
 PDF statistics:
- 358 PDF objects out of 1000 (max. 8388607)
- 289 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
- 37563 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 363 PDF objects out of 1000 (max. 8388607)
+ 285 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 37588 words of extra memory for PDF output out of 42996 (max. 10000000)
 
