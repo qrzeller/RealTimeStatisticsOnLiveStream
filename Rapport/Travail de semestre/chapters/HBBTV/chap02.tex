@@ -32,25 +32,11 @@ Begins a section.
 \label{subsec:subsec02}
 L'émulateur Opera TV rend possible le développement de contenu HTML5 et CE-HTML pour différents apareils que sont ; Smart TV, lecteurs Blue-ray, Box et aussi les ordinateurs.\cite{operaEmulator} La position sur le marché du leader Opera rend quasi indispensable cet environnement de développement, du moins pour les tests.
 
-
-
-
 L'environnement de développent se caractérise dans une machine virtuelle tournant sur le bien connu, VirtualBox. Il permet de s'abstraire de l'accès physique à une machine/TV ainsi que de rendre plus prédictif les protocoles de tests.
 Il dispose de deux interfaces graphique, la première étant le flux vidéo de la sortie standard qui propose une interface "TV-like" et dont la sortie sera celle de notre application développée.
 Sur la figure [\ref{fig:emue}] ci-après nous voyons la "landingpage" de l'émulateur opera. Celui-ci nous permet d'enter le lien du l'application HbbTV que nous souhaitons grâce à un clavier virtuel. Cependant cet interface n'est pas très ergonomique et gère mal l'interaction clavier-souris.
 
-
-\iffalse
-\begin{figure}[h]%h mean at the very place
-	%	HbbTV - Broadcast \("redbutton"\) vs broadband \("Web TV\).
-	
-	\includegraphics[width=\linewidth]{fig01//emulator/multi1/landing_emulator}
-	\caption{Interface vidéo de départ - Opera TV Emulator}
-	\label{fig:operaTVemulator}
-\end{figure}
-\fi
-
-Une autre interface beaucoup plus efficaces nous est proposée. Elle dispose notamment de fonctions utiles au debugging (fps counter, paint regions, terminal event, javascript event, performance monitor...) [\ref{fig:emu2}], et un certain nombre paramètre de fonctionnement de l'émulateur [\ref{fig:emua} \ref{fig:emub}] et du SDK ainsi que les différentes compatibilités assurées. Cette interface propose aussi une télécommande virtuelle [\ref{fig:emuf}] nous permettant de tester les différentes réactions au événements boutons.
+Une autre interface beaucoup plus efficaces nous est proposée. Il s'agit de l'interface web, disponible par défaut sur le port 5555. Elle dispose notamment de fonctions utiles au debugging (fps counter, paint regions, terminal event, javascript event, performance monitor...) [\ref{fig:emu2}], et un certain nombre paramètre de fonctionnement de l'émulateur [\ref{fig:emua} \ref{fig:emub}] et du SDK ainsi que les différentes compatibilités assurées. Cette interface propose aussi une télécommande virtuelle [\ref{fig:emuf}] nous permettant de tester les différentes réactions au événements boutons.
 \begin{figure}[h]
 	\centering
 	\begin{minipage}{0.50\linewidth}
@@ -85,7 +71,7 @@ Une autre interface beaucoup plus efficaces nous est proposée. Elle dispose nota
 		\centering
 		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/remote_control_annotated}\label{fig:emuf}}
 	\end{minipage}
-	\mycaption[Interface utilisateur]{Some text caption}
+	\mycaption[Opera emulator user interface]{Interface utilisateur.}
 	\label{fig:emu}
 	
 \end{figure}
@@ -118,8 +104,41 @@ Une autre interface beaucoup plus efficaces nous est proposée. Elle dispose nota
 		\centering
 		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi2/virtualbox}\label{fig:emu2e}}
 	\end{minipage}
-	\mycaption[Installation]{Installation et configuration des add-ons.}
+	\mycaption[Opera emulator installation]{Installation et configuration des add-ons.}
 	\label{fig:emu2}
+	
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi3/devtools_youtube}\label{fig:emu3a}}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi3/remote_control_key_mapping}\label{fig:emu3b}}
+	\end{minipage}
+	\hfill
+	%\hspace{0.5cm}
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi3/remote_control_help_tips}\label{fig:emu3c}}
+	\end{minipage}
+	\hfill
+	%\hspace{1.3cm}
+	\begin{minipage}{0.48\linewidth}
+		\centering
+		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi3/performance_monitor}\label{fig:emu3d}}
+	\end{minipage}
+	%\\ \vspace{0.1cm}
+	\begin{minipage}{1\linewidth}
+		\centering
+		\subtop[]{\includegraphics[width=1\linewidth]{fig01/emulator/multi3/emulator_logs}\label{fig:emu3e}}
+	\end{minipage}
+	\mycaption[Opera emulator devlopper tools]{Outils developeur.}
+	\label{fig:emu3}
 	
 \end{figure}
 

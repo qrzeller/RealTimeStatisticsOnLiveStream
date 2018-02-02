@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.5)  2 FEB 2018 17:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.5)  3 FEB 2018 00:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1686,62 +1686,62 @@ LaTeX Warning: Label `sec:sec01' multiply defined.
 )
 \openout1 = `travail_semestre.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 338.
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 338.
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 338.
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 338.
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 338.
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 338.
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 338.
-LaTeX Font Info:    Try loading font information for FML+fncmi on input line 33
-8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 340.
+LaTeX Font Info:    ... okay on input line 340.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 340.
+LaTeX Font Info:    ... okay on input line 340.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 340.
+LaTeX Font Info:    ... okay on input line 340.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 340.
+LaTeX Font Info:    ... okay on input line 340.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 340.
+LaTeX Font Info:    ... okay on input line 340.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 340.
+LaTeX Font Info:    ... okay on input line 340.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 340.
+LaTeX Font Info:    Try loading font information for FML+fncmi on input line 34
+0.
  (c:/texlive/2017/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 338.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 338
+LaTeX Font Info:    ... okay on input line 340.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 340.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 340
 .
 
 (c:/texlive/2017/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 338.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 338
+LaTeX Font Info:    ... okay on input line 340.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 340.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 340
 .
 
 (c:/texlive/2017/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 338.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 338.
+LaTeX Font Info:    ... okay on input line 340.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 340.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 340.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 338.
-LaTeX Font Info:    ... okay on input line 338.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 338.
+LaTeX Font Info:    ... okay on input line 340.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 340.
+LaTeX Font Info:    ... okay on input line 340.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 340.
 
 (c:/texlive/2017/texmf-dist/tex/latex/fouriernc/t1fnc.fd
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 338.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 338.
+(Font)              scaled to size 10.18341pt on input line 340.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 340.
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 338.
+Package layouts Warning: Layout scale set to 0.5 on input line 340.
 
 (c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1773,14 +1773,14 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \degres on input line 338.
-LaTeX Info: Redefining \dots on input line 338.
+LaTeX Info: Redefining \degres on input line 340.
+LaTeX Info: Redefining \dots on input line 340.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumerate package,
-(french.ldf)             reported on input line 338.
-LaTeX Info: Redefining \up on input line 338.
+(french.ldf)             reported on input line 340.
+LaTeX Info: Redefining \up on input line 340.
 \AtBeginShipoutBox=\box78
-Package hyperref Info: Link coloring ON on input line 338.
+Package hyperref Info: Link coloring ON on input line 340.
 
 (c:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1792,15 +1792,15 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 338.
-LaTeX Info: Redefining \ref on input line 338.
-LaTeX Info: Redefining \pageref on input line 338.
-LaTeX Info: Redefining \nameref on input line 338.
+LaTeX Info: Redefining \nameref on input line 340.
+LaTeX Info: Redefining \ref on input line 340.
+LaTeX Info: Redefining \pageref on input line 340.
+LaTeX Info: Redefining \nameref on input line 340.
 (./travail_semestre.out) (./travail_semestre.out)
 \@outlinefile=\write6
 \openout6 = `travail_semestre.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 338.
+LaTeX Info: Redefining \microtypecontext on input line 340.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1817,15 +1817,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 ABD: EveryShipout initializing macros
 Package nag Info: Command \caption@xlabel not defined, skipping amendment on in
-put line 338.
+put line 340.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 338.
+t line 340.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 338.
+t line 340.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 338.
+line 340.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 338.
+line 340.
  (./frontmatter/title.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 23.13821pt on input line 29.
@@ -1933,7 +1933,7 @@ l.18 \clearpage
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.363 \clearemptydoublepage
+l.365 \clearemptydoublepage
                             [2
 
 
@@ -1943,18 +1943,7 @@ l.363 \clearemptydoublepage
 
 
 ]
-(./frontmatter/declaration.tex
-Overfull \hbox (5.36734pt too wide) in paragraph at lines 27--29
- \T1/fnc/m/sc/10.95 (-20) SI-GNED : ...........................................
-......... DATE : .......................................... 
- []
-
-[5
-
-]) [6
-
-
-] (./travail_semestre.toc
+(./frontmatter/declaration.tex) (./travail_semestre.toc
 
 Package nag Warning: Command \bf is an old LaTeX 2.09 command. 
 (nag)                Use \bfseries or \textbf instead on input line 2.
@@ -1963,17 +1952,19 @@ LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 2.
-) [7] [8
+) [5
+
+] [6
 
 ] (./travail_semestre.lot
 LaTeX Font Info:    Font shape `T1/fnc/bx/sc' in size <10.95> not available
 (Font)              Font shape `T1/fnc/b/sc' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
 (Font)              scaled to size 10.18341pt on input line 2.
-) [9] [10
+) [7] [8
 
-] (./travail_semestre.lof) [11]
-[12
+] (./travail_semestre.lof) [9]
+[10
 
 ] (./chapters/introduction/chap01.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -1990,305 +1981,306 @@ LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
 (Font)              Font shape `T1/fnc/b/n' tried instead on input line 18.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 11.15991pt on input line 18.
-<chapters/introduction/fig01/Nswellings.jpeg, id=146, 282.30469pt x 472.76625pt
->
-File: chapters/introduction/fig01/Nswellings.jpeg Graphic file (type jpg)
-<use chapters/introduction/fig01/Nswellings.jpeg>
-Package pdftex.def Info: chapters/introduction/fig01/Nswellings.jpeg  used on i
-nput line 28.
-(pdftex.def)             Requested size: 106.4369pt x 178.2473pt.
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 28.
-
-Overfull \hbox (12.54272pt too wide) in paragraph at lines 28--29
- [][] 
- []
-
-<chapters/introduction/fig01/Mswellings.jpeg, id=147, 117.43875pt x 154.32657pt
->
-File: chapters/introduction/fig01/Mswellings.jpeg Graphic file (type jpg)
-<use chapters/introduction/fig01/Mswellings.jpeg>
-Package pdftex.def Info: chapters/introduction/fig01/Mswellings.jpeg  used on i
-nput line 33.
-(pdftex.def)             Requested size: 130.8101pt x 171.88478pt.
-
-Overfull \hbox (36.91592pt too wide) in paragraph at lines 33--34
- [][] 
- []
-
-<chapters/introduction/fig01/rhd1.jpeg, id=148, 164.86594pt x 246.1697pt>
-File: chapters/introduction/fig01/rhd1.jpeg Graphic file (type jpg)
-<use chapters/introduction/fig01/rhd1.jpeg>
-Package pdftex.def Info: chapters/introduction/fig01/rhd1.jpeg  used on input l
-ine 38.
-(pdftex.def)             Requested size: 115.12108pt x 171.88478pt.
-
-Overfull \hbox (21.2269pt too wide) in paragraph at lines 38--39
- [][] 
- []
-
-<chapters/introduction/fig01/mutantrhd6.jpeg, id=149, 894.34125pt x 240.9pt>
-File: chapters/introduction/fig01/mutantrhd6.jpeg Graphic file (type jpg)
-<use chapters/introduction/fig01/mutantrhd6.jpeg>
-Package pdftex.def Info: chapters/introduction/fig01/mutantrhd6.jpeg  used on i
-nput line 43.
-(pdftex.def)             Requested size: 342.69168pt x 92.30975pt.
-
-Overfull \hbox (58.16412pt too wide) in paragraph at lines 43--44
- [][] 
- []
-
-<chapters/introduction/fig01/auxab.jpeg, id=150, 315.42844pt x 93.34875pt>
-File: chapters/introduction/fig01/auxab.jpeg Graphic file (type jpg)
-<use chapters/introduction/fig01/auxab.jpeg>
-Package pdftex.def Info: chapters/introduction/fig01/auxab.jpeg  used on input 
-line 48.
-(pdftex.def)             Requested size: 344.20003pt x 101.85837pt.
-
-Overfull \hbox (59.67247pt too wide) in paragraph at lines 48--49
- [][] 
- []
-
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 50.
-
-Package natbib Warning: Citation `griersonRH' on page 1 undefined on input line
- 50.
-
-
-Package natbib Warning: Citation `mjones01' on page 1 undefined on input line 5
-0.
-
-
-Package natbib Warning: Citation `griersonRH' on page 1 undefined on input line
- 50.
-
-
-Package natbib Warning: Citation `mjones01' on page 1 undefined on input line 5
-0.
-
-<chapters/introduction/fig01/devepzones.jpeg, id=157, 317.68687pt x 481.8pt>
-File: chapters/introduction/fig01/devepzones.jpeg Graphic file (type jpg)
-<use chapters/introduction/fig01/devepzones.jpeg>
-Package pdftex.def Info: chapters/introduction/fig01/devepzones.jpeg  used on i
-nput line 57.
-(pdftex.def)             Requested size: 146.91817pt x 222.81398pt.
-
-Package natbib Warning: Citation `griersonRH' on page 1 undefined on input line
- 58.
-
-
-Package natbib Warning: Citation `griersonRH' on page 1 undefined on input line
- 58.
-
 ) [1
 
 
-]
-
-LaTeX Warning: Text page 2 contains only floats.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <./chapters/introduction/fig01/Nswellings.jpeg> <./chapters/introduction/fi
-g01/Mswellings.jpeg> <./chapters/introduction/fig01/rhd1.jpeg> <./chapters/intr
-oduction/fig01/mutantrhd6.jpeg> <./chapters/introduction/fig01/auxab.jpeg>] [3 
-<./chapters/introduction/fig01/devepzones.jpeg>] [4
+] [2
 
 ] (./chapters/HBBTV/chap02.tex
 
 pdfTeX warning: pdflatex.exe (file ./chapters/HBBTV/pdf/broadcast-broadband.pdf
 ): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<chapters/HBBTV/pdf/broadcast-broadband.pdf, id=185, 274.74945pt x 160.63553pt>
+<chapters/HBBTV/pdf/broadcast-broadband.pdf, id=144, 274.74945pt x 160.63553pt>
 
 File: chapters/HBBTV/pdf/broadcast-broadband.pdf Graphic file (type pdf)
 <use chapters/HBBTV/pdf/broadcast-broadband.pdf>
 Package pdftex.def Info: chapters/HBBTV/pdf/broadcast-broadband.pdf  used on in
 put line 16.
 (pdftex.def)             Requested size: 448.0pt x 261.95615pt.
-[5
+[3
 
  <./chapters/HBBTV/pdf/broadcast-broadband.pdf>]
 
-Package natbib Warning: Citation `operaEmulator' on page 6 undefined on input l
+Package natbib Warning: Citation `operaEmulator' on page 4 undefined on input l
 ine 33.
 
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.58 		\subtop
-              []{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/c...
-<chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png, id=267, 740.09833pt 
+<chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png, id=226, 740.09833pt 
 x 701.95583pt>
 File: chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png Graphic file (ty
 pe png)
 <use chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png>
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/control_panel_1.p
-ng  used on input line 58.
+ng  used on input line 44.
 (pdftex.def)             Requested size: 224.0pt x 212.45207pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.63 	\subtop
-             []{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/co...
-<chapters/HBBTV/fig01/emulator/multi1/control_panel_2.png, id=269, 570.63188pt 
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 8.36993pt on input line 44.
+<chapters/HBBTV/fig01/emulator/multi1/control_panel_2.png, id=228, 570.63188pt 
 x 630.10406pt>
 File: chapters/HBBTV/fig01/emulator/multi1/control_panel_2.png Graphic file (ty
 pe png)
 <use chapters/HBBTV/fig01/emulator/multi1/control_panel_2.png>
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/control_panel_2.p
-ng  used on input line 63.
+ng  used on input line 49.
 (pdftex.def)             Requested size: 192.63672pt x 212.71344pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.3})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.69 		\subtop
-              []{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/d...
-<chapters/HBBTV/fig01/emulator/multi1/das_erste_video.png, id=270, 410.19917pt 
+<chapters/HBBTV/fig01/emulator/multi1/das_erste_video.png, id=229, 410.19917pt 
 x 234.20833pt>
 File: chapters/HBBTV/fig01/emulator/multi1/das_erste_video.png Graphic file (ty
 pe png)
 <use chapters/HBBTV/fig01/emulator/multi1/das_erste_video.png>
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/das_erste_video.p
-ng  used on input line 69.
+ng  used on input line 55.
 (pdftex.def)             Requested size: 215.03809pt x 122.77893pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.4})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.75 		\subtop
-              []{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/d...
-<chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.png, id=271, 642.4pt x 36
+<chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.png, id=230, 642.4pt x 36
 1.35pt>
 File: chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.png Graphic file (ty
 pe png)
 <use chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.png>
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.p
-ng  used on input line 75.
+ng  used on input line 61.
 (pdftex.def)             Requested size: 215.03809pt x 120.95512pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.5})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.80 		\subtop
-              []{\includegraphics[width=1\linewidth]{fig01/emulator/multi1/l...
-<chapters/HBBTV/fig01/emulator/multi1/landing_emulator.png, id=272, 1286.8075pt
+<chapters/HBBTV/fig01/emulator/multi1/landing_emulator.png, id=231, 1286.8075pt
  x 796.9775pt>
 File: chapters/HBBTV/fig01/emulator/multi1/landing_emulator.png Graphic file (t
 ype png)
 <use chapters/HBBTV/fig01/emulator/multi1/landing_emulator.png>
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/landing_emulator.
-png  used on input line 80.
+png  used on input line 66.
 (pdftex.def)             Requested size: 268.80273pt x 166.48247pt.
-<chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png, id=273, 548
+<chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png, id=232, 548
 .0475pt x 423.08063pt>
 File: chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png Graphic
  file (type png)
 <use chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png>
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/remote_control_an
-notated.png  used on input line 86.
+notated.png  used on input line 72.
 (pdftex.def)             Requested size: 156.80273pt x 121.05049pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.97 		\subtop
-              []{\includegraphics[width=1\linewidth]{fig01/emulator/multi2/e...
-<chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstreamer_puel.png, id=274, 
+<chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstreamer_puel.png, id=233, 
 644.4075pt x 556.0775pt>
 File: chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstreamer_puel.png Grap
 hic file (type png)
 <use chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstreamer_puel.png>
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstr
-eamer_puel.png  used on input line 97.
+eamer_puel.png  used on input line 83.
 (pdftex.def)             Requested size: 215.03809pt x 185.55952pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.2})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.102 		\subtop
-               []{\includegraphics[width=1\linewidth]{fig01/emulator/multi2/...
-<chapters/HBBTV/fig01/emulator/multi2/emulator_640_libav_puel.png, id=275, 644.
+<chapters/HBBTV/fig01/emulator/multi2/emulator_640_libav_puel.png, id=234, 644.
 4075pt x 556.0775pt>
 File: chapters/HBBTV/fig01/emulator/multi2/emulator_640_libav_puel.png Graphic 
 file (type png)
 <use chapters/HBBTV/fig01/emulator/multi2/emulator_640_libav_puel.png>
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/emulator_640_liba
-v_puel.png  used on input line 102.
+v_puel.png  used on input line 88.
 (pdftex.def)             Requested size: 215.03809pt x 185.55952pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.3})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.108 		\subtop
-               []{\includegraphics[width=1\linewidth]{fig01/emulator/multi2/...
-<chapters/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_puel.png, id=276,
+<chapters/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_puel.png, id=235,
  644.4075pt x 556.0775pt>
 File: chapters/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_puel.png Gra
 phic file (type png)
 <use chapters/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_puel.png>
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/emulator_640_virt
-ualbox_puel.png  used on input line 108.
+ualbox_puel.png  used on input line 94.
 (pdftex.def)             Requested size: 215.03809pt x 185.55952pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.4})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.114 		\subtop
-               []{\includegraphics[width=1\linewidth]{fig01/emulator/multi2/...
-<chapters/HBBTV/fig01/emulator/multi2/emulator_640_welcome.png, id=277, 644.407
+<chapters/HBBTV/fig01/emulator/multi2/emulator_640_welcome.png, id=236, 644.407
 5pt x 556.0775pt>
 File: chapters/HBBTV/fig01/emulator/multi2/emulator_640_welcome.png Graphic fil
 e (type png)
 <use chapters/HBBTV/fig01/emulator/multi2/emulator_640_welcome.png>
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/emulator_640_welc
-ome.png  used on input line 114.
+ome.png  used on input line 100.
 (pdftex.def)             Requested size: 215.03809pt x 185.55952pt.
-pdfTeX warning (ext4): destination with the same identifier (name{subfigure.5})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.119 		\subtop
-               []{\includegraphics[width=1\linewidth]{fig01/emulator/multi2/...
-<chapters/HBBTV/fig01/emulator/multi2/virtualbox.png, id=278, 970.62625pt x 765
+<chapters/HBBTV/fig01/emulator/multi2/virtualbox.png, id=237, 970.62625pt x 765
 .86125pt>
 File: chapters/HBBTV/fig01/emulator/multi2/virtualbox.png Graphic file (type pn
 g)
 <use chapters/HBBTV/fig01/emulator/multi2/virtualbox.png>
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/virtualbox.png  u
-sed on input line 119.
+sed on input line 105.
 (pdftex.def)             Requested size: 268.80273pt x 212.09077pt.
 
-LaTeX Warning: Float too large for page by 39.49219pt on input line 124.
+LaTeX Warning: Float too large for page by 39.49219pt on input line 110.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [6] [7 <./chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png> <./chapte
-rs/HBBTV/fig01/emulator/multi1/control_panel_2.png> <./chapters/HBBTV/fig01/emu
-lator/multi1/das_erste_video.png> <./chapters/HBBTV/fig01/emulator/multi1/das_e
-rste_popup.png (PNG copy)> <./chapters/HBBTV/fig01/emulator/multi1/landing_emul
-ator.png> <./chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png>
-] [8 <./chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstreamer_puel.png> <
-./chapters/HBBTV/fig01/emulator/multi2/emulator_640_libav_puel.png> <./chapters
-/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_puel.png> <./chapters/HBBT
-V/fig01/emulator/multi2/emulator_640_welcome.png> <./chapters/HBBTV/fig01/emula
-tor/multi2/virtualbox.png>] (./chapters/appendices/app0A.tex) [9
+<chapters/HBBTV/fig01/emulator/multi3/devtools_youtube.png, id=238, 1323.94624p
+t x 1060.96375pt>
+File: chapters/HBBTV/fig01/emulator/multi3/devtools_youtube.png Graphic file (t
+ype png)
+<use chapters/HBBTV/fig01/emulator/multi3/devtools_youtube.png>
+Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi3/devtools_youtube.
+png  used on input line 116.
+(pdftex.def)             Requested size: 215.03809pt x 172.31552pt.
+<chapters/HBBTV/fig01/emulator/multi3/remote_control_key_mapping.png, id=239, 3
+99.82709pt x 512.91624pt>
+File: chapters/HBBTV/fig01/emulator/multi3/remote_control_key_mapping.png Graph
+ic file (type png)
+<use chapters/HBBTV/fig01/emulator/multi3/remote_control_key_mapping.png>
+Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi3/remote_control_ke
+y_mapping.png  used on input line 121.
+(pdftex.def)             Requested size: 215.03809pt x 275.86711pt.
+<chapters/HBBTV/fig01/emulator/multi3/remote_control_help_tips.png, id=240, 468
+.75125pt x 237.88875pt>
+File: chapters/HBBTV/fig01/emulator/multi3/remote_control_help_tips.png Graphic
+ file (type png)
+<use chapters/HBBTV/fig01/emulator/multi3/remote_control_help_tips.png>
+Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi3/remote_control_he
+lp_tips.png  used on input line 127.
+(pdftex.def)             Requested size: 215.03809pt x 109.12886pt.
+<chapters/HBBTV/fig01/emulator/multi3/performance_monitor.png, id=241, 857.2025
+pt x 255.95625pt>
+File: chapters/HBBTV/fig01/emulator/multi3/performance_monitor.png Graphic file
+ (type png)
+<use chapters/HBBTV/fig01/emulator/multi3/performance_monitor.png>
+Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi3/performance_monit
+or.png  used on input line 133.
+(pdftex.def)             Requested size: 215.03809pt x 64.20761pt.
+<chapters/HBBTV/fig01/emulator/multi3/emulator_logs.png, id=242, 1034.36438pt x
+ 89.58469pt>
+File: chapters/HBBTV/fig01/emulator/multi3/emulator_logs.png Graphic file (type
+ png)
+<use chapters/HBBTV/fig01/emulator/multi3/emulator_logs.png>
+Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi3/emulator_logs.png
+  used on input line 138.
+(pdftex.def)             Requested size: 448.0pt x 38.80087pt.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+File: logos/hepia.jpg Graphic file (type jpg)
+<use logos/hepia.jpg>
+Package pdftex.def Info: logos/hepia.jpg  used on input line 395.
+(pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
+<logos/hes-so.jpg, id=244, 226.9278pt x 121.1727pt>
+File: logos/hes-so.jpg Graphic file (type jpg)
+<use logos/hes-so.jpg>
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 395.
+(pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (13.6pt): 
+ Make it at least 32.53278pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4 <./logos/hes-so.jpg>] [5 <./chapters/HBBTV/fig01/emulator/multi1/control_pan
+el_1.png> <./chapters/HBBTV/fig01/emulator/multi1/control_panel_2.png> <./chapt
+ers/HBBTV/fig01/emulator/multi1/das_erste_video.png> <./chapters/HBBTV/fig01/em
+ulator/multi1/das_erste_popup.png (PNG copy)> <./chapters/HBBTV/fig01/emulator/
+multi1/landing_emulator.png> <./chapters/HBBTV/fig01/emulator/multi1/remote_con
+trol_annotated.png>]
+File: logos/hepia.jpg Graphic file (type jpg)
+<use logos/hepia.jpg>
+Package pdftex.def Info: logos/hepia.jpg  used on input line 395.
+(pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
+File: logos/hes-so.jpg Graphic file (type jpg)
+<use logos/hes-so.jpg>
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 395.
+(pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (13.6pt): 
+ Make it at least 32.53278pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.395 \clearemptydoublepage
+                           pdfTeX warning (ext4): destination with the same ide
+ntifier (name{subfigure.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.395 \clearemptydoublepage
+                           pdfTeX warning (ext4): destination with the same ide
+ntifier (name{subfigure.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.395 \clearemptydoublepage
+                           pdfTeX warning (ext4): destination with the same ide
+ntifier (name{subfigure.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.395 \clearemptydoublepage
+                           pdfTeX warning (ext4): destination with the same ide
+ntifier (name{subfigure.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.395 \clearemptydoublepage
+                            <./chapters/HBBTV/fig01/emulator/multi2/emulator_64
+0_gstreamer_puel.png> <./chapters/HBBTV/fig01/emulator/multi2/emulator_640_liba
+v_puel.png> <./chapters/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_pue
+l.png> <./chapters/HBBTV/fig01/emulator/multi2/emulator_640_welcome.png> <./cha
+pters/HBBTV/fig01/emulator/multi2/virtualbox.png>]
+File: logos/hepia.jpg Graphic file (type jpg)
+<use logos/hepia.jpg>
+Package pdftex.def Info: logos/hepia.jpg  used on input line 395.
+(pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
+File: logos/hes-so.jpg Graphic file (type jpg)
+<use logos/hes-so.jpg>
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 395.
+(pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (13.6pt): 
+ Make it at least 32.53278pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7pdfTeX warning (ext4): destination with the same identifier (name{subfigure.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.395 \clearemptydoublepage
+                           pdfTeX warning (ext4): destination with the same ide
+ntifier (name{subfigure.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.395 \clearemptydoublepage
+                           pdfTeX warning (ext4): destination with the same ide
+ntifier (name{subfigure.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.395 \clearemptydoublepage
+                           pdfTeX warning (ext4): destination with the same ide
+ntifier (name{subfigure.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.395 \clearemptydoublepage
+                           pdfTeX warning (ext4): destination with the same ide
+ntifier (name{subfigure.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.395 \clearemptydoublepage
+                            <./chapters/HBBTV/fig01/emulator/multi3/devtools_yo
+utube.png> <./chapters/HBBTV/fig01/emulator/multi3/remote_control_key_mapping.p
+ng> <./chapters/HBBTV/fig01/emulator/multi3/remote_control_help_tips.png> <./ch
+apters/HBBTV/fig01/emulator/multi3/performance_monitor.png> <./chapters/HBBTV/f
+ig01/emulator/multi3/emulator_logs.png>] [8
+
+] (./chapters/appendices/app0A.tex)
+[9
 
 ] [10
 
-]
-(./travail_semestre.bbl
+] (./travail_semestre.bbl
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 4.
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 4.
- (c:/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
+
+(c:/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -2323,41 +2315,45 @@ Package nag Warning: 1 complaints in total.
 \tf@lof=\write9
 \openout9 = `travail_semestre.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 412.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 412.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 414.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 414.
 (./travail_semestre.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 412.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 412.
-Package rerunfilecheck Info: File `travail_semestre.out' has not changed.
-(rerunfilecheck)             Checksum: 9AA0F84905E8F6042B4FBCE4A7C1DA98;775.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 414.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 414.
 
+
+Package rerunfilecheck Warning: File `travail_semestre.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `travail_semestre.out':
+(rerunfilecheck)             Before: 07E757D38AAAFAC9919C15E7B9FEF23F;776
+(rerunfilecheck)             After:  A9D72885A9C8B20A58B05A4231616BB1;774.
 
 LaTeX Warning: There were multiply-defined labels.
 
  )
-(\end occurred when \ifx on line 121 was incomplete)
-(\end occurred when \ifx on line 88 was incomplete)
-(\end occurred when \ifx on line 58 was incomplete)
-(\end occurred when \ifx on line 50 was incomplete) 
+(\end occurred when \ifx on line 140 was incomplete)
+(\end occurred when \ifx on line 107 was incomplete)
+(\end occurred when \ifx on line 74 was incomplete) 
 Here is how much of TeX's memory you used:
- 29985 strings out of 492980
- 554614 string characters out of 6136208
- 835427 words of memory out of 5000000
- 32615 multiletter control sequences out of 15000+600000
- 79656 words of font info for 210 fonts, out of 8000000 for 9000
+ 29936 strings out of 492980
+ 554523 string characters out of 6136208
+ 829503 words of memory out of 5000000
+ 32612 multiletter control sequences out of 15000+600000
+ 74751 words of font info for 181 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 52i,14n,80p,1018b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,15n,80p,1018b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2017/texmf-dist/
 fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2017/texmf-dist/fonts/enc/
-dvips/base/8r.enc}<c:/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourie
-r-mlit.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb
-><c:/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb><c:/texlive/20
-17/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><c:/texlive/2017/texmf-dist/f
-onts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on travail_semestre.pdf (26 pages, 2897708 bytes).
+dvips/base/8r.enc}<c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt1
+095.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb><c:/tex
+live/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><c:/texlive/2017/texmf
+-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on travail_semestre.pdf (24 pages, 3308255 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
- 285 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 346 PDF objects out of 1000 (max. 8388607)
+ 269 compressed objects within 3 object streams
+ 56 named destinations out of 1000 (max. 500000)
  37588 words of extra memory for PDF output out of 42996 (max. 10000000)
 
