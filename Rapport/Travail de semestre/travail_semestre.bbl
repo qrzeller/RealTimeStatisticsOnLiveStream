@@ -4,7 +4,10 @@
 {\scshape Wikipedia}, {\em Over-the-top media services}, \url{https://en.wikipedia.org/wiki/Over-the-top_media_services},  28 January 2018, at 13:23.
 
 \bibitem{operaHBBTV}
-{\scshape Opera Press}, {\em Deliver seamless entertainment experiences}, The Opera hybrid TV option, 1 February 2018., pp.~1.
+{\scshape Opera Press}, {\em Deliver seamless entertainment experiences}, The Opera hybrid TV option, 1 February 2018.,\url{www.opera.com/media/b2b/tv/Opera-TV-Emulator.pdf}, pp.~1.
+
+\bibitem{operaHBBTV}
+{\scshape Opera Press}, {\em Opera TV Emulator}, The Opera TV emulator introduction, 2 February 2018., pp.~1.
 
 \bibitem{massuci01}
 {\scshape J.~D. Masucci and J.~W. Schiefelbein}, {\em The rhd6 mutation of
@@ -23,7 +26,7 @@ transporter required for tip growth in arabidopsis root hairs}, The Plant
 Cell, 13 (2001), pp.~139--151.
 
 \bibitem{HBBTV_DasErste}
-{\scshape HBBTV application Das Erste},{\em Example of application with video content }, \url{ http://hbbtv.daserste.de/index.php}, Main application
+{\scshape HBBTV application Das Erste },{\em Example of application with video content }, \url{ http://hbbtv.daserste.de/index.php}, Main application
 30 January 2018.
 
 \end{thebibliography}
