@@ -2,24 +2,28 @@
 \par \penalty \@M \textbf {{\scshape Figure} \hfill Page}\par \penalty \@M 
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces HbbTV Broadband vs Broadcast}}{3}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Opera emulator user interface}}{5}{figure.2.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces }}{5}{figure.2.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces }}{5}{figure.2.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces }}{5}{figure.2.2}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces }}{5}{figure.2.2}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces }}{5}{figure.2.2}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces }}{5}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Opera emulator installation}}{6}{figure.2.3}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces }}{6}{figure.2.3}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces }}{6}{figure.2.3}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces }}{6}{figure.2.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces }}{6}{figure.2.3}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces }}{6}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Opera emulator devlopper tools}}{7}{figure.2.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces }}{7}{figure.2.4}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces }}{7}{figure.2.4}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces }}{7}{figure.2.4}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces }}{7}{figure.2.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces }}{7}{figure.2.4}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The easy Flask website MJPEG.}}{4}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Burn text on live stream, display on GUI}}{5}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The easy Flask website MJPEG. (code)}}{5}{figure.2.3}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces HbbTV Broadband vs Broadcast}}{7}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Opera emulator user interface}}{9}{figure.3.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces }}{9}{figure.3.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces }}{9}{figure.3.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces }}{9}{figure.3.2}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces }}{9}{figure.3.2}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces }}{9}{figure.3.2}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces }}{9}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Opera emulator installation}}{10}{figure.3.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces }}{10}{figure.3.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces }}{10}{figure.3.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces }}{10}{figure.3.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces }}{10}{figure.3.3}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces }}{10}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Opera emulator devlopper tools}}{11}{figure.3.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces }}{11}{figure.3.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces }}{11}{figure.3.4}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces }}{11}{figure.3.4}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces }}{11}{figure.3.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces }}{11}{figure.3.4}
 \addvspace {10pt}
