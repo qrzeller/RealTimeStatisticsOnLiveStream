@@ -1,7 +1,7 @@
 \begin{thebibliography}{}
 
 \bibitem{OTT}
-{\scshape Wikipedia}, {\em Over-the-top media services}, \url{https://en.wikipedia.org/wiki/Over-the-top_media_services},  28 January 2018, at 13:23.
+{\scshape Wikipedia}, {\em Over-the-top media services}, \url{https://en.wikipedia.org/wiki/Over-the-top_media_services}, 28 January 2018, at 13:23.
 
 \bibitem{operaHBBTV}
 {\scshape Opera Press}, {\em Deliver seamless entertainment experiences}, The Opera hybrid TV option, 1 February 2018.,\url{www.opera.com/media/b2b/tv/Opera-TV-Emulator.pdf}, pp.~1.
@@ -26,8 +26,12 @@ transporter required for tip growth in arabidopsis root hairs}, The Plant
 Cell, 13 (2001), pp.~139--151.
 
 \bibitem{HBBTV_DasErste}
-{\scshape HBBTV application Das Erste },{\em Example of application with video content }, \url{ http://hbbtv.daserste.de/index.php}, Main application
-30 January 2018.
+{\scshape HBBTV application Das Erste },{\em Example of application with video content }, \url{ http://hbbtv.daserste.de/index.php}, Main application, 30 January 2018.
+
+\bibitem{opencv}
+{\scshape OpenCV official },{\em About OpenCV, Support Question }, \url{https://opencv.org/about.html}, \url{https://opencv.org/platforms/}, Open Source Computer Vision Library, 4 February 2018.
+
+\bibitem{opencv_cuda}
+{\scshape OpenCV official },{\em About OpenCV, CUDA support }, \url{https://opencv.org/platforms/cuda.html}, Performances, 4 February 2018.
 
 \end{thebibliography}
-

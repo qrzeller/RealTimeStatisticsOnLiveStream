@@ -1,6 +1,7 @@
 \babel@toc {french}{}
 \par \penalty \@M \textbf {{\scshape Figure} \hfill Page}\par \penalty \@M 
 \addvspace {10pt}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Schémas de fonctionnement applicatif.}}{2}{figure.1.1}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces The easy Flask website MJPEG.}}{4}{figure.2.1}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Burn text on live stream, display on GUI}}{5}{figure.2.2}
