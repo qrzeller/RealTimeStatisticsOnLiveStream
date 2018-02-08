@@ -4,7 +4,7 @@
 % Description: Introduction
 %
 %\let\textcircled=\pgftextcircled
-\chapter{OpenCV}
+\chapter{OpenCV \& Flask}
 \label{chap:OpenCV}
 
 \initial{O}penCV est une librairie multiplate-forme \footnote{MacOS, IOS, Android, Windows, Linuxes,...} et open source prévue pour le machine learning ainsi que pour le traitement d'image (computer vision)\cite{opencv}. Du fait de sa licence BSD, cette librairie est constamment améliorée par le marché et notamment par les plus grosses entreprises du secteur technologique, ce qui en fait une des librairies leader dans ce domaine. En plus d'être disponible sur la quasi totalité des systèmes d'exploitations du marché elle est également disponible dans multiple langage que sont : C++, C, Python, Java and MATLAB à ce jour et sans compter évidemment les différents binding. Nous utiliserons ici la librairie pour Python qui est un langage certes moins optimisé que certains de ses concurrents mais qui à l'instar de Mathlab permet de se concentrer sur le coeur du sujet. Il dispose en outre d'une bonne communauté et d'un bon support.
@@ -21,6 +21,31 @@ OPENCV
 \section{Environnement de développement de l'application test}
 \label{sec:sec03b}
 pycharm opencv, livrairies, flask...
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{deepred}{rgb}{0.6,0,0}
+
+\lstset{
+	language=Python,
+	backgroundcolor=\color{white},   % choose the background color
+	basicstyle=\footnotesize,        % size of fonts used for the code
+	breaklines=true,                 % automatic line breaking only at whitespace
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\color{mygreen},    % comment style
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	keywordstyle=\color{blue},       % keyword style
+	emphstyle=\ttb\color{deepred},
+	stringstyle=\color{mymauve},     % string literal style
+}
+
+
+	\lstinputlisting[language=Python, firstline=7, lastline=37, caption={Live streaming MJPEG with Flask, inspired from Miguel Grinberg. \cite{grinberg}}]{../../app/video_streaming_with_flask_example/main.py}
+%	\caption{Live streaming MJPEG with Flask, inspired from Miguel Grinberg. \cite{grinberg}}
+
+
+
 
 
 \begin{figure}[h]

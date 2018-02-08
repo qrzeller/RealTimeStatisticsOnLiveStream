@@ -39,5 +39,39 @@ wowsa + pluggin
 HBBTV -> opera
 
 
+%%%%%%%%%%%%%%%% Table
+
+
+
+\definecolor{tableHeader}{RGB}{211, 47, 47}
+\definecolor{tableLineOne}{RGB}{245, 245, 245}
+\definecolor{tableLineTwo}{RGB}{224, 224, 224}
+
+\newcommand{\tableHeaderStyle}{
+	\rowfont{\leavevmode\color{white}\bfseries}
+	\rowcolor{tableHeader}
+}
+
+
+
+
+\taburowcolors[2] 2{tableLineOne .. tableLineTwo}
+\tabulinesep = ^4mm_3mm
+\everyrow{\tabucline[.4mm  white]{}}
+
+\begin{tabu} to \textwidth {l >{\bfseries}X[r, 1] X[4] l}
+	\tableHeaderStyle
+	& Application & Description & Difficulty \\
+	& OpenCV & Une librairie BSD, init. Intel : Tout est a programmer sois-même. Très puissant car permet de traiter la vidéo image par image. Enorme librairie pour traitement d'image, etc... \newline(C, C++, Python, Mathlab...)  & Difficile \\
+	& Wowza transcoder & Librairie propriétaire, programmation objet \newline(Java) & Moyen \\
+	& Wowza Clamp & Un plugin RestFull propriétaire. Résultat très rapidement, Basé sur le principe d'overlay \newline(Json), Prix : 300\$& Facile \\
+	
+\end{tabu}
+\paragraph{Wowza transcoder}
+\paragraph{Wowza Clamp}
+
+
+%%%%%%%%%%%%%% End table
+
 
 %=========================================================

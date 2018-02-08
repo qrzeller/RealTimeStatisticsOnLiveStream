@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.5)  7 FEB 2018 16:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.5)  8 FEB 2018 16:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1311,6 +1311,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 LaTeX Info: Redefining \color on input line 709.
+\rownum=\count343
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -1329,7 +1330,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen183
-\pgfmath@count=\count343
+\pgfmath@count=\count344
 \pgfmath@box=\box42
 \pgfmath@toks=\toks60
 \pgfmath@stack@operand=\toks61
@@ -1353,7 +1354,7 @@ x)
 (c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
 etics.code.tex)))
 (c:/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count344
+\c@pgfmathroundto@lastzeros=\count345
 ))
 (c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
@@ -1389,7 +1390,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box43
 \pgf@hbox=\box44
 \pgf@layerbox@main=\box45
-\pgf@picture@serial@count=\count345
+\pgf@picture@serial@count=\count346
 )
 (c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
 .tex
@@ -1420,7 +1421,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 (c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen268
-\pgf@sys@shading@range@num=\count346
+\pgf@sys@shading@range@num=\count347
 )
 (c:/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -1470,7 +1471,7 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (c:/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
 de.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count347
+\pgf@plot@mark@count=\count348
 \pgfplotmarksize=\dimen271
 )
 \tikz@lastx=\dimen272
@@ -1483,18 +1484,18 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@figbox@bg=\box49
 \tikz@tempbox=\box50
 \tikz@tempbox@bg=\box51
-\tikztreelevel=\count348
-\tikznumberofchildren=\count349
-\tikznumberofcurrentchild=\count350
-\tikz@fig@count=\count351
+\tikztreelevel=\count349
+\tikznumberofchildren=\count350
+\tikznumberofcurrentchild=\count351
+\tikz@fig@count=\count352
 
 (c:/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count352
-\pgfmatrixcurrentcolumn=\count353
-\pgf@matrix@numberofcolumns=\count354
+\pgfmatrixcurrentrow=\count353
+\pgfmatrixcurrentcolumn=\count354
+\pgf@matrix@numberofcolumns=\count355
 )
-\tikz@expandcount=\count355
+\tikz@expandcount=\count356
 
 (c:/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarytopaths.code.tex
@@ -1600,7 +1601,7 @@ ex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen281
 \pgfdecoratedinputsegmentremainingdistance=\dimen282
 \pgf@decorate@distancetomove=\dimen283
-\pgf@decorate@repeatstate=\count356
+\pgf@decorate@repeatstate=\count357
 \pgfdecorationsegmentamplitude=\dimen284
 \pgfdecorationsegmentlength=\dimen285
 )
@@ -1630,20 +1631,20 @@ File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
 brarypetri.code.tex
 File: tikzlibrarypetri.code.tex 2013/07/17 v3.0.1a (rcs-revision 1.3)
 )
-\c@proofcount=\count357
+\c@proofcount=\count358
 
 (c:/texlive/2017/texmf-dist/tex/latex/lettrine/lettrine.sty
 File: lettrine.sty 2015/08/31 v1.9 (Daniel Flipo)
-\c@DefaultLines=\count358
-\c@DefaultDepth=\count359
+\c@DefaultLines=\count359
+\c@DefaultDepth=\count360
 \DefaultFindent=\dimen286
 \DefaultNindent=\dimen287
 \DefaultSlope=\dimen288
 \DiscardVskip=\dimen289
 \L@lbox=\box75
 \L@tbox=\box76
-\c@L@lines=\count360
-\c@L@depth=\count361
+\c@L@lines=\count361
+\c@L@depth=\count362
 \L@Pindent=\dimen290
 \L@Findent=\dimen291
 \L@Nindent=\dimen292
@@ -1659,12 +1660,12 @@ File: lettrine.sty 2015/08/31 v1.9 (Daniel Flipo)
 
 Loading lettrine.cfg
 (c:/texlive/2017/texmf-dist/tex/latex/lettrine/lettrine.cfg))
-\c@theo=\count362
-\c@prop=\count363
-\c@dfn=\count364
-\c@lema=\count365
-\c@cor=\count366
-\c@resu=\count367
+\c@theo=\count363
+\c@prop=\count364
+\c@dfn=\count365
+\c@lema=\count366
+\c@cor=\count367
+\c@resu=\count368
 
 (c:/texlive/2017/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
@@ -1679,6 +1680,64 @@ s
 \f@nch@O@olf=\skip306
 \f@nch@O@orf=\skip307
 )
+(c:/texlive/2017/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
+
+(c:/texlive/2017/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box77
+\sift@deathcycles=\count369
+\@vwid@loff=\dimen302
+\@vwid@roff=\dimen303
+)
+\c@taburow=\count370
+\tabu@nbcols=\count371
+\tabu@cnt=\count372
+\tabu@Xcol=\count373
+\tabu@alloc=\count374
+\tabu@nested=\count375
+\tabu@target=\dimen304
+\tabu@spreadtarget=\dimen305
+\tabu@naturalX=\dimen306
+\tabucolX=\dimen307
+\tabu@Xsum=\dimen308
+\extrarowdepth=\dimen309
+\abovetabulinesep=\dimen310
+\belowtabulinesep=\dimen311
+\tabustrutrule=\dimen312
+\tabu@thebody=\toks65
+\tabu@footnotes=\toks66
+\tabu@box=\box78
+\tabu@arstrutbox=\box79
+\tabu@hleads=\box80
+\tabu@vleads=\box81
+\tabu@cellskip=\skip308
+)
+(c:/texlive/2017/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count376
+\lst@gtempboxa=\box82
+\lst@token=\toks67
+\lst@length=\count377
+\lst@currlwidth=\dimen313
+\lst@column=\count378
+\lst@pos=\count379
+\lst@lostspace=\dimen314
+\lst@width=\dimen315
+\lst@newlines=\count380
+\lst@lineno=\count381
+\lst@maxwidth=\dimen316
+
+(c:/texlive/2017/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count382
+\lst@skipnumbers=\count383
+\lst@framebox=\box83
+)
+(c:/texlive/2017/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
 (./travail_semestre.aux
 
 Package natbib Warning: Citation `operaHBBTV' multiply defined.
@@ -1686,76 +1745,76 @@ Package natbib Warning: Citation `operaHBBTV' multiply defined.
 )
 \openout1 = `travail_semestre.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 341.
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 341.
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 341.
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 341.
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 341.
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 341.
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 341.
-LaTeX Font Info:    Try loading font information for FML+fncmi on input line 34
-1.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 350.
+LaTeX Font Info:    ... okay on input line 350.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 350.
+LaTeX Font Info:    ... okay on input line 350.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 350.
+LaTeX Font Info:    ... okay on input line 350.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 350.
+LaTeX Font Info:    ... okay on input line 350.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 350.
+LaTeX Font Info:    ... okay on input line 350.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 350.
+LaTeX Font Info:    ... okay on input line 350.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 350.
+LaTeX Font Info:    Try loading font information for FML+fncmi on input line 35
+0.
  (c:/texlive/2017/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 341.
-LaTeX Font Info:    Try loading font information for FMS+fncm on input line 341
+LaTeX Font Info:    ... okay on input line 350.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 350.
+LaTeX Font Info:    Try loading font information for FMS+fncm on input line 350
 .
 
 (c:/texlive/2017/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 341.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 341
+LaTeX Font Info:    ... okay on input line 350.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 350.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 350
 .
 
 (c:/texlive/2017/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 341.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 341.
+LaTeX Font Info:    ... okay on input line 350.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 350.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 350.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 341.
-LaTeX Font Info:    ... okay on input line 341.
-LaTeX Font Info:    Try loading font information for T1+fnc on input line 341.
+LaTeX Font Info:    ... okay on input line 350.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 350.
+LaTeX Font Info:    ... okay on input line 350.
+LaTeX Font Info:    Try loading font information for T1+fnc on input line 350.
 
 (c:/texlive/2017/texmf-dist/tex/latex/fouriernc/t1fnc.fd
 File: t1fnc.fd 2005/12/13 scaled font definitions for T1/fnc.
 )
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 341.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 341.
+(Font)              scaled to size 10.18341pt on input line 350.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 350.
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 341.
+Package layouts Warning: Layout scale set to 0.5 on input line 350.
 
 (c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count368
-\scratchdimen=\dimen302
-\scratchbox=\box77
-\nofMPsegments=\count369
-\nofMParguments=\count370
-\everyMPshowfont=\toks65
-\MPscratchCnt=\count371
-\MPscratchDim=\dimen303
-\MPnumerator=\count372
-\makeMPintoPDFobject=\count373
-\everyMPtoPDFconversion=\toks66
+\scratchcounter=\count384
+\scratchdimen=\dimen317
+\scratchbox=\box84
+\nofMPsegments=\count385
+\nofMParguments=\count386
+\everyMPshowfont=\toks68
+\MPscratchCnt=\count387
+\MPscratchDim=\dimen318
+\MPnumerator=\count388
+\makeMPintoPDFobject=\count389
+\everyMPtoPDFconversion=\toks69
 ) (c:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1773,14 +1832,14 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \degres on input line 341.
-LaTeX Info: Redefining \dots on input line 341.
+LaTeX Info: Redefining \degres on input line 350.
+LaTeX Info: Redefining \dots on input line 350.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumerate package,
-(french.ldf)             reported on input line 341.
-LaTeX Info: Redefining \up on input line 341.
-\AtBeginShipoutBox=\box78
-Package hyperref Info: Link coloring ON on input line 341.
+(french.ldf)             reported on input line 350.
+LaTeX Info: Redefining \up on input line 350.
+\AtBeginShipoutBox=\box85
+Package hyperref Info: Link coloring ON on input line 350.
 
 (c:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1788,19 +1847,19 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (c:/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count374
+\c@section@level=\count390
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 341.
-LaTeX Info: Redefining \ref on input line 341.
-LaTeX Info: Redefining \pageref on input line 341.
-LaTeX Info: Redefining \nameref on input line 341.
+LaTeX Info: Redefining \nameref on input line 350.
+LaTeX Info: Redefining \ref on input line 350.
+LaTeX Info: Redefining \pageref on input line 350.
+LaTeX Info: Redefining \nameref on input line 350.
 (./travail_semestre.out) (./travail_semestre.out)
 \@outlinefile=\write6
 \openout6 = `travail_semestre.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 341.
+LaTeX Info: Redefining \microtypecontext on input line 350.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1816,16 +1875,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 ABD: EveryShipout initializing macros
+\c@lstlisting=\count391
 Package nag Info: Command \caption@xlabel not defined, skipping amendment on in
-put line 341.
+put line 350.
 Package nag Info: Command \captionabove not defined, skipping amendment on inpu
-t line 341.
+t line 350.
 Package nag Info: Command \captionbelow not defined, skipping amendment on inpu
-t line 341.
+t line 350.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input 
-line 341.
+line 350.
 Package nag Info: Command \topcaption not defined, skipping amendment on input 
-line 341.
+line 350.
  (./frontmatter/title.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 23.13821pt on input line 29.
@@ -1933,7 +1993,7 @@ l.18 \clearpage
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.366 \clearemptydoublepage
+l.375 \clearemptydoublepage
                             [2
 
 
@@ -1998,15 +2058,22 @@ LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
 (Font)              Font shape `T1/fnc/b/n' tried instead on input line 33.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 11.15991pt on input line 33.
-)
+
+Overfull \hbox (16.99998pt too wide) in paragraph at lines 62--70
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: logos/hepia.jpg Graphic file (type jpg)
 <use logos/hepia.jpg>
-Package pdftex.def Info: logos/hepia.jpg  used on input line 394.
+Package pdftex.def Info: logos/hepia.jpg  used on input line 70.
 (pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
 <logos/hes-so.jpg, id=175, 226.9278pt x 121.1727pt>
 File: logos/hes-so.jpg Graphic file (type jpg)
 <use logos/hes-so.jpg>
-Package pdftex.def Info: logos/hes-so.jpg  used on input line 394.
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 70.
 (pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
 
 
@@ -2016,49 +2083,14 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  This may cause the page layout to be inconsistent, however.
 
 [2 <./logos/hes-so.jpg> <./chapters/introduction/fig01/Schemas_fonctionnement.p
-df>] (./chapters/OpenCV/chap03.tex
-LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 10.
-<chapters/OpenCV/fig01/website.png, id=192, 489.49542pt x 531.65292pt>
-File: chapters/OpenCV/fig01/website.png Graphic file (type png)
-<use chapters/OpenCV/fig01/website.png>
-Package pdftex.def Info: chapters/OpenCV/fig01/website.png  used on input line 
-28.
-(pdftex.def)             Requested size: 358.40137pt x 389.28781pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<chapters/OpenCV/fig01/example_application.png, id=194, 483.47292pt x 384.10167
-pt>
-File: chapters/OpenCV/fig01/example_application.png Graphic file (type png)
-<use chapters/OpenCV/fig01/example_application.png>
-Package pdftex.def Info: chapters/OpenCV/fig01/example_application.png  used on
- input line 36.
-(pdftex.def)             Requested size: 358.40137pt x 284.73482pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<chapters/OpenCV/fig01/flask_simple.png, id=195, 446.66875pt x 254.61792pt>
-File: chapters/OpenCV/fig01/flask_simple.png Graphic file (type png)
-<use chapters/OpenCV/fig01/flask_simple.png>
-Package pdftex.def Info: chapters/OpenCV/fig01/flask_simple.png  used on input 
-line 44.
-(pdftex.def)             Requested size: 448.0pt x 255.38264pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [3
-
-
-] [4 <./chapters/OpenCV/fig01/website.png>]
+df>])
 File: logos/hepia.jpg Graphic file (type jpg)
 <use logos/hepia.jpg>
-Package pdftex.def Info: logos/hepia.jpg  used on input line 396.
+Package pdftex.def Info: logos/hepia.jpg  used on input line 403.
 (pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
 File: logos/hes-so.jpg Graphic file (type jpg)
 <use logos/hes-so.jpg>
-Package pdftex.def Info: logos/hes-so.jpg  used on input line 396.
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 403.
 (pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
 
 
@@ -2067,28 +2099,114 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5 <./chapters/OpenCV/fig01/example_application.png> <./chapters/OpenCV/fig01/f
-lask_simple.png>] [6
+[3] [4
 
-] (./chapters/HBBTV/chap02.tex
+] (./chapters/OpenCV/chap03.tex
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 8.36993pt on input line 10.
+
+(c:/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 44.
+
+(../../app/video_streaming_with_flask_example/main.py [5
+
+]
+LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
+(Font)              scaled to size 7.06795pt on input line 23.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 23.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 23.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 23.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 23.
+)
+<chapters/OpenCV/fig01/website.png, id=228, 489.49542pt x 531.65292pt>
+File: chapters/OpenCV/fig01/website.png Graphic file (type png)
+<use chapters/OpenCV/fig01/website.png>
+Package pdftex.def Info: chapters/OpenCV/fig01/website.png  used on input line 
+53.
+(pdftex.def)             Requested size: 358.40137pt x 389.28781pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<chapters/OpenCV/fig01/example_application.png, id=230, 483.47292pt x 384.10167
+pt>
+File: chapters/OpenCV/fig01/example_application.png Graphic file (type png)
+<use chapters/OpenCV/fig01/example_application.png>
+Package pdftex.def Info: chapters/OpenCV/fig01/example_application.png  used on
+ input line 61.
+(pdftex.def)             Requested size: 358.40137pt x 284.73482pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<chapters/OpenCV/fig01/flask_simple.png, id=231, 446.66875pt x 254.61792pt>
+File: chapters/OpenCV/fig01/flask_simple.png Graphic file (type png)
+<use chapters/OpenCV/fig01/flask_simple.png>
+Package pdftex.def Info: chapters/OpenCV/fig01/flask_simple.png  used on input 
+line 69.
+(pdftex.def)             Requested size: 448.0pt x 255.38264pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+File: logos/hepia.jpg Graphic file (type jpg)
+<use logos/hepia.jpg>
+Package pdftex.def Info: logos/hepia.jpg  used on input line 405.
+(pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
+File: logos/hes-so.jpg Graphic file (type jpg)
+<use logos/hes-so.jpg>
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 405.
+(pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (13.6pt): 
+ Make it at least 32.53278pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6] [7 <./chapters/OpenCV/fig01/website.png>]
+File: logos/hepia.jpg Graphic file (type jpg)
+<use logos/hepia.jpg>
+Package pdftex.def Info: logos/hepia.jpg  used on input line 405.
+(pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
+File: logos/hes-so.jpg Graphic file (type jpg)
+<use logos/hes-so.jpg>
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 405.
+(pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (13.6pt): 
+ Make it at least 32.53278pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8 <./chapters/OpenCV/fig01/example_application.png> <./chapters/OpenCV/fig01/f
+lask_simple.png>] (./chapters/HBBTV/chap02.tex
 
 pdfTeX warning: pdflatex.exe (file ./chapters/HBBTV/pdf/broadcast-broadband.pdf
 ): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<chapters/HBBTV/pdf/broadcast-broadband.pdf, id=220, 274.74945pt x 160.63553pt>
+<chapters/HBBTV/pdf/broadcast-broadband.pdf, id=269, 274.74945pt x 160.63553pt>
 
 File: chapters/HBBTV/pdf/broadcast-broadband.pdf Graphic file (type pdf)
 <use chapters/HBBTV/pdf/broadcast-broadband.pdf>
 Package pdftex.def Info: chapters/HBBTV/pdf/broadcast-broadband.pdf  used on in
 put line 16.
 (pdftex.def)             Requested size: 448.0pt x 261.95615pt.
-[7
+[9
+
 
  <./chapters/HBBTV/pdf/broadcast-broadband.pdf>]
 
-Package natbib Warning: Citation `operaEmulator' on page 8 undefined on input l
-ine 33.
+Package natbib Warning: Citation `operaEmulator' on page 10 undefined on input 
+line 33.
 
-<chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png, id=303, 740.09833pt 
+<chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png, id=351, 740.09833pt 
 x 701.95583pt>
 File: chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png Graphic file (ty
 pe png)
@@ -2096,7 +2214,7 @@ pe png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/control_panel_1.p
 ng  used on input line 44.
 (pdftex.def)             Requested size: 224.0pt x 212.45207pt.
-<chapters/HBBTV/fig01/emulator/multi1/control_panel_2.png, id=304, 570.63188pt 
+<chapters/HBBTV/fig01/emulator/multi1/control_panel_2.png, id=352, 570.63188pt 
 x 630.10406pt>
 File: chapters/HBBTV/fig01/emulator/multi1/control_panel_2.png Graphic file (ty
 pe png)
@@ -2104,7 +2222,7 @@ pe png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/control_panel_2.p
 ng  used on input line 49.
 (pdftex.def)             Requested size: 192.63672pt x 212.71344pt.
-<chapters/HBBTV/fig01/emulator/multi1/das_erste_video.png, id=305, 410.19917pt 
+<chapters/HBBTV/fig01/emulator/multi1/das_erste_video.png, id=353, 410.19917pt 
 x 234.20833pt>
 File: chapters/HBBTV/fig01/emulator/multi1/das_erste_video.png Graphic file (ty
 pe png)
@@ -2112,7 +2230,7 @@ pe png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/das_erste_video.p
 ng  used on input line 55.
 (pdftex.def)             Requested size: 215.03809pt x 122.77893pt.
-<chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.png, id=306, 642.4pt x 36
+<chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.png, id=354, 642.4pt x 36
 1.35pt>
 File: chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.png Graphic file (ty
 pe png)
@@ -2120,7 +2238,7 @@ pe png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.p
 ng  used on input line 61.
 (pdftex.def)             Requested size: 215.03809pt x 120.95512pt.
-<chapters/HBBTV/fig01/emulator/multi1/landing_emulator.png, id=307, 1286.8075pt
+<chapters/HBBTV/fig01/emulator/multi1/landing_emulator.png, id=355, 1286.8075pt
  x 796.9775pt>
 File: chapters/HBBTV/fig01/emulator/multi1/landing_emulator.png Graphic file (t
 ype png)
@@ -2128,7 +2246,7 @@ ype png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/landing_emulator.
 png  used on input line 66.
 (pdftex.def)             Requested size: 268.80273pt x 166.48247pt.
-<chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png, id=308, 548
+<chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png, id=356, 548
 .0475pt x 423.08063pt>
 File: chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png Graphic
  file (type png)
@@ -2139,7 +2257,7 @@ notated.png  used on input line 72.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstreamer_puel.png, id=309, 
+<chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstreamer_puel.png, id=357, 
 644.4075pt x 556.0775pt>
 File: chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstreamer_puel.png Grap
 hic file (type png)
@@ -2147,7 +2265,7 @@ hic file (type png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstr
 eamer_puel.png  used on input line 83.
 (pdftex.def)             Requested size: 215.03809pt x 185.55952pt.
-<chapters/HBBTV/fig01/emulator/multi2/emulator_640_libav_puel.png, id=310, 644.
+<chapters/HBBTV/fig01/emulator/multi2/emulator_640_libav_puel.png, id=358, 644.
 4075pt x 556.0775pt>
 File: chapters/HBBTV/fig01/emulator/multi2/emulator_640_libav_puel.png Graphic 
 file (type png)
@@ -2155,7 +2273,7 @@ file (type png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/emulator_640_liba
 v_puel.png  used on input line 88.
 (pdftex.def)             Requested size: 215.03809pt x 185.55952pt.
-<chapters/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_puel.png, id=311,
+<chapters/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_puel.png, id=359,
  644.4075pt x 556.0775pt>
 File: chapters/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_puel.png Gra
 phic file (type png)
@@ -2163,7 +2281,7 @@ phic file (type png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/emulator_640_virt
 ualbox_puel.png  used on input line 94.
 (pdftex.def)             Requested size: 215.03809pt x 185.55952pt.
-<chapters/HBBTV/fig01/emulator/multi2/emulator_640_welcome.png, id=312, 644.407
+<chapters/HBBTV/fig01/emulator/multi2/emulator_640_welcome.png, id=360, 644.407
 5pt x 556.0775pt>
 File: chapters/HBBTV/fig01/emulator/multi2/emulator_640_welcome.png Graphic fil
 e (type png)
@@ -2171,7 +2289,7 @@ e (type png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/emulator_640_welc
 ome.png  used on input line 100.
 (pdftex.def)             Requested size: 215.03809pt x 185.55952pt.
-<chapters/HBBTV/fig01/emulator/multi2/virtualbox.png, id=313, 970.62625pt x 765
+<chapters/HBBTV/fig01/emulator/multi2/virtualbox.png, id=361, 970.62625pt x 765
 .86125pt>
 File: chapters/HBBTV/fig01/emulator/multi2/virtualbox.png Graphic file (type pn
 g)
@@ -2185,7 +2303,7 @@ LaTeX Warning: Float too large for page by 39.49219pt on input line 110.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/HBBTV/fig01/emulator/multi3/devtools_youtube.png, id=314, 1323.94624p
+<chapters/HBBTV/fig01/emulator/multi3/devtools_youtube.png, id=362, 1323.94624p
 t x 1060.96375pt>
 File: chapters/HBBTV/fig01/emulator/multi3/devtools_youtube.png Graphic file (t
 ype png)
@@ -2193,7 +2311,7 @@ ype png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi3/devtools_youtube.
 png  used on input line 116.
 (pdftex.def)             Requested size: 215.03809pt x 172.31552pt.
-<chapters/HBBTV/fig01/emulator/multi3/remote_control_key_mapping.png, id=315, 3
+<chapters/HBBTV/fig01/emulator/multi3/remote_control_key_mapping.png, id=363, 3
 99.82709pt x 512.91624pt>
 File: chapters/HBBTV/fig01/emulator/multi3/remote_control_key_mapping.png Graph
 ic file (type png)
@@ -2201,7 +2319,7 @@ ic file (type png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi3/remote_control_ke
 y_mapping.png  used on input line 121.
 (pdftex.def)             Requested size: 215.03809pt x 275.86711pt.
-<chapters/HBBTV/fig01/emulator/multi3/remote_control_help_tips.png, id=316, 468
+<chapters/HBBTV/fig01/emulator/multi3/remote_control_help_tips.png, id=364, 468
 .75125pt x 237.88875pt>
 File: chapters/HBBTV/fig01/emulator/multi3/remote_control_help_tips.png Graphic
  file (type png)
@@ -2209,7 +2327,7 @@ File: chapters/HBBTV/fig01/emulator/multi3/remote_control_help_tips.png Graphic
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi3/remote_control_he
 lp_tips.png  used on input line 127.
 (pdftex.def)             Requested size: 215.03809pt x 109.12886pt.
-<chapters/HBBTV/fig01/emulator/multi3/performance_monitor.png, id=317, 857.2025
+<chapters/HBBTV/fig01/emulator/multi3/performance_monitor.png, id=365, 857.2025
 pt x 255.95625pt>
 File: chapters/HBBTV/fig01/emulator/multi3/performance_monitor.png Graphic file
  (type png)
@@ -2217,7 +2335,7 @@ File: chapters/HBBTV/fig01/emulator/multi3/performance_monitor.png Graphic file
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi3/performance_monit
 or.png  used on input line 133.
 (pdftex.def)             Requested size: 215.03809pt x 64.20761pt.
-<chapters/HBBTV/fig01/emulator/multi3/emulator_logs.png, id=318, 1034.36438pt x
+<chapters/HBBTV/fig01/emulator/multi3/emulator_logs.png, id=366, 1034.36438pt x
  89.58469pt>
 File: chapters/HBBTV/fig01/emulator/multi3/emulator_logs.png Graphic file (type
  png)
@@ -2231,11 +2349,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 )
 File: logos/hepia.jpg Graphic file (type jpg)
 <use logos/hepia.jpg>
-Package pdftex.def Info: logos/hepia.jpg  used on input line 398.
+Package pdftex.def Info: logos/hepia.jpg  used on input line 407.
 (pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
 File: logos/hes-so.jpg Graphic file (type jpg)
 <use logos/hes-so.jpg>
-Package pdftex.def Info: logos/hes-so.jpg  used on input line 398.
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 407.
 (pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
 
 
@@ -2244,18 +2362,19 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8] [9 <./chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png> <./chapters
-/HBBTV/fig01/emulator/multi1/control_panel_2.png> <./chapters/HBBTV/fig01/emula
-tor/multi1/das_erste_video.png> <./chapters/HBBTV/fig01/emulator/multi1/das_ers
-te_popup.png (PNG copy)> <./chapters/HBBTV/fig01/emulator/multi1/landing_emulat
-or.png> <./chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png>]
+[10] [11 <./chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png> <./chapte
+rs/HBBTV/fig01/emulator/multi1/control_panel_2.png> <./chapters/HBBTV/fig01/emu
+lator/multi1/das_erste_video.png> <./chapters/HBBTV/fig01/emulator/multi1/das_e
+rste_popup.png (PNG copy)> <./chapters/HBBTV/fig01/emulator/multi1/landing_emul
+ator.png> <./chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png>
+]
 File: logos/hepia.jpg Graphic file (type jpg)
 <use logos/hepia.jpg>
-Package pdftex.def Info: logos/hepia.jpg  used on input line 398.
+Package pdftex.def Info: logos/hepia.jpg  used on input line 407.
 (pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
 File: logos/hes-so.jpg Graphic file (type jpg)
 <use logos/hes-so.jpg>
-Package pdftex.def Info: logos/hes-so.jpg  used on input line 398.
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 407.
 (pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
 
 
@@ -2264,36 +2383,36 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10pdfTeX warning (ext4): destination with the same identifier (name{subfigure.
+[12pdfTeX warning (ext4): destination with the same identifier (name{subfigure.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.398 \clearemptydoublepage
+l.407 \clearemptydoublepage
                            pdfTeX warning (ext4): destination with the same ide
 ntifier (name{subfigure.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.398 \clearemptydoublepage
+l.407 \clearemptydoublepage
                            pdfTeX warning (ext4): destination with the same ide
 ntifier (name{subfigure.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.398 \clearemptydoublepage
+l.407 \clearemptydoublepage
                            pdfTeX warning (ext4): destination with the same ide
 ntifier (name{subfigure.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.398 \clearemptydoublepage
+l.407 \clearemptydoublepage
                            pdfTeX warning (ext4): destination with the same ide
 ntifier (name{subfigure.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.398 \clearemptydoublepage
+l.407 \clearemptydoublepage
                             <./chapters/HBBTV/fig01/emulator/multi2/emulator_64
 0_gstreamer_puel.png> <./chapters/HBBTV/fig01/emulator/multi2/emulator_640_liba
 v_puel.png> <./chapters/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_pue
@@ -2301,11 +2420,11 @@ l.png> <./chapters/HBBTV/fig01/emulator/multi2/emulator_640_welcome.png> <./cha
 pters/HBBTV/fig01/emulator/multi2/virtualbox.png>]
 File: logos/hepia.jpg Graphic file (type jpg)
 <use logos/hepia.jpg>
-Package pdftex.def Info: logos/hepia.jpg  used on input line 398.
+Package pdftex.def Info: logos/hepia.jpg  used on input line 407.
 (pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
 File: logos/hes-so.jpg Graphic file (type jpg)
 <use logos/hes-so.jpg>
-Package pdftex.def Info: logos/hes-so.jpg  used on input line 398.
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 407.
 (pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
 
 
@@ -2314,45 +2433,45 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11pdfTeX warning (ext4): destination with the same identifier (name{subfigure.
+[13pdfTeX warning (ext4): destination with the same identifier (name{subfigure.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.398 \clearemptydoublepage
+l.407 \clearemptydoublepage
                            pdfTeX warning (ext4): destination with the same ide
 ntifier (name{subfigure.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.398 \clearemptydoublepage
+l.407 \clearemptydoublepage
                            pdfTeX warning (ext4): destination with the same ide
 ntifier (name{subfigure.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.398 \clearemptydoublepage
+l.407 \clearemptydoublepage
                            pdfTeX warning (ext4): destination with the same ide
 ntifier (name{subfigure.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.398 \clearemptydoublepage
+l.407 \clearemptydoublepage
                            pdfTeX warning (ext4): destination with the same ide
 ntifier (name{subfigure.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.398 \clearemptydoublepage
+l.407 \clearemptydoublepage
                             <./chapters/HBBTV/fig01/emulator/multi3/devtools_yo
 utube.png> <./chapters/HBBTV/fig01/emulator/multi3/remote_control_key_mapping.p
 ng> <./chapters/HBBTV/fig01/emulator/multi3/remote_control_help_tips.png> <./ch
 apters/HBBTV/fig01/emulator/multi3/performance_monitor.png> <./chapters/HBBTV/f
-ig01/emulator/multi3/emulator_logs.png>] [12
+ig01/emulator/multi3/emulator_logs.png>] [14
 
-] (./chapters/appendices/app0A.tex) [13
+] (./chapters/appendices/app0A.tex) [15
 
-] [14
+] [16
 
 ] (./travail_semestre.bbl
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
@@ -2373,7 +2492,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 n/10.95 https : / / en . wikipedia . org / wiki /
  []
 
-) [15
+) [17
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.operaHBB
@@ -2381,8 +2500,8 @@ TV}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.412 \clearemptydoublepage
-                           ] [16
+l.423 \clearemptydoublepage
+                           ] [18
 
 ]
 
@@ -2403,43 +2522,51 @@ Package nag Warning: 1 complaints in total.
 \tf@lof=\write9
 \openout9 = `travail_semestre.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 417.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 417.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 428.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 428.
 (./travail_semestre.aux
 
 Package natbib Warning: Citation(s) may have changed.
 (natbib)                Rerun to get citations correct.
 
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 417.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 417.
-Package rerunfilecheck Info: File `travail_semestre.out' has not changed.
-(rerunfilecheck)             Checksum: FA58FCC4CEE09E603F642B9594496C0E;1179.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 428.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 428.
+
+
+Package rerunfilecheck Warning: File `travail_semestre.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `travail_semestre.out':
+(rerunfilecheck)             Before: 5917B0521593AB4EAF01E4EA15995168;1190
+(rerunfilecheck)             After:  9BDA302C92F6115A75A755835A77D189;1190.
  )
 (\end occurred when \ifx on line 140 was incomplete)
 (\end occurred when \ifx on line 107 was incomplete)
 (\end occurred when \ifx on line 74 was incomplete)
-(\end occurred when \ifx on line 45 was incomplete)
-(\end occurred when \ifx on line 37 was incomplete)
-(\end occurred when \ifx on line 29 was incomplete) 
+(\end occurred when \ifx on line 70 was incomplete)
+(\end occurred when \ifx on line 62 was incomplete)
+(\end occurred when \ifx on line 54 was incomplete) 
 Here is how much of TeX's memory you used:
- 30034 strings out of 492980
- 556318 string characters out of 6136208
- 830532 words of memory out of 5000000
- 32652 multiletter control sequences out of 15000+600000
- 76967 words of font info for 202 fonts, out of 8000000 for 9000
+ 32244 strings out of 492980
+ 588255 string characters out of 6136208
+ 921512 words of memory out of 5000000
+ 34792 multiletter control sequences out of 15000+600000
+ 84913 words of font info for 227 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 52i,15n,80p,1042b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,15n,81p,1042b,1993s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2017/texmf-dist/
 fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2017/texmf-dist/fonts/enc/
-dvips/base/8r.enc}<c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt1
-095.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb><c:/tex
-live/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><c:/texlive/2017/texmf
--dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on travail_semestre.pdf (28 pages, 8697483 bytes).
+dvips/base/8r.enc}<c:/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourie
+r-ms.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><
+c:/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb><c:/texlive/2017
+/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><c:/texlive/2017/texmf-dist/fon
+ts/type1/urw/ncntrsbk/uncri8a.pfb>
+Output written on travail_semestre.pdf (30 pages, 8740270 bytes).
 PDF statistics:
- 430 PDF objects out of 1000 (max. 8388607)
- 340 compressed objects within 4 object streams
- 73 named destinations out of 1000 (max. 500000)
- 37648 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 489 PDF objects out of 1000 (max. 8388607)
+ 392 compressed objects within 4 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 38160 words of extra memory for PDF output out of 42996 (max. 10000000)
 

@@ -9,7 +9,7 @@
 \bibitem{operaHBBTV}
 {\scshape Opera Press}, {\em Opera TV Emulator}, The Opera TV emulator introduction, 2 February 2018., pp.~1.
 
-\bibitem{massuci01}
+\bibitem{massuci01}s
 {\scshape J.~D. Masucci and J.~W. Schiefelbein}, {\em The rhd6 mutation of
 arabidopsis thaliana alters root-hair initiation trhough an auxin- and
 ethylene-associated process}, Plant. Physiol., 106 (1994), pp.~1335--1346.
@@ -33,5 +33,8 @@ Cell, 13 (2001), pp.~139--151.
 
 \bibitem{opencv_cuda}
 {\scshape OpenCV official },{\em About OpenCV, CUDA support }, \url{https://opencv.org/platforms/cuda.html}, Performances, 4 February 2018.
+
+\bibitem{grinberg}
+{\scshape Miguel Grinberg },{\em Video Streaming with Flask }, \url{https://blog.miguelgrinberg.com/post/video-streaming-with-flask}, Code, October 20 2014.
 
 \end{thebibliography}
