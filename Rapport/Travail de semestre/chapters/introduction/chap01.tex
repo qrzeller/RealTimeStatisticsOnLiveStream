@@ -61,21 +61,25 @@ HBBTV -> opera
 
 \begin{tabu} to \textwidth {l >{\bfseries}X[r, 1] X[4] l}
 	\tableHeaderStyle
-	& Application & Description & Difficulty \\
+	& Application & Description & Difficulté \\
+	
 	& OpenCV & Une librairie BSD, init. Intel : Tout est a programmer sois-même. Très puissant car permet de traiter la vidéo image par image. Enorme librairie pour traitement d'image, etc... \newline(C, C++, Python, Mathlab...)  & Difficile \\
+	
 	& Wowza transcoder & Librairie propriétaire, programmation objet \newline(Java) & Moyen \\
+	
 	& Wowza Clamp & Un plugin RestFull propriétaire. Résultat très rapidement, Basé sur le principe d'overlay \newline(Json), Prix : 300\$ & Facile \\
-	& ffmpeg & Programme de transcodage, très limité dans l'intégration de contenu. & Facile \\
+	
+	& ffmpeg & Programme de transcodage puissant mais très limité dans l'intégration de contenu visuel. & Facile \\
 	
 \end{tabu}
 \paragraph{OpenCV} : Voir chapitre \ref{chap:OpenCV}
-\paragraph{Wowza}
- Streaming Engine est un serveur multimédia permettant la diffusion de contenu vidéo en streaming. Son secteur ded marché est principalement la vidéo à la demande ainsi que la vidéo en temps réel.
+\paragraph{Wowza} : 
+ Streaming Engine est un serveur multimédia permettant la diffusion de contenu vidéo en streaming. Son secteur de marché est principalement la vidéo à la demande ainsi que la vidéo en temps réel.
 Il dispose de plusieurs outils de retouche, conversion, compression et permet la compatibilité avec de multiples appareils. Des outils de loadbalancing géographique permettent à cet outils d'être utilisable en production à n'importe quelle échelle.
 Le serveur est construit sur Java ce qui lui donne une flexibilité supplémentaire au niveau du matériel sur lequel il est déployé.
-Wowza dispose d'un écosystème de plusieurs application dans le but de cibler les clients auquel ils sont destinés. Les solution sont notamment : [ Facebook live streamer, cloud application based on Rest API, Le server complet, Un cross platform SDK pour le développent mobile, A CDN\footnote{content delivery network ou réseau de diffusion de contenu en français} delivery...].
+Wowza dispose d'un écosystème de plusieurs application dans le but de cibler les clients auquel ils sont destinés. Les solution sont notamment : [ Facebook live streamer, cloud application based on Rest API, Le server complet, Un cross platform SDK pour le développent mobile, Un service  CDN\footnote{content delivery network ou réseau de diffusion de contenu en français}...].
 Le prix pour le serveur de contenu qui est le service le moins contraignant pour le développement est de entre 95\$ et 65\$ pas mois. La licence à vie est de 2000\$ ce qui peut être relativement cher si le produit est utilisé de manière accessoire.
-\subparagraph{Wowza Transcoder} : 
+\subparagraph{Wowza Transcoder} : Connu sous le nom de `Wowza streaming engine` dans la proposition de leurs produits. $$ Wowza streaming engine $$ ou $ Wowza streaming engine $ .
 \subparagraph{Wowza Clamp} : 
 \paragraph{ffmpeg} demo ffmpeg\\
  
