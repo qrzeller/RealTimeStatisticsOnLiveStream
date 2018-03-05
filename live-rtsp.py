@@ -5,16 +5,20 @@ import easygui
 import threading
 
 import transcoder
+import flask_handler
 from flask import Flask, render_template, Response
 
 import sys
 
 from form import form
 
+
+global cap
 cameraLocation = '/dev/video0'
 #cameraLocation = 'rtsp://192.168.1.103/live1.sdp'
-cap = cv2.VideoCapture(cameraLocation)
-global cap
+cap = cv2.VideoCapture(0)
+#cap = cv2.VideoCapture(cameraLocation)
+
 # Variables
 text_info = 'Test of subtitle'
 
@@ -58,3 +62,12 @@ cap.release()
 cv2.destroyAllWindows()
 sys.exit(1)
 
+
+"""
+
+http://www.chioka.in/python-live-video-streaming-example/
+https://github.com/log0/video_streaming_with_flask_example
+ def __del__(self):
+        self.video.release()
+
+"""

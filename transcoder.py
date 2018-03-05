@@ -6,6 +6,7 @@ import cv2
 class transcoder(object):
 
     frame = None
+    #concert images into jpeg format
     def jpeg(self):
         mjpg = cv2.imencode('.jpg', frame)
         return mjpg.tobytes()

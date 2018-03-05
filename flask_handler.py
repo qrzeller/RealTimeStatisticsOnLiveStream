@@ -9,7 +9,7 @@ class mjpegstream(object):
         cap = img
 
     @app.route('/')
-    def index():
+    def index(self):
         return render_template('index.html')
 
     def gen(camera):
@@ -20,7 +20,7 @@ class mjpegstream(object):
 
 
     @app.route('/video_feed')
-    def video_feed():
+    def video_feed(self):
         return Response(transcoder.jpeg(),
                         mimetype='multipart/x-mixed-replace; boundary=frame')
 
