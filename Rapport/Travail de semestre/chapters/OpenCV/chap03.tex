@@ -6,7 +6,8 @@
 %\let\textcircled=\pgftextcircled
 \chapter{OpenCV \& Flask}
 \label{chap:OpenCV}
-
+\section{Introduction}
+\label{sec:sec03}
 \initial{O}penCV est une librairie multiplate-forme \footnote{MacOS, IOS, Android, Windows, Linuxes,...} et open source prévue pour le machine learning ainsi que pour le traitement d'image (computer vision)\cite{opencv}. Du fait de sa licence BSD, cette librairie est constamment améliorée par le marché et notamment par les plus grosses entreprises du secteur technologique, ce qui en fait une des librairies leader dans ce domaine. En plus d'être disponible sur la quasi totalité des systèmes d'exploitations du marché elle est également disponible dans multiple langage que sont : C++, C, Python, Java and MATLAB à ce jour et sans compter évidemment les différents binding. Nous utiliserons ici la librairie pour Python qui est un langage certes moins optimisé que certains de ses concurrents mais qui à l'instar de Mathlab permet de se concentrer sur le coeur du sujet. Il dispose en outre d'une bonne communauté et d'un bon support.
 
 Une autre particularité d'OpenCV et ce qui le rend attractif à l'heure actuelle est sa compatibilité avec les processeurs Nvidia et leurs CUDA \footnote{CUDA : Technologie dite GPGPU (General-Purpose Computing on Graphics Processing Units)} Core\cite{opencv_cuda}. Grâce aux avancées des GPUs a l'heure actuelle, principalement due au jeux vidéo mais aussi et principalement au crypto-monnaie les performances sont accrue d'un facteur 30x dans le pire des cas.
@@ -75,8 +76,13 @@ pycharm opencv, livrairies, flask...
 
 \section{Environnement de production}
 \label{sec:sec03c}
-\subsection{The Opera hybrid TV option}
-\label{subsec:subsec03c}
+Cette application à été développée sur une environnement linux. La puissance d'OpenCV est sa disponibilité sur quasiment toute les environnements de développement. Que ce soit les bien connus Linux et Windows mais aussi MacOS ainsi que les systèmes embarqué, RaspberryPI et consorts (ARM) ou les smartphones iOS et Android.\cite{opencv_platforms}  Le support de CUDA est aussi très important. Il faut cependant faire attention à ce dernier. Les drivers Nvidia ne sont pas forcément bien supporté sur toutes les plateformes linux, Nvidia ne voulant pas développer de l'Open-Source.
+
+Compte tenu de tout ces contraintes, l'utilisation du binding OpenCV Python est en faveur de la compatibilité du plus grand nombre. Une autre alternative aurait été Java qui est un langage très propre et académique, en particulier au niveau des structures données qu'il propose. Cependant, Python prend l'avantage dans sa facilité d'implémentation des sources externes grâce a l'implémentation de son fameux outils de gestion de paquet 'pip'. De ce fait les tests on été fait par le biais du language python. Il faut noter aussi que ce langage est très utilisé pour les back-end web. Nous tirons partis de ceci aussi grâce a la librairie Flask.
+
+Intellij - Fedora
+
+camera : windows vs linux 
 
 
 %=========================================================

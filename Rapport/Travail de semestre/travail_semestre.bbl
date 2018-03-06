@@ -1,49 +1,100 @@
 \begin{thebibliography}{}
 
+
+
 \bibitem{OTT}
+
 {\scshape Wikipedia}, {\em Over-the-top media services}, \url{https://en.wikipedia.org/wiki/Over-the-top_media_services}, 28 January 2018, at 13:23.
 
+
+
 \bibitem{operaHBBTV}
+
 {\scshape Opera Press}, {\em Deliver seamless entertainment experiences}, The Opera hybrid TV option, 1 February 2018.,\url{www.opera.com/media/b2b/tv/Opera-TV-Emulator.pdf}, pp.~1.
 
+
+
 \bibitem{operaHBBTV}
+
 {\scshape Opera Press}, {\em Opera TV Emulator}, The Opera TV emulator introduction, 2 February 2018., pp.~1.
 
+
+
 \bibitem{massuci01}s
+
 {\scshape J.~D. Masucci and J.~W. Schiefelbein}, {\em The rhd6 mutation of
+
 arabidopsis thaliana alters root-hair initiation trhough an auxin- and
+
 ethylene-associated process}, Plant. Physiol., 106 (1994), pp.~1335--1346.
 
+
+
 \bibitem{payne01}
+
 {\scshape R.~Payne and C.~Grierson}, {\em A theoretical model for rop localisation
+
 by auxin in arabidopsis root hair cells}, PLoS ONE, 4 (2009), p.~e8337.
+
 doi:10.1371/journal.pone.0008337.
 
+
+
 \bibitem{rigas01}
+
 {\scshape S.~Rigas, G.~Debrosses, K.~Haralampidis, F.~Vicente-Angulo, K.~A. Feldman,
+
 A.~Grabov, L.~Dolan, and P.~Hatzpoulos}, {\em Trh1 encondes a potassium
+
 transporter required for tip growth in arabidopsis root hairs}, The Plant
+
 Cell, 13 (2001), pp.~139--151.
 
+
+
 \bibitem{HBBTV_DasErste}
+
 {\scshape HBBTV application Das Erste },{\em Example of application with video content }, \url{ http://hbbtv.daserste.de/index.php}, Main application, 30 January 2018.
 
+
+
 \bibitem{opencv}
+
 {\scshape OpenCV official },{\em About OpenCV, Support Question }, \url{https://opencv.org/about.html}, \url{https://opencv.org/platforms/}, Open Source Computer Vision Library, 4 February 2018.
 
+
+
 \bibitem{opencv_cuda}
+
 {\scshape OpenCV official },{\em About OpenCV, CUDA support }, \url{https://opencv.org/platforms/cuda.html}, Performances, 4 February 2018.
 
+\bibitem{opencv_platforms}
+
+{\scshape OpenCV Platforms },{\em Platforms }, \url{https://opencv.org/platforms/}, Cuda - Android - iOS, 01.03.2018.
+
+
 \bibitem{grinberg}
+
 {\scshape Miguel Grinberg },{\em Video Streaming with Flask }, \url{https://blog.miguelgrinberg.com/post/video-streaming-with-flask}, Code, October 20 2014.
 
+
+
 \bibitem{RTS_hbbtv_use}
+
 {\scshape RTS  Info}, {\em Un nouveau service de TV interactive est lancé en Suisse}, \url{https://www.rts.ch/info/suisse/4710599-un-nouveau-service-de-tv-interactive-est-lance-en-suisse.html}, Article,05 mars 2013
 
+
+
 \bibitem{swisscom_hbbtv}
+
 {\scshape Swisscom chronique}, {\em HBBTV : Le nouveau teletext inaugure la TV de demain.}, \url{https://www.swisscom.ch/fr/chroniques/technologie/hbbtv-television-interactive.html#T=3c4e5434-dbb8-4243-84d9-8fa965326573&TS=0TC9cL8VsfTsieADGzM6CBZFFw4xoVlCooYGR5LYSkk}, Article, 28 septembre 2017
 
+
+
 \bibitem{RTSR_hbbtv}
+
 {\scshape Communication d?entreprise SSR}, {\em Swisscom propose dès aujourd?hui ce successeur multimédia du télétexte avec de nombreuses fonctionnalités intéressantes.}, \url{https://rtsr.ch/a_la_une/swisscom-tv-2-0-propose-la-hbbtv-sur-les-chaines-de-la-ssr-srg/}, Article, 14.04
+
+
 
 \end{thebibliography}
