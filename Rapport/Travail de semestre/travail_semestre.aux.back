@@ -30,7 +30,7 @@
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}}
-\newlabel{chap:Introduction}{{\M@TitleReference {1}{Introduction}}{1}{Introduction}{chapter.1}{}}
+\newlabel{chap:intro}{{\M@TitleReference {1}{Introduction}}{1}{Introduction}{chapter.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Cahier des charges de l'application}{1}{section.1.1}}
 \newlabel{sec:sec01}{{\M@TitleReference {1.1}{Cahier des charges de l'application}}{1}{Cahier des charges de l'application}{section.1.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Schémas de fonctionnement applicatif.}}{2}{figure.1.1}}
@@ -148,38 +148,52 @@
 \citation{opencv_cuda}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
-\@writefile{toc}{\contentsline {chapter}{\chapternumberline {4}Wowza}{15}{chapter.4}}
-\newlabel{chap:Wowza}{{\M@TitleReference {4}{Wowza}}{15}{Wowza}{chapter.4}{}}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {4}OpenCV \& Flask}{15}{chapter.4}}
+\newlabel{chap:OpenCV}{{\M@TitleReference {4}{OpenCV \& Flask}}{15}{OpenCV \& Flask}{chapter.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.1}Fonctionnement général}{15}{section.4.1}}
-\newlabel{sec:sec04a}{{\M@TitleReference {4.1}{Fonctionnement général}}{15}{Fonctionnement général}{section.4.1}{}}
+\newlabel{sec:sec03a}{{\M@TitleReference {4.1}{Fonctionnement général}}{15}{Fonctionnement général}{section.4.1}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.2}Environnement de développement de l'application test}{15}{section.4.2}}
-\newlabel{sec:sec04b}{{\M@TitleReference {4.2}{Environnement de développement de l'application test}}{15}{Environnement de développement de l'application test}{section.4.2}{}}
+\newlabel{sec:sec03b}{{\M@TitleReference {4.2}{Environnement de développement de l'application test}}{15}{Environnement de développement de l'application test}{section.4.2}{}}
 \@writefile{lol}{\contentsline {lstlisting}{\numberline {4.1}Live streaming MJPEG with Flask, inspired from Miguel Grinberg. \cite  {grinberg}}{15}{lstlisting.4.1}}
 \citation{grinberg}
 \citation{grinberg}
 \@writefile{toc}{\contentsline {section}{\numberline {4.3}Environnement de production}{16}{section.4.3}}
-\newlabel{sec:sec04c}{{\M@TitleReference {4.3}{Environnement de production}}{16}{Environnement de production}{section.4.3}{}}
+\newlabel{sec:sec03c}{{\M@TitleReference {4.3}{Environnement de production}}{16}{Environnement de production}{section.4.3}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}The Opera hybrid TV option}{16}{subsection.4.3.1}}
-\newlabel{subsec:subsec04c}{{\M@TitleReference {4.3.1}{The Opera hybrid TV option}}{16}{The Opera hybrid TV option}{subsection.4.3.1}{}}
-\citation{grinberg}
-\citation{grinberg}
+\newlabel{subsec:subsec03c}{{\M@TitleReference {4.3.1}{The Opera hybrid TV option}}{16}{The Opera hybrid TV option}{subsection.4.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces The easy Flask website MJPEG.}}{17}{figure.4.1}}
+\newlabel{fig:flask}{{\M@TitleReference {4.1}{The easy Flask website MJPEG.}}{17}{The easy Flask website MJPEG}{figure.4.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Burn text on live stream, display on GUI}}{18}{figure.4.2}}
+\newlabel{fig:live_text_integration}{{\M@TitleReference {4.2}{Burn text on live stream, display on GUI}}{18}{Burn text on live stream, display on GUI}{figure.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces The easy Flask website MJPEG. (code)}}{18}{figure.4.3}}
+\newlabel{fig:flask_code}{{\M@TitleReference {4.3}{The easy Flask website MJPEG. (code)}}{18}{The easy Flask website MJPEG. (code)}{figure.4.3}{}}
+\citation{opencv}
+\citation{opencv_cuda}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
-\@writefile{toc}{\contentsline {chapter}{\chapternumberline {5}Produits sur le marché}{17}{chapter.5}}
-\newlabel{chap:marche}{{\M@TitleReference {5}{Produits sur le marché}}{17}{Produits sur le marché}{chapter.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Fonctionnement général}{17}{section.5.1}}
-\newlabel{sec:sec05a}{{\M@TitleReference {5.1}{Fonctionnement général}}{17}{Fonctionnement général}{section.5.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Environnement de développement de l'application test}{17}{section.5.2}}
-\newlabel{sec:sec05b}{{\M@TitleReference {5.2}{Environnement de développement de l'application test}}{17}{Environnement de développement de l'application test}{section.5.2}{}}
-\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.1}Live streaming MJPEG with Flask, inspired from Miguel Grinberg. \cite  {grinberg}}{17}{lstlisting.5.1}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Environnement de production}{18}{section.5.3}}
-\newlabel{sec:sec05c}{{\M@TitleReference {5.3}{Environnement de production}}{18}{Environnement de production}{section.5.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Linux \& FFMPEG}{18}{subsection.5.3.1}}
-\newlabel{subsec:subsec05c}{{\M@TitleReference {5.3.1}{Linux \& FFMPEG}}{18}{Linux \& FFMPEG}{subsection.5.3.1}{}}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {5}OpenCV \& Flask}{19}{chapter.5}}
+\newlabel{chap:OpenCV}{{\M@TitleReference {5}{OpenCV \& Flask}}{19}{OpenCV \& Flask}{chapter.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Fonctionnement général}{19}{section.5.1}}
+\newlabel{sec:sec03a}{{\M@TitleReference {5.1}{Fonctionnement général}}{19}{Fonctionnement général}{section.5.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Environnement de développement de l'application test}{19}{section.5.2}}
+\newlabel{sec:sec03b}{{\M@TitleReference {5.2}{Environnement de développement de l'application test}}{19}{Environnement de développement de l'application test}{section.5.2}{}}
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {5.1}Live streaming MJPEG with Flask, inspired from Miguel Grinberg. \cite  {grinberg}}{19}{lstlisting.5.1}}
+\citation{grinberg}
+\citation{grinberg}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Environnement de production}{20}{section.5.3}}
+\newlabel{sec:sec03c}{{\M@TitleReference {5.3}{Environnement de production}}{20}{Environnement de production}{section.5.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}The Opera hybrid TV option}{20}{subsection.5.3.1}}
+\newlabel{subsec:subsec03c}{{\M@TitleReference {5.3.1}{The Opera hybrid TV option}}{20}{The Opera hybrid TV option}{subsection.5.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces The easy Flask website MJPEG.}}{21}{figure.5.1}}
+\newlabel{fig:flask}{{\M@TitleReference {5.1}{The easy Flask website MJPEG.}}{21}{The easy Flask website MJPEG}{figure.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Burn text on live stream, display on GUI}}{22}{figure.5.2}}
+\newlabel{fig:live_text_integration}{{\M@TitleReference {5.2}{Burn text on live stream, display on GUI}}{22}{Burn text on live stream, display on GUI}{figure.5.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces The easy Flask website MJPEG. (code)}}{22}{figure.5.3}}
+\newlabel{fig:flask_code}{{\M@TitleReference {5.3}{The easy Flask website MJPEG. (code)}}{22}{The easy Flask website MJPEG. (code)}{figure.5.3}{}}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
-\@writefile{toc}{\contentsline {appendix}{\chapternumberline {A}Annexe A}{19}{appendix.A}}
-\newlabel{app:app01}{{\M@TitleReference {A}{Annexe A}}{19}{Annexe A}{appendix.A}{}}
+\@writefile{toc}{\contentsline {appendix}{\chapternumberline {A}Annexe A}{23}{appendix.A}}
+\newlabel{app:app01}{{\M@TitleReference {A}{Annexe A}}{23}{Annexe A}{appendix.A}{}}
 \bibstyle{siam}
 \bibdata{bibliography}
 \bibcite{OTT}{{1}{}{{}}{{}}}
@@ -193,12 +207,11 @@
 \bibcite{opencv_cuda}{{9}{}{{}}{{}}}
 \bibcite{opencv_platforms}{{10}{}{{}}{{}}}
 \bibcite{grinberg}{{11}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{Bibliographie}{21}{section*.11}}
+\@writefile{toc}{\contentsline {chapter}{Bibliographie}{25}{section*.11}}
 \bibcite{RTS_hbbtv_use}{{12}{}{{}}{{}}}
 \bibcite{swisscom_hbbtv}{{13}{}{{}}{{}}}
 \bibcite{RTSR_hbbtv}{{14}{}{{}}{{}}}
-\bibcite{code_streamtool}{{15}{}{{}}{{}}}
 \citation{*}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\memsetcounter{lastsheet}{34}
-\memsetcounter{lastpage}{22}
+\memsetcounter{lastsheet}{38}
+\memsetcounter{lastpage}{26}

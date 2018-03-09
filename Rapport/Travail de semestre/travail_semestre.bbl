@@ -95,6 +95,10 @@ Cell, 13 (2001), pp.~139--151.
 
 {\scshape Communication d?entreprise SSR}, {\em Swisscom propose dès aujourd?hui ce successeur multimédia du télétexte avec de nombreuses fonctionnalités intéressantes.}, \url{https://rtsr.ch/a_la_une/swisscom-tv-2-0-propose-la-hbbtv-sur-les-chaines-de-la-ssr-srg/}, Article, 14.04
 
+%% Github
+\bibitem{code_streamtool}
+{\scshape [Github] jantekb }, {\em Exemple de code et de configuration pour les outils streamingtoolbox.com.}, \url{https://github.com/jantekb/streamtoolbox-examples/}, Code, Nov 7 2015
+
 
 
 \end{thebibliography}
