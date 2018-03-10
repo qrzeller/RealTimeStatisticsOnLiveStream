@@ -6,21 +6,22 @@
 %\let\textcircled=\pgftextcircled
 \chapter{Introduction}
 \label{chap:Introduction}
-
+\section{Préambule}
+\label{sec:preambule}
 \initial{C}e travail de recherche consiste en la reconnaissance des différents outils logiciels disponibles sur le marché, permettant l'ajout d'informations en temps réel sur un flux vidéo. Ceci dans le but d'apporter au client-consommateurs des données supplémentaires, notamment lors d'évènements sportifs. Nous utiliserons ici l'exemple du volleyball sans pour autant restreindre les recherches à ce seul but. Cette étude de cas concerne bien évidemment un domaine plus vaste que celui du volleyball ou même des jeux.
 
 L'approche pratique de ce travail explorera aussi les différentes possibilités de collecter les informations statistiques via une interface fortement découplées ce qui permettra l'intégration des données de la manière la plus générique possible.
 Cette modularité permettra d'intégrer d'autre sources de données sans repenser l'intégralité de l'application et permettra une plus grande flexibilité quand au sport/jeux auquel elle s'adresse.
 
-Nous commencerons par le recensement de toute les technologies différentes disponible sur le marché. Nous choisirons aussi le médium de communication le plus adéquats. De prime abord, il semblerait que deux groupes se distinguent de par les technologies qu'ils emploient. Le groupe télévisuel ordinaire qu'est la "télévision de salon" et un groupe plus orienté ordinateur/téléphone mobile. Nous étudierons s'il est possible de concilier ses deux groupes et choisirons le cas échéant le médium le plus adéquat.
+Cette étude commencera par le recensement de toute les technologies différentes disponible sur le marché et définira le médium de communication le plus adéquats. De prime abord, il semblerait que deux groupes se distinguent de par les technologies qu'ils emploient. Le groupe télévisuel ordinaire qu'est la "télévision de salon" et un groupe plus orienté ordinateur/téléphone mobile. Nous étudierons s'il est possible de concilier ses deux groupes et choisirons le cas échéant le médium le plus adéquat.
 
 La deuxième partie de ce travail consistera à différents tests sur les technologies ainsi que potentiellement quelques démonstrations de type "Hello World" afin de se rentre compte des ressources nécessaires à l'implémentations.
 
-Si ce travail s'avère réalisable au regard des contraintes d'un mémoire de bachelor, il aboutira en l'implémentation d'une solution fonctionnelle.
+Si ce travail s'avère réalisable au regard des contraintes d'un mémoire de Bachelor, il aboutira en l'implémentation d'une solution fonctionnelle.
 %=======
 \section{Cahier des charges de l'application}
 \label{sec:sec01}
-Le but final de ce travail est de trouver un moyen efficace, fiable et peut couteux de diffuser du contenu audio-visuel à valeur ajoutée et en temps réel. Plus concrètement il s'agit dans le cas d'une retransmission sportive de ; Premièrement récupérer le/les flux vidéos, les sources de données à incorporer aux flux vidéos. Puis de les combiner en un seul service multimédia soit par l'injonction directe des données dans le flux vidéo, ce qui reviendrait a "bruler" la vidéo avec les informations ou alors, solution plus modulable, incorporer ces informations sur un flux parallèle dont nous discuterons au chapitre. \ref{chap:HBBTV}. Le résultat final étant un flux audio-visuel ne nécessitant aucun applicatif supplémentaire pour fonctionner. Il devra être directement utilisable sur une télévision, un smart-phone ou un ordinateur et permettra donc la lecture sur n'importe quel appareil.
+Le but final de ce travail est de trouver un moyen efficace, fiable et peut couteux de diffuser du contenu audio-visuel à valeur ajoutée et en temps réel. Plus concrètement il s'agit dans le cas d'une retransmission sportive de ; Premièrement récupérer le/les flux vidéos, les sources de données à incorporer aux flux vidéos. Puis de les combiner en un seul service multimédia soit par l'injonction directe des données dans le flux vidéo, ce qui reviendrait a "bruler" la vidéo avec les informations ou alors, solution plus modulable, incorporer ces informations sur un flux parallèle dont nous discuterons au  \autoref{chap:HBBTV}. Le résultat final étant un flux audio-visuel ne nécessitant aucun applicatif supplémentaire pour fonctionner. Il devra être directement utilisable sur une télévision, un smart-phone ou un ordinateur et permettra donc la lecture sur n'importe quel appareil.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{fig01/Schemas_fonctionnement}
@@ -33,14 +34,7 @@ Le but final de ce travail est de trouver un moyen efficace, fiable et peut cout
 \subsection{État des lieux du marché}
 \label{subsec:subsec01}
 
-Opencv
-ffmpeg
-wowsa + pluggin
-HBBTV -> opera
-
-
 %%%%%%%%%%%%%%%% Table
-
 
 
 \definecolor{tableHeader}{RGB}{211, 47, 47}
@@ -59,30 +53,45 @@ HBBTV -> opera
 \tabulinesep = ^4mm_3mm
 \everyrow{\tabucline[.4mm  white]{}}
 
-\begin{tabu} to \textwidth {l >{\bfseries}X[r, 1] X[4] l}
+\begin{longtabu} to \textwidth {l >{\bfseries}X[r, 1] X[4] l}
 	\tableHeaderStyle
 	& Application & Description & Difficulté \\
 	
-	& OpenCV & Une librairie BSD, init. Intel : Tout est a programmer sois-même. Très puissant car permet de traiter la vidéo image par image. Enorme librairie pour traitement d'image, etc... \newline(C, C++, Python, Mathlab...)  & Difficile \\
+	& OpenCV & Une librairie BSD, init. Intel : Tout est a programmer sois-même. Très puissant car permet de traiter la vidéo image par image. Elle est une énorme librairie pour traitement d'image, etc... \newline Programmation : C, C++, Python, Mathlab...
+	\newline Prix : Gratuit.  & Difficile \\
 	
-	& Wowza transcoder & Librairie propriétaire, programmation objet \newline(Java) & Moyen \\
+	& Wowza & Wowza est un serveur de contenu multimédia spécialisé dans la distribution de vidéos. La partie transcription est quand à elle principalement déléguée à des librairies tierces tel que FFmpeg. \newline Programmation : XML/fichier de configuration. \newline Prix : 65\$/mo (logiciel), 4500\$ (matérielle)  & Facile \\
 	
-	& Wowza Clamp & Un plugin RestFull propriétaire. Résultat très rapidement, Basé sur le principe d'overlay \newline(Json), Prix : 300\$ & Facile \\
+	& Wowza transcoder & Est un module de wowza et permet la transcription des vidéos et principalement l'ajout d'overlay type images. Elle utilise une librairie propriétaire propre à Wowza \newline Programmation : Java \newline Prix : Compris par Wowza server & Moyen \\
 	
-	& ffmpeg & Programme de transcodage puissant mais très limité dans l'intégration de contenu visuel. & Facile \\
+	& Wowza Clamp & Un plugin RestFull propriétaire. Résultat très rapidement, Basé sur le principe d'overlay \newline Programmation : Json (RESTfull, Fichier) \newline Prix : 300\$ & Facile \\
 	
-\end{tabu}
-\paragraph{OpenCV} : Voir chapitre \ref{chap:OpenCV}
+	& FFmpeg \& Libav & Programme de transcodage puissant mais très limité dans l'intégration de contenu visuel.  & Facile \\
+	
+	& Red5 & Programme de transcodage puissant mais très limité dans l'intégration de contenu visuel.  & Facile \\
+	
+	& Adobe Media Server & Un des pionniers dans la diffusion de contenu vidéo. Actuellement en décrudescence. Leur format a encore beaucoup d'inertie et est passablement utilisé au niveau de leurs flux de transport. La fin de flash est annoncée pour 2020.\cite{flash_dead} Pour ce qui est du serveur,  celui-ci ne permet pas l'intégration de contenu type overlay sur les vidéos.   & Facile \\
+	
+	& Microsoft IIS Media Services & Programme de transcodage puissant mais très limité dans l'intégration de contenu visuel. Ce serveur ne doit plus être utilisé comme solution de service multimédia. Son support s'est terminé avec Windows Server 2008. Quand bien même une "extended lifetime" est prévue jusque en 2020. \cite{IIS_media} & Ne pas utiliser \\
+	
+	& Mist server & Serveur de distribution multimédia et de transcription (non live). Très modulaire, rapide et a empreinte CPU-Mémoire faible. Idéal si l'on ne veut pas investir dans une solution hardware car se place au delà des concurrents de type serveur web.  \newline Language : C++ (Aussi le programme en lui-même.)\newline Prix : Gratuit (OpenGL, sans DRM), Commercial : 2500\$ & Moyen \\
+	
+\end{longtabu}
+\paragraph{OpenCV} : OpenCV est a l'origine une librairie développée par Intel. C'est une librairie open-source qui dispose de beaucoup de support de la part de la communauté ainsi que du monde universitaire. Elle dispose notamment de beaucoup de fonction de machine learning, ce qui à fait d'ailleurs se popularité. Voir chapitre \ref{chap:OpenCV} pour plus de détails.
 \paragraph{Wowza} : 
  Streaming Engine est un serveur multimédia permettant la diffusion de contenu vidéo en streaming. Son secteur de marché est principalement la vidéo à la demande ainsi que la vidéo en temps réel.
 Il dispose de plusieurs outils de retouche, conversion, compression et permet la compatibilité avec de multiples appareils. Des outils de loadbalancing géographique permettent à cet outils d'être utilisable en production à n'importe quelle échelle.
 Le serveur est construit sur Java ce qui lui donne une flexibilité supplémentaire au niveau du matériel sur lequel il est déployé.
 Wowza dispose d'un écosystème de plusieurs application dans le but de cibler les clients auquel ils sont destinés. Les solution sont notamment : [ Facebook live streamer, cloud application based on Rest API, Le server complet, Un cross platform SDK pour le développent mobile, Un service  CDN\footnote{content delivery network ou réseau de diffusion de contenu en français}...].
 Le prix pour le serveur de contenu qui est le service le moins contraignant pour le développement est de entre 95\$ et 65\$ pas mois. La licence à vie est de 2000\$ ce qui peut être relativement cher si le produit est utilisé de manière accessoire.
-\subparagraph{Wowza Transcoder} : Connu sous le nom de `Wowza streaming engine` dans la proposition de leurs produits. $$ Wowza streaming engine $$ ou $ Wowza streaming engine $ .
-\subparagraph{Wowza Clamp} : 
-\paragraph{ffmpeg} demo ffmpeg\\
- 
+\subparagraph{Wowza Transcoder} : Connu sous le nom de `Wowza streaming engine` dans la proposition de leurs produits. Nous en discuterons plus en détails dans la partie \autoref{chap:Wowza}.
+\subparagraph{Wowza Clamp} : Wowza clamp est un plugin Wowza transcoder développé par Streamingtoolbox.com. Ce plugin possède un API RESTful permettant l'ajout d'overlay. Il dispose aussi d'une interface graphique web afin agissant comme client REST afin d'ajouter des overlays rapidement sans programmation au préalable. Ceci permettant donc de débuger l'application et de se rendre compte du rendu des différents éléments. Une explication de l'installation est disponible dans le \autoref{chap:Wowza}, cependant il semblerait qu'il y ait un soucis de compatibilité avec la nouvelle version de Wowza.
+\paragraph{ffmpeg} 
+FFmpeg est une librairie de transcodage de vidéo très connue. Beaucoup d'application open-sources utilisent ou tout du moins se basent sur cette librairie. Comme par exemple les très connu Blender, GStreamer, Mplayer (mvp) et VLC.
+Libav, fork de FFmpeg, est une librairie que l'on retrouvera souvent dans des programmes tierces ainsi que certaines distributions linux tel que la famille RHEL. VLC par exemple préférera la version Libav dans cet environnement par exemple.\cite{libav}.
+Forcément, la question se pose quid de FFmpeg ou de Libav est plus performant? En réalité, il n'y a pas de réponse tranchée à la question. Beaucoup de développement de qualité est fait sur Libav et leur politique est plus sévère quand à l'intégration de code dans leurs librairie. Il privilégieront la qualité à la fonctionnalité. FFmpeg quand a eux font la courses aux fonctionnalités. Essayant d'avoir tout les derniers codec supporté, souvent, en lésignant sur la propreté et l'efficacité. Cependant beaucoup privilégieront ce dernier, possédant le plus de fonctionnalité. En effet toute modification et implémentation dans la librairie Libav est copiée dans la librairie FFmpeg. Il y a donc peut de chance de trouver une fonction présente dans Libav et non dans FFmpeg \cite{libav_ffmpeg}.
+ \paragraph{Mist server}
+ Mist serveur est lui aussi un serveur de distribution et de retranscription multimédia. Il support passablement de codec et de transport-stream. Le serveur est très modulaire et à un empreinte faible ce qui lui permet de tourner sur les plus petit des appareils. Il est particulièrement recommandé si l'on souhaite ajouter ou modifier les fonctionnalités de celui-ci. un aventage indegnable est qu'il peut tourner sur un Raspberry Pi contrairement à ses concurrents. Son efficacité fais sa force, sa simplicité peut être son défaut. En effet en parcourant des forums officieux, il semblerait que Wowza possède plus de fonctionnalités dans certains cas.\cite{mist}
 
 
 %%%%%%%%%%%%%% End table
