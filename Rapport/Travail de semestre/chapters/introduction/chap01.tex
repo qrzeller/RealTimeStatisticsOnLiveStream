@@ -57,24 +57,26 @@ Le but final de ce travail est de trouver un moyen efficace, fiable et peut cout
 	\tableHeaderStyle
 	& Application & Description & Difficulté \\
 	
-	& OpenCV & Une librairie BSD, init. Intel : Tout est a programmer sois-même. Très puissant car permet de traiter la vidéo image par image. Elle est une énorme librairie pour traitement d'image, etc... \newline Programmation : C, C++, Python, Mathlab...
-	\newline Prix : Gratuit.  & Difficile \\
+	& OpenCV & Une librairie sous licence BSD, initialement développée par Intel. C'est une librairie très puissante car elle permet notamment de traiter les vidéo images par images. Cette api et très complète et propose presque tout les algorithmes utiles pour la "computer vision". \newline Programmation : C, C++, Python, Mathlab...
+	\newline Prix : Open-source.  & Difficile \\
 	
-	& Wowza & Wowza est un serveur de contenu multimédia spécialisé dans la distribution de vidéos. La partie transcription est quand à elle principalement déléguée à des librairies tierces tel que FFmpeg. \newline Programmation : XML/fichier de configuration. \newline Prix : 65\$/mo (logiciel), 4500\$ (matérielle)  & Facile \\
+	& Wowza & Wowza est un serveur de contenu multimédia spécialisé dans la distribution de vidéos. La partie transcription est quand à elle principalement déléguée à des librairies tierces tel que FFmpeg. \newline Programmation : XML/fichier de configuration. \newline Prix : 65\$/mo (logiciel), 4500\$ (matérielle)  & Moyen \\
 	
-	& Wowza transcoder & Est un module de wowza et permet la transcription des vidéos et principalement l'ajout d'overlay type images. Elle utilise une librairie propriétaire propre à Wowza \newline Programmation : Java \newline Prix : Compris par Wowza server & Moyen \\
+	& Wowza transcoder & Est un module de Wowza et permet la transcription des vidéos. Ce module permet aussi d'ajouter du contenu lors de la retranscription du flux. Elle utilise une librairie propriétaire propre à Wowza \newline Programmation : Java \newline Prix : Compris par Wowza server & Difficile \\
 	
-	& Wowza Clamp & Un plugin RestFull propriétaire. Résultat très rapidement, Basé sur le principe d'overlay \newline Programmation : Json (RESTfull, Fichier) \newline Prix : 300\$ & Facile \\
+	& Wowza Clamp & Est plugin RestFull propriétaire. Ce module est probablement une des solutions les plus proches de ce que l'on souhaite. Il est possible d'ajouter des overlay statiques très facilement. Désavantage : restreint à Wowza, peu maintenu. \newline Programmation : Json (RESTfull, Fichier) \newline Prix : 300\$ & Facile \\
 	
-	& FFmpeg \& Libav & Programme de transcodage puissant mais très limité dans l'intégration de contenu visuel.  & Facile \\
+	& FFmpeg \& Libav & Est le programme de référence open-source pour le transcodage. Cependant il est très limité dans l'intégration de contenu visuel. (sous-titre) Écrit en C.\newline Programmation : C++/C, Python : (Avpy, ffmpy), Autres : wrapper  & Facile à Moyen \\
 	
-	& Red5 & Programme de transcodage puissant mais très limité dans l'intégration de contenu visuel.  & Facile \\
+	& Red5 & Est un serveur de distribution open-source concurrent à Wowza. Il semblerait qu'il soit moins stables que Wowza pour une utilisation professionnelle.\cite{red5-wowza} Son avantage, outre sa gratuité, est qu'il est beaucoup moins cher que son concurrent. Il est conseillé si l'on veut faire de la programmation Java. Pas de solution d'intégration de contenu connue. \newline Programmation: Java \newline Prix : open-source  & Facile \\
 	
-	& Adobe Media Server & Un des pionniers dans la diffusion de contenu vidéo. Actuellement en décrudescence. Leur format a encore beaucoup d'inertie et est passablement utilisé au niveau de leurs flux de transport. La fin de flash est annoncée pour 2020.\cite{flash_dead} Pour ce qui est du serveur,  celui-ci ne permet pas l'intégration de contenu type overlay sur les vidéos.   & Facile \\
+	& Adobe Media Server & Un des pionniers dans la diffusion de contenu vidéo. Actuellement en décrudescence. Leur format a encore beaucoup d'inertie et est passablement utilisé au niveau de leurs flux de transport. La fin de flash est annoncée pour 2020.\cite{flash_dead} Pour ce qui est du serveur, celui-ci ne permet pas l'intégration de contenu type overlay sur les vidéos.   & Facile \\
 	
-	& Microsoft IIS Media Services & Programme de transcodage puissant mais très limité dans l'intégration de contenu visuel. Ce serveur ne doit plus être utilisé comme solution de service multimédia. Son support s'est terminé avec Windows Server 2008. Quand bien même une "extended lifetime" est prévue jusque en 2020. \cite{IIS_media} & Ne pas utiliser \\
+	& Microsoft IIS Media Services & Serveur de distribution et de transcodage,; Il est limité dans l'intégration de contenu visuel. Ce serveur ne doit plus être utilisé comme solution de service multimédia. Son support s'est terminé avec Windows Server 2008 R2. Quand bien même une "extended lifetime" est prévue jusque en 2020. \cite{IIS_media} & Ne pas utiliser \\
 	
-	& Mist server & Serveur de distribution multimédia et de transcription (non live). Très modulaire, rapide et a empreinte CPU-Mémoire faible. Idéal si l'on ne veut pas investir dans une solution hardware car se place au delà des concurrents de type serveur web.  \newline Language : C++ (Aussi le programme en lui-même.)\newline Prix : Gratuit (OpenGL, sans DRM), Commercial : 2500\$ & Moyen \\
+	& Mist server & Serveur de distribution multimédia et de transcription (non live). Très modulaire, rapide et a empreinte CPU-Mémoire faible. Idéal si l'on ne veut pas investir dans une solution hardware car il semble plus performant que ses concurrents de type serveur web.  \newline Language : C++ (Aussi le programme en lui-même.)\newline Prix : Gratuit (OpenGL, sans DRM), Commercial : 2500\$ & Moyen \\
+	
+	& Video Logix & Est un boitier physique permettant de programmer les overlays directement sur un flux live. Plusieurs interfaces sont disponible pour l'ajout des données dont des interfaces analogiques. L'avantage étant un temps de latence très faible. Le désavantage : encombrement physique, nécessité de le posséder, flux non numérique. \newline Prix : 1695\$ & Moyen \\
 	
 \end{longtabu}
 \paragraph{OpenCV} : OpenCV est a l'origine une librairie développée par Intel. C'est une librairie open-source qui dispose de beaucoup de support de la part de la communauté ainsi que du monde universitaire. Elle dispose notamment de beaucoup de fonction de machine learning, ce qui à fait d'ailleurs se popularité. Voir chapitre \ref{chap:OpenCV} pour plus de détails.
@@ -86,7 +88,7 @@ Wowza dispose d'un écosystème de plusieurs application dans le but de cibler les
 Le prix pour le serveur de contenu qui est le service le moins contraignant pour le développement est de entre 95\$ et 65\$ pas mois. La licence à vie est de 2000\$ ce qui peut être relativement cher si le produit est utilisé de manière accessoire.
 \subparagraph{Wowza Transcoder} : Connu sous le nom de `Wowza streaming engine` dans la proposition de leurs produits. Nous en discuterons plus en détails dans la partie \autoref{chap:Wowza}.
 \subparagraph{Wowza Clamp} : Wowza clamp est un plugin Wowza transcoder développé par Streamingtoolbox.com. Ce plugin possède un API RESTful permettant l'ajout d'overlay. Il dispose aussi d'une interface graphique web afin agissant comme client REST afin d'ajouter des overlays rapidement sans programmation au préalable. Ceci permettant donc de débuger l'application et de se rendre compte du rendu des différents éléments. Une explication de l'installation est disponible dans le \autoref{chap:Wowza}, cependant il semblerait qu'il y ait un soucis de compatibilité avec la nouvelle version de Wowza.
-\paragraph{ffmpeg} 
+\paragraph{FFmpeg} 
 FFmpeg est une librairie de transcodage de vidéo très connue. Beaucoup d'application open-sources utilisent ou tout du moins se basent sur cette librairie. Comme par exemple les très connu Blender, GStreamer, Mplayer (mvp) et VLC.
 Libav, fork de FFmpeg, est une librairie que l'on retrouvera souvent dans des programmes tierces ainsi que certaines distributions linux tel que la famille RHEL. VLC par exemple préférera la version Libav dans cet environnement par exemple.\cite{libav}.
 Forcément, la question se pose quid de FFmpeg ou de Libav est plus performant? En réalité, il n'y a pas de réponse tranchée à la question. Beaucoup de développement de qualité est fait sur Libav et leur politique est plus sévère quand à l'intégration de code dans leurs librairie. Il privilégieront la qualité à la fonctionnalité. FFmpeg quand a eux font la courses aux fonctionnalités. Essayant d'avoir tout les derniers codec supporté, souvent, en lésignant sur la propreté et l'efficacité. Cependant beaucoup privilégieront ce dernier, possédant le plus de fonctionnalité. En effet toute modification et implémentation dans la librairie Libav est copiée dans la librairie FFmpeg. Il y a donc peut de chance de trouver une fonction présente dans Libav et non dans FFmpeg \cite{libav_ffmpeg}.
