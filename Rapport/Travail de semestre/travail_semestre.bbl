@@ -99,6 +99,10 @@ Cell, 13 (2001), pp.~139--151.
 \bibitem{code_streamtool}
 {\scshape [Github] jantekb }, {\em Exemple de code et de configuration pour les outils streamingtoolbox.com.}, \url{https://github.com/jantekb/streamtoolbox-examples/}, Code, Nov 7 2015
 
+\bibitem{v4l2loopback}
+{\scshape [Github] umlaeute }, {\em 
+v4l2loopback - a kernel module to create V4L2 loopback devices.}, \url{https://github.com/umlaeute/v4l2loopback}, Code, Fev. 26 2018
+
 %% API
 \bibitem{libav}
 {\scshape Libav official }, {\em wiki: Using libav*}, \url{https://trac.ffmpeg.org/wiki/Using%20libav*}, API, 10 nov. 2017
