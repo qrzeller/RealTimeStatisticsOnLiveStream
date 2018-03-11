@@ -7,7 +7,7 @@
 \chapter{HBBTV}
 \label{chap:HBBTV}
 
-\initial{H}ybrid Broadcast Broadband TV, plus connu sous l'acronyme HbbTV est un standard européen permettant le partage d'information et de services en complément à un flux multimédias destinés a l'utilisateur final. Il à été inventé en France en 2006.
+\initial{H}ybrid Broadcast Broadband TV, plus connu sous l'acronyme HbbTV est un standard européen permettant le partage d'informations et de services en complément à un flux multimédia destiné à l'utilisateur final. Il a été inventé en France en 2006.
 
 
 Il fait partie des outils ou protocoles TV OTT, acronyme signifiant télévision Over The Top ou services par contournement en français et qui définissent les contenus ne passant pas par le bouquet proposé par l'opérateur internet / télévision. C'est donc l'antithèse de la télévision linéaire, mode de consommation traditionnel. \cite{OTT}
@@ -18,15 +18,15 @@ Il fait partie des outils ou protocoles TV OTT, acronyme signifiant télévision O
 	\label{fig:hbbtv1}
 \end{figure}
 
-Le but du consortium est de créer un seul standard permettant d'acheminer du contenu broadcast et broadband à travers une seule interface de type web. Le but étant donc d'empêcher l'émergence de multiples standards propriétaires ainsi que les désavantages qui en incombe.\cite{operaHBBTV} Les services proposés peuvent être infini, passant de la vidéo à la demande, se dissociant donc du contenu vidéo de base jusqu'au quiz interactif lors d'une émission télévisée.
+L'objectif du consortium est de créer un seul standard permettant d'acheminer du contenu broadcast et broadband à travers une seule interface de type web. Le but est donc d'empêcher l'émergence de multiples standards propriétaires ainsi que les désavantages qui en incombent.\cite{operaHBBTV} Les services proposés peuvent être infinis, passant de la vidéo à la demande, se dissociant donc du contenu vidéo de base jusqu'au quiz interactif lors d'une émission télévisée.
 
 %=======
 \section{Fonctionnement général}
 \label{sec:sec02a}
 \subsection{Utilisation, le cas de la Suisse.}
 \label{subsec:subsec02a}
-Depuis début 2011, les suisses ont a disposition la HBBTV. Cependant, elle n'est pas disponible sur tout les mediums d'information. en effet, elle est encore indisponible chez certain cablo-operateur, sur la TNT ainsi que sur Swisscom TV et ceci représente une grande majorité des utilisateurs.\cite{RTS_hbbtv_use}.
-En 2017, La régie publicitaire Admeira, filiale de la SSR Ringier et Swisscom lance un projet pilote pour incorporer des fonctionnalités publicitaires couplées au programme regardé ainsi qu'au publicité proposées.\cite{swisscom_hbbtv} En parcourant ce qu'il se fait au niveau international, il semblerait que les régies publicitaires ainsi que les constructeurs sont les premiers intéressés, ils permettent ainsi gentiment de démocratiser cette technologie. Des constructeurs de télévision, parviennent même a proposer des contenus ciblés en analysant le contenu vidéo de l'utilisateur.
+Dès 2011, les suisses ont à disposition la HBBTV. Cependant, elle n'est pas disponible sur tous les mediums d'information. En effet, elle est encore indisponible chez certains cablo-operateurs, sur la TNT ainsi que sur Swisscom TV et ceci représente une grande majorité des utilisateurs.\cite{RTS_hbbtv_use}.
+En 2017, la régie publicitaire Admeira, filiale de la SSR Ringier et Swisscom lance un projet pilote pour incorporer des fonctionnalités publicitaires couplées au programme regardé ainsi qu'aux publicités proposées.\cite{swisscom_hbbtv} En parcourant ce qu'il se fait au niveau international, il semblerait que les régies publicitaires ainsi que les constructeurs soient les premiers intéressés. Ils permettent ainsi gentiment de démocratiser cette technologie. Des constructeurs de télévision parviennent même à proposer des contenus ciblés en analysant le contenu vidéo de l'utilisateur.
 \section{Environnement de développement}
 \label{sec:sec02b}
 
@@ -34,13 +34,13 @@ Begins a section.
 
 \subsection{Opera TV Emulator}
 \label{subsec:subsec02b}
-L'émulateur Opera TV rend possible le développement de contenu HTML5 et CE-HTML pour différents apareils que sont ; Smart TV, lecteurs Blue-ray, Box et aussi les ordinateurs.\cite{operaEmulator} La position sur le marché du leader Opera rend quasi indispensable cet environnement de développement, du moins pour les tests.
+L'émulateur Opera TV rend possible le développement de contenu HTML5 et CE-HTML pour différents appareils que sont les Smart TV, lecteurs Blue-ray, Box et aussi les ordinateurs.\cite{operaEmulator} La position sur le marché du leader Opera rend quasi indispensable cet environnement de développement, du moins pour les tests.
 
-L'environnement de développent se caractérise dans une machine virtuelle tournant sur le bien connu, VirtualBox. Il permet de s'abstraire de l'accès physique à une machine/TV ainsi que de rendre plus prédictif les protocoles de tests.
-Il dispose de deux interfaces graphique, la première étant le flux vidéo de la sortie standard qui propose une interface "TV-like" et dont la sortie sera celle de notre application développée.
-Sur la figure [\ref{fig:emue}] ci-après nous voyons la "landingpage" de l'émulateur opera. Celui-ci nous permet d'enter le lien du l'application HbbTV que nous souhaitons grâce à un clavier virtuel. Cependant cet interface n'est pas très ergonomique et gère mal l'interaction clavier-souris.
+L'environnement de développement se caractérise dans une machine virtuelle tournant sur le bien connu, VirtualBox. Il permet de s'abstraire de l'accès physique à une machine/TV ainsi que de rendre plus prédictif les protocoles de tests.
+Il dispose de deux interfaces graphiques, la première étant le flux vidéo de la sortie standard qui propose une interface "TV-like" et dont la sortie sera celle de notre application développée.
+Sur la figure [\ref{fig:emue}] ci-après nous voyons la "landingpage" de l'émulateur opera. Celui-ci nous permet d'entrer le lien de l'application HbbTV que nous souhaitons grâce à un clavier virtuel. Cependant cette interface n'est pas très ergonomique et gère mal l'interaction clavier-souris.
 
-Une autre interface beaucoup plus efficaces nous est proposée. Il s'agit de l'interface web, disponible par défaut sur le port 5555. Elle dispose notamment de fonctions utiles au debugging (fps counter, paint regions, terminal event, javascript event, performance monitor...) [\ref{fig:emu2}], et un certain nombre paramètre de fonctionnement de l'émulateur [\ref{fig:emua} \ref{fig:emub}] et du SDK ainsi que les différentes compatibilités assurées. Cette interface propose aussi une télécommande virtuelle [\ref{fig:emuf}] nous permettant de tester les différentes réactions au événements boutons.
+Une autre interface beaucoup plus efficace nous est proposée. Il s'agit de l'interface web, disponible par défaut sur le port 5555. Elle dispose notamment de fonctions utiles au debugging (fps counter, paint regions, terminal event, javascript event, performance monitor...) [\ref{fig:emu2}], et un certain nombre de paramètres de fonctionnement de l'émulateur [\ref{fig:emua} \ref{fig:emub}] et du SDK ainsi que les différentes compatibilités assurées. Cette interface propose aussi une télécommande virtuelle [\ref{fig:emuf}] nous permettant de tester les différentes réactions aux événements boutons.
 \begin{figure}[h]
 	\centering
 	\begin{minipage}{0.50\linewidth}
@@ -151,6 +151,6 @@ Une autre interface beaucoup plus efficaces nous est proposée. Il s'agit de l'in
 \label{sec:sec02c}
 \subsection{The Opera hybrid TV option}
 \label{subsec:subsec02ca}
-The Opera hybrid TV option est un basée sur leur propre Opera Devices SDK (Standard Developpement Kit) qui est une technologie déjà bien répandue sur le marché avec plusieurs millions de set-up box dans le monde. Ce kit de développement implémente plusieurs module de compatibilité tel que (OIPF, CE-HTML, CEA-2014...) et de ce fait supporte toute les applications HbbTV. Ils se targuent aussi d'avoir une technologie éprouvée permettant des performances et intégration supérieur a ce que propose le marché.\cite{operaHBBTV}
+The Opera hybrid TV option est un basée sur leur propre Opera Devices SDK (Standard Development Kit) qui est une technologie déjà bien répandue sur le marché avec plusieurs millions de set-up box dans le monde. Ce kit de développement implémente plusieurs modules de compatibilité tels que (OIPF, CE-HTML, CEA-2014...) et de ce fait supporte toutes les applications HbbTV. Ils se targuent aussi d'avoir une technologie éprouvée permettant des performances et intégration supérieures à ce que propose le marché.\cite{operaHBBTV}
 
 %=========================================================
