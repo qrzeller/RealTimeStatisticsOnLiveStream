@@ -4,36 +4,35 @@
 \contentsline {chapter}{Table des figures}{ix}{section*.4}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Préambule}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Cahier des charges de l'application}{1}{section.1.2}
+\contentsline {section}{\numberline {1.2}Cahier des charges de l'application}{2}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}État des lieux du marché}{2}{subsection.1.2.1}
 \contentsline {paragraph}{OpenCV}{5}{section*.5}
 \contentsline {paragraph}{Wowza}{5}{section*.6}
-\contentsline {subparagraph}{Wowza Transcoder}{5}{section*.7}
-\contentsline {subparagraph}{Wowza Clamp}{5}{section*.8}
+\contentsline {subparagraph}{Wowza Transcoder}{6}{section*.7}
+\contentsline {subparagraph}{Wowza Clamp}{6}{section*.8}
 \contentsline {paragraph}{FFmpeg}{6}{section*.9}
 \contentsline {paragraph}{Mist server}{6}{section*.10}
 \contentsline {chapter}{\chapternumberline {2}OpenCV \& Flask}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction}{7}{section.2.1}
 \contentsline {section}{\numberline {2.2}Fonctionnement général}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}Environnement de développement de l'application test}{7}{section.2.3}
-\contentsline {section}{\numberline {2.4}Environnement de production}{8}{section.2.4}
-\contentsline {chapter}{\chapternumberline {3}HBBTV}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Fonctionnement général}{12}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Utilisation, le cas de la Suisse.}{12}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}Environnement de développement}{12}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Opera TV Emulator}{12}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Environnement de production}{13}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}The Opera hybrid TV option}{13}{subsection.3.3.1}
-\contentsline {chapter}{\chapternumberline {4}Wowza}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}Fonctionnement général}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}Environnement de développement de l'application test}{17}{section.4.2}
-\contentsline {section}{\numberline {4.3}Environnement de production}{18}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}The Opera hybrid TV option}{18}{subsection.4.3.1}
-\contentsline {chapter}{\chapternumberline {5}Produits sur le marché}{19}{chapter.5}
-\contentsline {section}{\numberline {5.1}Fonctionnement général}{19}{section.5.1}
-\contentsline {section}{\numberline {5.2}Environnement de développement de l'application test}{19}{section.5.2}
-\contentsline {section}{\numberline {5.3}Environnement de production}{20}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Linux \& FFMPEG}{20}{subsection.5.3.1}
-\contentsline {chapter}{\chapternumberline {6}Conclusion}{21}{chapter.6}
-\contentsline {appendix}{\chapternumberline {A}Annexe A}{23}{appendix.A}
-\contentsline {chapter}{Bibliographie}{25}{section*.12}
+\contentsline {section}{\numberline {2.3}Environnement de développement de l'application test}{8}{section.2.3}
+\contentsline {chapter}{\chapternumberline {3}HBBTV}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Fonctionnement général}{14}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Utilisation, le cas de la Suisse.}{14}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Environnement de développement}{14}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Opera TV Emulator}{14}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Environnement de production}{15}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}The Opera hybrid TV option}{15}{subsection.3.3.1}
+\contentsline {chapter}{\chapternumberline {4}Wowza}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Fonctionnement général}{19}{section.4.1}
+\contentsline {section}{\numberline {4.2}Environnement de développement de l'application test}{19}{section.4.2}
+\contentsline {section}{\numberline {4.3}Environnement de production}{20}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}The Opera hybrid TV option}{20}{subsection.4.3.1}
+\contentsline {chapter}{\chapternumberline {5}Produits sur le marché}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}Fonctionnement général}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Environnement de développement de l'application test}{21}{section.5.2}
+\contentsline {section}{\numberline {5.3}Environnement de production}{22}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Linux \& FFMPEG}{22}{subsection.5.3.1}
+\contentsline {chapter}{\chapternumberline {6}Conclusion}{23}{chapter.6}
+\contentsline {appendix}{\chapternumberline {A}Annexe A}{25}{appendix.A}
+\contentsline {chapter}{Bibliographie}{27}{section*.12}

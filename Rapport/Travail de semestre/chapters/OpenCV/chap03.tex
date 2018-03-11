@@ -21,7 +21,7 @@ OpenCV est la librairie de référence dans le domaine de la "computer vision". El
 \label{sec:sec03a}
 L'exemple suivant démontre qu'il est possible de récupérer un flux vidéo temps réel, de le modifier à la volée avec peu de latence puis de l'afficher dans une autre application. Cette exemple récupère ici le flux "raw" d'une caméra branchée directement à l'ordinateur, par mesure de simplicité. Tout flux vidéo peut être pris comme entrée. Il suffira par exemple de rediriger celui-ci sur un l'interface loopback avec FFmpeg par exemple.
 \\
-\texttt{ \# ffmpeg -re -i someInput -map 0\:v -f v4l2 /dev/video0}
+\texttt{ \# ffmpeg -re -i someInput -map 0{\:}v -f v4l2 /dev/video0}
 
 
 Ceci requiert une interface kernel pour fonctionner. Dans cet exemple nous utilisons  \textit{v4l2loopback} ( voir \cite{v4l2loopback} pour le dépôt ). Il y aurait bien entendu d'autres manières de faire, comme de récupérer le flux directement au niveau logiciel, mais ce qui intéresse ici est la preuve de concept.
@@ -30,6 +30,9 @@ Le flux de sortie est visible dans une autre application pour démontrer que ce n
 
 \section{Environnement de développement de l'application test}
 \label{sec:sec03b}
+Cette application a été développée en Python sur un environnement linux. Il faut potentiellement faire attention au support de CUDA dont les drivers ne sont pas d'office installés et où l'installation peut être compliquée sur certaines machines trop récentes. Les drivers Nvidia ne sont pas forcément bien supportés sur toutes les plateformes linux, Nvidia ne voulant pas développer de l'Open-Source. Si l'on souhaite des drivers open source, il est à regarder les drivers \verb|'Nouveau'| tout aussi performants que les drivers propriétaires à ce jour.
+
+Compte tenu de toutes ces contraintes, l'utilisation du binding OpenCV Python est en faveur de la compatibilité du plus grand nombre. Une autre alternative aurait été Java qui est un langage très propre et académique, en particulier au niveau des structures données qu'il propose. Cependant, Python prend l'avantage dans sa facilité d'implémentation des sources externes grâce à l'implémentation de son fameux outil de gestion de paquet 'pip'. De ce fait les tests on été faits par le biais du langage python. Il faut noter aussi que ce langage est très utilisé pour les back-end web. Nous tirons parti de ceci aussi grâce à la librairie Flask.\\
 Pour le développement de ce petit exemple sont utilisés : 
 \begin{itemize}
 	\item IDE : Pycharm
@@ -40,9 +43,10 @@ Pour le développement de ce petit exemple sont utilisés :
 	\item Librairie : Flask ; VideoCamera ; cv2 (OpenCV 2)
 	\item Visionneuse : Navigateur web Opera 53.0 edition developper.
 \end{itemize}
-
+\  \\
 Ci-dessous nous trouvons le code permettant au serveur Flask de construire la page web nécessaire au visionnage du flux vidéo.
-Le chemin est référencé par : \texttt{@app.route('/path/')}
+Le chemin est référencé par les lignes de codes du type : \verb|@app.route('path')|
+Nous aurons donc le flux sous le chemin \verb|"/video_feed/"| et la page HTML décoratrice à la racine. La fonction \verb|video_feed()| s'occupe d'envoyer le flux de bytes au navigateur distant au fur et a mesure que celui-ci est disponible.
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
@@ -66,36 +70,41 @@ Le chemin est référencé par : \texttt{@app.route('/path/')}
 	\lstinputlisting[language=Python, firstline=7, lastline=37, caption={Live streaming MJPEG with Flask, inspired from Miguel Grinberg. \cite{grinberg} \label{flask-code}}]{../../app/video_streaming_with_flask_example/main.py}
 %	\caption{Live streaming MJPEG with Flask, inspired from Miguel Grinberg. \cite{grinberg}}
 
+Dans la partie qui suit nous montrons comment récupérer un flux en entrée et le modifier.
+Ici nous récupérons la caméra directement attachée à l'interface loopback de l'ordinateur. Ce chemin correspond à l'architecture d'un système linux. Pour Windows il faut utiliser la fonction \verb|cv2.VideoCapture(Integer)| afin de choisir un périphérique vidéo d'entrée. OpenCV accepte également un descripteur de flux réseau RTSP\footnote{Real Time Streaming Protocol} dans cet exemple.
+Le gros de la fonction correspond en résumé à une boucle \verb|while()| qui récupère le flux image, les modifies, puis les déposes dans un objet qui sera utilisé par la fonction expliquée précédemment. Les informations sont ajoutées en temps réel grâce a un formulaire texte.
+Nous voyons par ceci que la modification du flux image par image est celle qui semble la plus simple. De plus, le délais ajouté au flux est quasi inexistant dans le cadre d'un flux "raw" en entrée. Pour un flux réseau cependant, il faut ajouter un petit délais pour prévoir une éventuelle perturbation du réseau, à moins que puissions assurer la qualité de service de celui-ci.
 
 
+	\lstinputlisting[language=Python,lastline=63, caption={Live streaming MJPEG with Flask, récupération et modification des frames. \cite{grinberg}
+	\label{overlay-flask-code}}]{../../live-rtsp.py}
 
-
+La \autoref{fig:flask} et \autoref{fig:flask-opera} ci-dessous nous montre la sortie graphique de l'application visionnée sur un navigateur web. La \autoref{fig:live_text_integration} quant à elle nous montre le formulaire qui nous permet d'insérer le texte.
 \begin{figure}[h]
-	\centering
-	\frame{\includegraphics[width=0.8\linewidth]{fig01/website}}
-	\mycaption[The easy Flask website MJPEG.]{Streaming HTTP avec librairie python Flask}
-	\label{fig:flask}
+	\begin{minipage}{0.49\linewidth}
+
+		\centering
+		\frame{\includegraphics[width=1\linewidth]{fig01/website}}
+		\mycaption[The easy Flask website MJPEG. - Visualisation Opera]{Affichage du stream avec Opéra}
+		\label{fig:flask}
+	\end{minipage}
+	\begin{minipage}{0.49\linewidth}
+
+		\centering
+		\frame{\includegraphics[width=1\linewidth]{fig01/video_vlc}}
+		\mycaption[The easy Flask website MJPEG - Visualisation VLC.]{Affichage du stream avec VLC}
+		\label{fig:flask-opera}
+	\end{minipage}
 	
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
-	\frame{\includegraphics[width=0.8\linewidth]{fig01/example_application}}
+	\frame{\includegraphics[width=0.5\linewidth]{fig01/example_application}}
 	\mycaption[Burn text on live stream, display on GUI]{Intégration texte dans vidéo live, affichage GUI bureau}
 	\label{fig:live_text_integration}
 	
 \end{figure}
-
-
-\section{Environnement de production}
-\label{sec:sec03c}
-Cette application a été développée en Python sur un environnement linux. Il faut potentiellement faire attention au support de CUDA dont les drivers ne sont pas d'office installés et où l'installation peut être compliquée sur certaines machines trop récentes. Les drivers Nvidia ne sont pas forcément bien supportés sur toutes les plateformes linux, Nvidia ne voulant pas développer de l'Open-Source. Si l'on souhaite des drivers open source, il est à regarder les drivers 'Nouveau' tout aussi performants que les drivers propriétaires à ce jour.
-
-Compte tenu de toutes ces contraintes, l'utilisation du binding OpenCV Python est en faveur de la compatibilité du plus grand nombre. Une autre alternative aurait été Java qui est un langage très propre et académique, en particulier au niveau des structures données qu'il propose. Cependant, Python prend l'avantage dans sa facilité d'implémentation des sources externes grâce à l'implémentation de son fameux outil de gestion de paquet 'pip'. De ce fait les tests on été faits par le biais du langage python. Il faut noter aussi que ce langage est très utilisé pour les back-end web. Nous tirons parti de ceci aussi grâce à la librairie Flask.
-
-Intellij - Fedora
-
-camera : windows vs linux 
 
 
 %=========================================================

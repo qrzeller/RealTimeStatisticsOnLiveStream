@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.5)  11 MAR 2018 13:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.5)  12 MAR 2018 00:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1897,7 +1897,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 34.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 36.
-<logos/hepia.jpg, id=131, 1166.3575pt x 296.10625pt>
+<logos/hepia.jpg, id=127, 1166.3575pt x 296.10625pt>
 File: logos/hepia.jpg Graphic file (type jpg)
 <use logos/hepia.jpg>
 Package pdftex.def Info: logos/hepia.jpg  used on input line 39.
@@ -2024,7 +2024,7 @@ File: logos/hepia.jpg Graphic file (type jpg)
 <use logos/hepia.jpg>
 Package pdftex.def Info: logos/hepia.jpg  used on input line 387.
 (pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
-<logos/hes-so.jpg, id=207, 226.9278pt x 121.1727pt>
+<logos/hes-so.jpg, id=202, 226.9278pt x 121.1727pt>
 File: logos/hes-so.jpg Graphic file (type jpg)
 <use logos/hes-so.jpg>
 Package pdftex.def Info: logos/hes-so.jpg  used on input line 387.
@@ -2064,7 +2064,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 pdfTeX warning: pdflatex.exe (file ./chapters/introduction/fig01/Schemas_foncti
 onnement.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
 > allowed
-<chapters/introduction/fig01/Schemas_fonctionnement.pdf, id=245, 649.6503pt x 5
+<chapters/introduction/fig01/Schemas_fonctionnement.pdf, id=240, 649.6503pt x 5
 42.10428pt>
 File: chapters/introduction/fig01/Schemas_fonctionnement.pdf Graphic file (type
  pdf)
@@ -2072,7 +2072,10 @@ File: chapters/introduction/fig01/Schemas_fonctionnement.pdf Graphic file (type
 Package pdftex.def Info: chapters/introduction/fig01/Schemas_fonctionnement.pdf
   used on input line 27.
 (pdftex.def)             Requested size: 448.0pt x 373.84555pt.
-[1
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 
 
 ]
@@ -2081,16 +2084,16 @@ LaTeX Font Info:    Font shape `T1/fnc/bx/n' in size <12> not available
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 11.15991pt on input line 34.
 
-Underfull \vbox (badness 10000) detected at line 81
+Underfull \vbox (badness 10000) detected at line 85
  []
 
 File: logos/hepia.jpg Graphic file (type jpg)
 <use logos/hepia.jpg>
-Package pdftex.def Info: logos/hepia.jpg  used on input line 81.
+Package pdftex.def Info: logos/hepia.jpg  used on input line 85.
 (pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
 File: logos/hes-so.jpg Graphic file (type jpg)
 <use logos/hes-so.jpg>
-Package pdftex.def Info: logos/hes-so.jpg  used on input line 81.
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 85.
 (pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
 
 Package Fancyhdr Warning: \headheight is too small (13.6pt): 
@@ -2101,11 +2104,11 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
 [2 <./chapters/introduction/fig01/Schemas_fonctionnement.pdf>]
 File: logos/hepia.jpg Graphic file (type jpg)
 <use logos/hepia.jpg>
-Package pdftex.def Info: logos/hepia.jpg  used on input line 81.
+Package pdftex.def Info: logos/hepia.jpg  used on input line 85.
 (pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
 File: logos/hes-so.jpg Graphic file (type jpg)
 <use logos/hes-so.jpg>
-Package pdftex.def Info: logos/hes-so.jpg  used on input line 81.
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 85.
 (pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
 
 
@@ -2117,11 +2120,11 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
 [3]
 File: logos/hepia.jpg Graphic file (type jpg)
 <use logos/hepia.jpg>
-Package pdftex.def Info: logos/hepia.jpg  used on input line 81.
+Package pdftex.def Info: logos/hepia.jpg  used on input line 85.
 (pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
 File: logos/hes-so.jpg Graphic file (type jpg)
 <use logos/hes-so.jpg>
-Package pdftex.def Info: logos/hes-so.jpg  used on input line 81.
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 85.
 (pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
 
 
@@ -2132,14 +2135,14 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
 
 [4]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 87.
+(Font)              scaled to size 8.36993pt on input line 91.
 File: logos/hepia.jpg Graphic file (type jpg)
 <use logos/hepia.jpg>
-Package pdftex.def Info: logos/hepia.jpg  used on input line 91.
+Package pdftex.def Info: logos/hepia.jpg  used on input line 93.
 (pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
 File: logos/hes-so.jpg Graphic file (type jpg)
 <use logos/hes-so.jpg>
-Package pdftex.def Info: logos/hes-so.jpg  used on input line 91.
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 93.
 (pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
 
 
@@ -2165,16 +2168,50 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  This may cause the page layout to be inconsistent, however.
 
 [6] (./chapters/OpenCV/chap03.tex
-(c:/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 45.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 24.
 
-(../../app/video_streaming_with_flask_example/main.py [7
+(c:/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [7
 
 
 ]
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 27.
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 8.36993pt on input line 28.
+
+Overfull \hbox (11.91617pt too wide) in paragraph at lines 27--29
+[]\T1/fnc/m/n/10.95 (-20) Ceci re-quiert une in-ter-face ker-nel pour fonc-tion
+-ner. Dans cet exemple nous uti-li-sons \T1/fnc/m/it/10.95 (-20) v4l2loopback
+ []
+
+File: logos/hepia.jpg Graphic file (type jpg)
+<use logos/hepia.jpg>
+Package pdftex.def Info: logos/hepia.jpg  used on input line 50.
+(pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
+File: logos/hes-so.jpg Graphic file (type jpg)
+<use logos/hes-so.jpg>
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 50.
+(pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
+
+Package Fancyhdr Warning: \headheight is too small (13.6pt): 
+ Make it at least 32.53278pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8] (c:/texlive/2017/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 70.
+
+(../../app/video_streaming_with_flask_example/main.py
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 7.06795pt on input line 23.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -2186,36 +2223,74 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 23.
 )
-<chapters/OpenCV/fig01/website.png, id=338, 489.49542pt x 531.65292pt>
+File: logos/hepia.jpg Graphic file (type jpg)
+<use logos/hepia.jpg>
+Package pdftex.def Info: logos/hepia.jpg  used on input line 80.
+(pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
+File: logos/hes-so.jpg Graphic file (type jpg)
+<use logos/hes-so.jpg>
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 80.
+(pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (13.6pt): 
+ Make it at least 32.53278pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9] (../../live-rtsp.py
+File: logos/hepia.jpg Graphic file (type jpg)
+<use logos/hepia.jpg>
+Package pdftex.def Info: logos/hepia.jpg  used on input line 46.
+(pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
+File: logos/hes-so.jpg Graphic file (type jpg)
+<use logos/hes-so.jpg>
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 46.
+(pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (13.6pt): 
+ Make it at least 32.53278pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10])
+<chapters/OpenCV/fig01/website.png, id=440, 488.15709pt x 529.31084pt>
 File: chapters/OpenCV/fig01/website.png Graphic file (type png)
 <use chapters/OpenCV/fig01/website.png>
 Package pdftex.def Info: chapters/OpenCV/fig01/website.png  used on input line 
-54.
-(pdftex.def)             Requested size: 358.40137pt x 389.28781pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<chapters/OpenCV/fig01/example_application.png, id=340, 483.47292pt x 384.10167
+87.
+(pdftex.def)             Requested size: 219.52246pt x 238.03421pt.
+<chapters/OpenCV/fig01/video_vlc.png, id=442, 416.55624pt x 386.77834pt>
+File: chapters/OpenCV/fig01/video_vlc.png Graphic file (type png)
+<use chapters/OpenCV/fig01/video_vlc.png>
+Package pdftex.def Info: chapters/OpenCV/fig01/video_vlc.png  used on input lin
+e 94.
+(pdftex.def)             Requested size: 219.52246pt x 203.82889pt.
+<chapters/OpenCV/fig01/example_application.png, id=443, 483.47292pt x 384.10167
 pt>
 File: chapters/OpenCV/fig01/example_application.png Graphic file (type png)
 <use chapters/OpenCV/fig01/example_application.png>
 Package pdftex.def Info: chapters/OpenCV/fig01/example_application.png  used on
- input line 62.
-(pdftex.def)             Requested size: 358.40137pt x 284.73482pt.
+ input line 103.
+(pdftex.def)             Requested size: 224.0pt x 177.96072pt.
+File: logos/hepia.jpg Graphic file (type jpg)
+<use logos/hepia.jpg>
+Package pdftex.def Info: logos/hepia.jpg  used on input line 108.
+(pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
+File: logos/hes-so.jpg Graphic file (type jpg)
+<use logos/hes-so.jpg>
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 108.
+(pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/OpenCV/fig01/flask_simple.png, id=341, 446.66875pt x 254.61792pt>
-File: chapters/OpenCV/fig01/flask_simple.png Graphic file (type png)
-<use chapters/OpenCV/fig01/flask_simple.png>
-Package pdftex.def Info: chapters/OpenCV/fig01/flask_simple.png  used on input 
-line 70.
-(pdftex.def)             Requested size: 448.0pt x 255.38264pt.
+Package Fancyhdr Warning: \headheight is too small (13.6pt): 
+ Make it at least 32.53278pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-)
+[11 <./chapters/OpenCV/fig01/website.png> <./chapters/OpenCV/fig01/video_vlc.pn
+g>])
 File: logos/hepia.jpg Graphic file (type jpg)
 <use logos/hepia.jpg>
 Package pdftex.def Info: logos/hepia.jpg  used on input line 405.
@@ -2231,43 +2306,27 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8] [9 <./chapters/OpenCV/fig01/website.png>]
-File: logos/hepia.jpg Graphic file (type jpg)
-<use logos/hepia.jpg>
-Package pdftex.def Info: logos/hepia.jpg  used on input line 405.
-(pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
-File: logos/hes-so.jpg Graphic file (type jpg)
-<use logos/hes-so.jpg>
-Package pdftex.def Info: logos/hes-so.jpg  used on input line 405.
-(pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (13.6pt): 
- Make it at least 32.53278pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[10 <./chapters/OpenCV/fig01/example_application.png> <./chapters/OpenCV/fig01/
-flask_simple.png>] (./chapters/HBBTV/chap02.tex
+[12 <./chapters/OpenCV/fig01/example_application.png>]
+(./chapters/HBBTV/chap02.tex
 
 pdfTeX warning: pdflatex.exe (file ./chapters/HBBTV/pdf/broadcast-broadband.pdf
 ): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<chapters/HBBTV/pdf/broadcast-broadband.pdf, id=382, 274.74945pt x 160.63553pt>
+<chapters/HBBTV/pdf/broadcast-broadband.pdf, id=473, 274.74945pt x 160.63553pt>
 
 File: chapters/HBBTV/pdf/broadcast-broadband.pdf Graphic file (type pdf)
 <use chapters/HBBTV/pdf/broadcast-broadband.pdf>
 Package pdftex.def Info: chapters/HBBTV/pdf/broadcast-broadband.pdf  used on in
 put line 16.
 (pdftex.def)             Requested size: 448.0pt x 261.95615pt.
-[11
+[13
 
 
  <./chapters/HBBTV/pdf/broadcast-broadband.pdf>]
 
-Package natbib Warning: Citation `operaEmulator' on page 12 undefined on input 
+Package natbib Warning: Citation `operaEmulator' on page 14 undefined on input 
 line 37.
 
-<chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png, id=466, 740.09833pt 
+<chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png, id=558, 740.09833pt 
 x 701.95583pt>
 File: chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png Graphic file (ty
 pe png)
@@ -2275,7 +2334,7 @@ pe png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/control_panel_1.p
 ng  used on input line 48.
 (pdftex.def)             Requested size: 224.0pt x 212.45207pt.
-<chapters/HBBTV/fig01/emulator/multi1/control_panel_2.png, id=467, 570.63188pt 
+<chapters/HBBTV/fig01/emulator/multi1/control_panel_2.png, id=559, 570.63188pt 
 x 630.10406pt>
 File: chapters/HBBTV/fig01/emulator/multi1/control_panel_2.png Graphic file (ty
 pe png)
@@ -2283,7 +2342,7 @@ pe png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/control_panel_2.p
 ng  used on input line 53.
 (pdftex.def)             Requested size: 192.63672pt x 212.71344pt.
-<chapters/HBBTV/fig01/emulator/multi1/das_erste_video.png, id=468, 410.19917pt 
+<chapters/HBBTV/fig01/emulator/multi1/das_erste_video.png, id=560, 410.19917pt 
 x 234.20833pt>
 File: chapters/HBBTV/fig01/emulator/multi1/das_erste_video.png Graphic file (ty
 pe png)
@@ -2291,7 +2350,7 @@ pe png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/das_erste_video.p
 ng  used on input line 59.
 (pdftex.def)             Requested size: 215.03809pt x 122.77893pt.
-<chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.png, id=469, 642.4pt x 36
+<chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.png, id=561, 642.4pt x 36
 1.35pt>
 File: chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.png Graphic file (ty
 pe png)
@@ -2299,7 +2358,7 @@ pe png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/das_erste_popup.p
 ng  used on input line 65.
 (pdftex.def)             Requested size: 215.03809pt x 120.95512pt.
-<chapters/HBBTV/fig01/emulator/multi1/landing_emulator.png, id=470, 1286.8075pt
+<chapters/HBBTV/fig01/emulator/multi1/landing_emulator.png, id=562, 1286.8075pt
  x 796.9775pt>
 File: chapters/HBBTV/fig01/emulator/multi1/landing_emulator.png Graphic file (t
 ype png)
@@ -2307,7 +2366,7 @@ ype png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi1/landing_emulator.
 png  used on input line 70.
 (pdftex.def)             Requested size: 268.80273pt x 166.48247pt.
-<chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png, id=471, 548
+<chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png, id=563, 548
 .0475pt x 423.08063pt>
 File: chapters/HBBTV/fig01/emulator/multi1/remote_control_annotated.png Graphic
  file (type png)
@@ -2318,7 +2377,7 @@ notated.png  used on input line 76.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstreamer_puel.png, id=472, 
+<chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstreamer_puel.png, id=564, 
 644.4075pt x 556.0775pt>
 File: chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstreamer_puel.png Grap
 hic file (type png)
@@ -2326,7 +2385,7 @@ hic file (type png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/emulator_640_gstr
 eamer_puel.png  used on input line 87.
 (pdftex.def)             Requested size: 215.03809pt x 185.55952pt.
-<chapters/HBBTV/fig01/emulator/multi2/emulator_640_libav_puel.png, id=473, 644.
+<chapters/HBBTV/fig01/emulator/multi2/emulator_640_libav_puel.png, id=565, 644.
 4075pt x 556.0775pt>
 File: chapters/HBBTV/fig01/emulator/multi2/emulator_640_libav_puel.png Graphic 
 file (type png)
@@ -2334,7 +2393,7 @@ file (type png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/emulator_640_liba
 v_puel.png  used on input line 92.
 (pdftex.def)             Requested size: 215.03809pt x 185.55952pt.
-<chapters/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_puel.png, id=474,
+<chapters/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_puel.png, id=566,
  644.4075pt x 556.0775pt>
 File: chapters/HBBTV/fig01/emulator/multi2/emulator_640_virtualbox_puel.png Gra
 phic file (type png)
@@ -2342,7 +2401,7 @@ phic file (type png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/emulator_640_virt
 ualbox_puel.png  used on input line 98.
 (pdftex.def)             Requested size: 215.03809pt x 185.55952pt.
-<chapters/HBBTV/fig01/emulator/multi2/emulator_640_welcome.png, id=475, 644.407
+<chapters/HBBTV/fig01/emulator/multi2/emulator_640_welcome.png, id=567, 644.407
 5pt x 556.0775pt>
 File: chapters/HBBTV/fig01/emulator/multi2/emulator_640_welcome.png Graphic fil
 e (type png)
@@ -2350,7 +2409,7 @@ e (type png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi2/emulator_640_welc
 ome.png  used on input line 104.
 (pdftex.def)             Requested size: 215.03809pt x 185.55952pt.
-<chapters/HBBTV/fig01/emulator/multi2/virtualbox.png, id=476, 970.62625pt x 765
+<chapters/HBBTV/fig01/emulator/multi2/virtualbox.png, id=568, 970.62625pt x 765
 .86125pt>
 File: chapters/HBBTV/fig01/emulator/multi2/virtualbox.png Graphic file (type pn
 g)
@@ -2364,7 +2423,7 @@ LaTeX Warning: Float too large for page by 39.49219pt on input line 114.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/HBBTV/fig01/emulator/multi3/devtools_youtube.png, id=477, 1323.94624p
+<chapters/HBBTV/fig01/emulator/multi3/devtools_youtube.png, id=569, 1323.94624p
 t x 1060.96375pt>
 File: chapters/HBBTV/fig01/emulator/multi3/devtools_youtube.png Graphic file (t
 ype png)
@@ -2372,7 +2431,7 @@ ype png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi3/devtools_youtube.
 png  used on input line 120.
 (pdftex.def)             Requested size: 215.03809pt x 172.31552pt.
-<chapters/HBBTV/fig01/emulator/multi3/remote_control_key_mapping.png, id=478, 3
+<chapters/HBBTV/fig01/emulator/multi3/remote_control_key_mapping.png, id=570, 3
 99.82709pt x 512.91624pt>
 File: chapters/HBBTV/fig01/emulator/multi3/remote_control_key_mapping.png Graph
 ic file (type png)
@@ -2380,7 +2439,7 @@ ic file (type png)
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi3/remote_control_ke
 y_mapping.png  used on input line 125.
 (pdftex.def)             Requested size: 215.03809pt x 275.86711pt.
-<chapters/HBBTV/fig01/emulator/multi3/remote_control_help_tips.png, id=479, 468
+<chapters/HBBTV/fig01/emulator/multi3/remote_control_help_tips.png, id=571, 468
 .75125pt x 237.88875pt>
 File: chapters/HBBTV/fig01/emulator/multi3/remote_control_help_tips.png Graphic
  file (type png)
@@ -2388,7 +2447,7 @@ File: chapters/HBBTV/fig01/emulator/multi3/remote_control_help_tips.png Graphic
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi3/remote_control_he
 lp_tips.png  used on input line 131.
 (pdftex.def)             Requested size: 215.03809pt x 109.12886pt.
-<chapters/HBBTV/fig01/emulator/multi3/performance_monitor.png, id=480, 857.2025
+<chapters/HBBTV/fig01/emulator/multi3/performance_monitor.png, id=572, 857.2025
 pt x 255.95625pt>
 File: chapters/HBBTV/fig01/emulator/multi3/performance_monitor.png Graphic file
  (type png)
@@ -2396,7 +2455,7 @@ File: chapters/HBBTV/fig01/emulator/multi3/performance_monitor.png Graphic file
 Package pdftex.def Info: chapters/HBBTV/fig01/emulator/multi3/performance_monit
 or.png  used on input line 137.
 (pdftex.def)             Requested size: 215.03809pt x 64.20761pt.
-<chapters/HBBTV/fig01/emulator/multi3/emulator_logs.png, id=481, 1034.36438pt x
+<chapters/HBBTV/fig01/emulator/multi3/emulator_logs.png, id=573, 1034.36438pt x
  89.58469pt>
 File: chapters/HBBTV/fig01/emulator/multi3/emulator_logs.png Graphic file (type
  png)
@@ -2425,7 +2484,7 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12])
+[14])
 File: logos/hepia.jpg Graphic file (type jpg)
 <use logos/hepia.jpg>
 Package pdftex.def Info: logos/hepia.jpg  used on input line 407.
@@ -2441,7 +2500,7 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13] [14 <./chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png> <./chapte
+[15] [16 <./chapters/HBBTV/fig01/emulator/multi1/control_panel_1.png> <./chapte
 rs/HBBTV/fig01/emulator/multi1/control_panel_2.png> <./chapters/HBBTV/fig01/emu
 lator/multi1/das_erste_video.png> <./chapters/HBBTV/fig01/emulator/multi1/das_e
 rste_popup.png (PNG copy)> <./chapters/HBBTV/fig01/emulator/multi1/landing_emul
@@ -2462,7 +2521,7 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15pdfTeX warning (ext4): destination with the same identifier (name{subfigure.
+[17pdfTeX warning (ext4): destination with the same identifier (name{subfigure.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2512,7 +2571,7 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16pdfTeX warning (ext4): destination with the same identifier (name{subfigure.
+[18pdfTeX warning (ext4): destination with the same identifier (name{subfigure.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2547,7 +2606,7 @@ utube.png> <./chapters/HBBTV/fig01/emulator/multi3/remote_control_key_mapping.p
 ng> <./chapters/HBBTV/fig01/emulator/multi3/remote_control_help_tips.png> <./ch
 apters/HBBTV/fig01/emulator/multi3/performance_monitor.png> <./chapters/HBBTV/f
 ig01/emulator/multi3/emulator_logs.png>] (./chapters/Wowza/chap04.tex
-(../../app/video_streaming_with_flask_example/main.py [17
+(../../app/video_streaming_with_flask_example/main.py [19
 
 
 ]))
@@ -2566,8 +2625,8 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18] (./chapters/Autres/chap05.tex
-(../../app/video_streaming_with_flask_example/main.py) [19
+[20] (./chapters/Autres/chap05.tex
+(../../app/video_streaming_with_flask_example/main.py) [21
 
 
 ])
@@ -2586,36 +2645,24 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20] (./chapters/Conclusion/chap06.tex) [21
+[22] (./chapters/Conclusion/chap06.tex) [23
 
-
-] [22
-
-]
-(./chapters/appendices/app0A.tex) [23
 
 ] [24
 
+]
+(./chapters/appendices/app0A.tex) [25
+
+] [26
+
 ] (./travail_semestre.bbl
-LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
-(Font)              scaled to size 10.18341pt on input line 7.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 7.
-
-(c:/texlive/2017/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
 []\T1/fnc/m/sc/10.95 (+20) Wikipedia\T1/fnc/m/n/10.95 (+20) , \T1/fnc/m/it/10.9
 5 (+20) Over-the-top me-dia ser-vices\T1/fnc/m/n/10.95 (+20) , [][]$\T1/cmtt/m/
 n/10.95 https : / / en . wikipedia . org / wiki /
  []
 
-[25
+[27
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{cite.operaHBB
@@ -2674,20 +2721,34 @@ haines-[]de-[]la-[]ssr-[]srg/$[][]\T1/fnc/m/n/10.95 (+20) , Ar-ticle,
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 113--114
+Underfull \hbox (badness 1859) in paragraph at lines 117--118
 []\T1/fnc/m/sc/10.95 (+20) Mist of-fi-cial \T1/fnc/m/n/10.95 (+20) , \T1/fnc/m/
 it/10.95 (+20) Com-pa-ri-son from Mist webste (bias)\T1/fnc/m/n/10.95 (+20) , [
 ][]$\T1/cmtt/m/n/10.95 https : / / mistserver . org /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 []\T1/fnc/m/sc/10.95 (+20) oodlestechnologies \T1/fnc/m/n/10.95 (+20) , \T1/fnc
 /m/it/10.95 (+20) Red5 Vs Wowza Head To Head \T1/fnc/m/n/10.95 (+20) , [][]$\T1
 /cmtt/m/n/10.95 http : / / www .
  []
 
-)
+File: logos/hepia.jpg Graphic file (type jpg)
+<use logos/hepia.jpg>
+Package pdftex.def Info: logos/hepia.jpg  used on input line 132.
+(pdftex.def)             Requested size: 112.06871pt x 28.45274pt.
+File: logos/hes-so.jpg Graphic file (type jpg)
+<use logos/hes-so.jpg>
+Package pdftex.def Info: logos/hes-so.jpg  used on input line 132.
+(pdftex.def)             Requested size: 53.28302pt x 28.45274pt.
+
+Package Fancyhdr Warning: \headheight is too small (13.6pt): 
+ Make it at least 32.53278pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28])
 File: logos/hepia.jpg Graphic file (type jpg)
 <use logos/hepia.jpg>
 Package pdftex.def Info: logos/hepia.jpg  used on input line 430.
@@ -2703,7 +2764,9 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26]
+[29] [30
+
+]
 
 Package natbib Warning: There were undefined citations.
 
@@ -2733,22 +2796,22 @@ Package natbib Warning: Citation(s) may have changed.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
 Package rerunfilecheck Info: File `travail_semestre.out' has not changed.
-(rerunfilecheck)             Checksum: ADDC16D4E68E3067F1F0B0C3B5754736;2093.
+(rerunfilecheck)             Checksum: FAA01E0796248197E7854A3178E97975;2019.
  )
 (\end occurred when \ifx on line 144 was incomplete)
 (\end occurred when \ifx on line 111 was incomplete)
 (\end occurred when \ifx on line 78 was incomplete)
-(\end occurred when \ifx on line 71 was incomplete)
-(\end occurred when \ifx on line 63 was incomplete)
-(\end occurred when \ifx on line 55 was incomplete) 
+(\end occurred when \ifx on line 104 was incomplete)
+(\end occurred when \ifx on line 95 was incomplete)
+(\end occurred when \ifx on line 88 was incomplete) 
 Here is how much of TeX's memory you used:
- 32490 strings out of 492980
- 591707 string characters out of 6136208
- 949136 words of memory out of 5000000
- 34875 multiletter control sequences out of 15000+600000
- 87134 words of font info for 263 fonts, out of 8000000 for 9000
+ 32644 strings out of 492980
+ 593879 string characters out of 6136208
+ 961878 words of memory out of 5000000
+ 34933 multiletter control sequences out of 15000+600000
+ 90417 words of font info for 275 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 52i,15n,81p,1174b,1993s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 52i,16n,81p,1204b,1929s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2017/texmf-dist/
 fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2017/texmf-dist/fonts/enc/
 dvips/base/8r.enc}<c:/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourie
@@ -2756,10 +2819,10 @@ r-ms.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><
 c:/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb><c:/texlive/2017
 /texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><c:/texlive/2017/texmf-dist/fon
 ts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on travail_semestre.pdf (38 pages, 8782764 bytes).
+Output written on travail_semestre.pdf (42 pages, 10408746 bytes).
 PDF statistics:
- 740 PDF objects out of 1000 (max. 8388607)
- 624 compressed objects within 7 object streams
- 198 named destinations out of 1000 (max. 500000)
- 38264 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 859 PDF objects out of 1000 (max. 8388607)
+ 733 compressed objects within 8 object streams
+ 271 named destinations out of 1000 (max. 500000)
+ 42352 words of extra memory for PDF output out of 42996 (max. 10000000)
 
