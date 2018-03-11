@@ -118,5 +118,9 @@ Cell, 13 (2001), pp.~139--151.
 \bibitem{red5-wowza}
 {\scshape oodlestechnologies }, {\em Red5 Vs Wowza Head To Head }, \url{http://www.oodlestechnologies.com/blogs/Red5-Vs-Wowza-Head-To-Head}, Site, 12 déc. 2017 
 
+%% Book
+\bibitem{book_opencv}
+{\scshape Adrian Kaehler \& Gary Bradski }, {\em Learning OpenCV 3 }, O'Realy, Book, 2017 
+
 
 \end{thebibliography}
