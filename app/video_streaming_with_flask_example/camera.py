@@ -18,5 +18,11 @@ class VideoCamera(object):
         # We are using Motion JPEG, but OpenCV defaults to capture raw images,
         # so we must encode it into JPEG in order to correctly display the
         # video stream.
+        # Write text
+        font = cv2.FONT_HERSHEY_COMPLEX
+
+        cv2.putText(image, " Some text, Score or something else",
+                    (int(self.video.get(cv2.CAP_PROP_FRAME_WIDTH) / 8), int(self.video.get(cv2.CAP_PROP_FRAME_HEIGHT) - 30)), font, 0.8,
+                    (100, 200, 100), 2, cv2.LINE_AA)
         ret, jpeg = cv2.imencode('.jpg', image)
         return jpeg.tobytes()
