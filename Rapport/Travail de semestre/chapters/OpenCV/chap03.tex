@@ -19,11 +19,30 @@ OpenCV est la librairie de référence dans le domaine de la "computer vision". El
 %=======
 \section{Fonctionnement général}
 \label{sec:sec03a}
-L'exemple suivant démontre qu'il est possible de récupérer un flux vidéo live
+L'exemple suivant démontre qu'il est possible de récupérer un flux vidéo temps réel, de le modifier à la volée avec peu de latence puis de l'afficher dans une autre application. Cette exemple récupère ici le flux "raw" d'une caméra branchée directement à l'ordinateur, par mesure de simplicité. Tout flux vidéo peut être pris comme entrée. Il suffira par exemple de rediriger celui-ci sur un l'interface loopback avec FFmpeg par exemple.
+\\
+\texttt{ \# ffmpeg -re -i someInput -map 0\:v -f v4l2 /dev/video0}
+
+
+Ceci requiert une interface kernel pour fonctionner. Dans cet exemple nous utilisons  \textit{v4l2loopback} ( voir \cite{v4l2loopback} pour le dépôt ). Il y aurait bien entendu d'autres manières de faire, comme de récupérer le flux directement au niveau logiciel, mais ce qui intéresse ici est la preuve de concept.
+Le flux de sortie est visible dans une autre application pour démontrer que ce n'est pas l'affichage qui est modifié mais bien la vidéo. Le lecteur multimédia VLC ou un navigateur Web fera l'affaire. Pour ceci nous utiliserons la librairie Flask qui est l'un des serveurs web les plus utilisés sur Python. Celui-ci s'occupera de mettre les données sous la forme MJPEG \footnote{MJPEG est un codec vidéo qui consiste en un flux d'images JPEG, d'où l'acronyme pour \textit{Motion JPEG}} pour qu'elles soient compréhensibles par une visionneuse.
+
 
 \section{Environnement de développement de l'application test}
 \label{sec:sec03b}
-pycharm opencv, livrairies, flask...
+Pour le développement de ce petit exemple sont utilisés : 
+\begin{itemize}
+	\item IDE : Pycharm
+	\item Language : Python 3.6
+	\item OS : Linux, Fedora 27
+	\item Carte graphique utilisée : Non
+	\item Architecture : Intel x86
+	\item Librairie : Flask ; VideoCamera ; cv2 (OpenCV 2)
+	\item Visionneuse : Navigateur web Opera 53.0 edition developper.
+\end{itemize}
+
+Ci-dessous nous trouvons le code permettant au serveur Flask de construire la page web nécessaire au visionnage du flux vidéo.
+Le chemin est référencé par : \texttt{@app.route('/path/')}
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
@@ -44,7 +63,7 @@ pycharm opencv, livrairies, flask...
 }
 
 
-	\lstinputlisting[language=Python, firstline=7, lastline=37, caption={Live streaming MJPEG with Flask, inspired from Miguel Grinberg. \cite{grinberg}}]{../../app/video_streaming_with_flask_example/main.py}
+	\lstinputlisting[language=Python, firstline=7, lastline=37, caption={Live streaming MJPEG with Flask, inspired from Miguel Grinberg. \cite{grinberg} \label{flask-code}}]{../../app/video_streaming_with_flask_example/main.py}
 %	\caption{Live streaming MJPEG with Flask, inspired from Miguel Grinberg. \cite{grinberg}}
 
 
@@ -64,14 +83,6 @@ pycharm opencv, livrairies, flask...
 	\frame{\includegraphics[width=0.8\linewidth]{fig01/example_application}}
 	\mycaption[Burn text on live stream, display on GUI]{Intégration texte dans vidéo live, affichage GUI bureau}
 	\label{fig:live_text_integration}
-	
-\end{figure}
-
-\begin{figure}[h]
-	\centering
-	\frame{\includegraphics[width=1\linewidth]{fig01/flask_simple}}
-	\mycaption[The easy Flask website MJPEG. (code)]{Code pour streaming HTTP avec librairie python Flask}
-	\label{fig:flask_code}
 	
 \end{figure}
 
