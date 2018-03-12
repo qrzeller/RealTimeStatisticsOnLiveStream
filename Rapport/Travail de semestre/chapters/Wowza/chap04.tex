@@ -56,44 +56,61 @@ Dans la section suivante \ref{sec:sec04c}, nous profiterons pour expliquer comme
 \section{Clamp - Module Streamtoolbox.com}
 \label{sec:sec04c}
 
-Clamp est un module transcoder de Wowza du même type que celui montré plus haut. Il est développé par Streamtoolbox.com qui est une compagnie développant des outils de retouche vidéo à la volée et de statistiques pour Wowza. Toute leurs solutions son payantes. La solution qui nous intéresse, Clamp, a un prix unique de 300\$ par serveur.\cite{streamtoolbox}
-Nous profitons de la présentation de ce module pour expliquer comment celui-ci est installé sur le serveur, l'installation n'est pas très pratique ni même claire, 
+Clamp est un module transcoder de Wowza du même type que celui montré plus haut. Il permet l'ajout d'overlays sur tout flux vidéo transcodé ar Wowza. Il est développé par Streamtoolbox.com qui est une compagnie développant des outils de retouche vidéo à la volée et de statistiques pour Wowza. Toute leurs solutions son payantes. La solution qui nous intéresse, Clamp, a un prix unique de 300\$ par serveur.\cite{streamtoolbox}
+Nous profitons de la présentation de ce module pour montrer comment celui-ci est installé sur le serveur, car elle n'est pas forcément très évidente de prime abord.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=1\linewidth]{fig01/capture6}\label{fig:w6}
-	\mycaption[Wowza - Flowchart appareils]{Workflow Wowza - Flowchart}
-\end{figure}
-\begin{figure}
-	\centering
-\includegraphics[width=1\linewidth]{fig01/capture7}\label{fig:w7}
-	\mycaption[Wowza génération du flux d'entrée avec OBS.]{Génération du flux d'entrée de Wowza avec OBS, Open Broadcaster.}
-\end{figure}
-\begin{figure}
-	\centering
-	\includegraphics[width=1\linewidth]{fig01/capture8}\label{fig:w8}
-	\mycaption[Paramétrage du module Wowza Clamp.]{Paramétrage et test du module Wowza Clamp.}
-\end{figure}
+Dans la pratique, ce module se place entre le décodage et l'encodage comme le fait le module de la \autoref{sec:sec04a}. Il instancie un serveur HTTP qui permet non seulement l'utilisation de l'API RESTful via des POST mais aussi celle de l'interface graphique permettant de générer "à la souris" les requêtes REST (voir \autoref{fig:w8}). Beaucoup de paramètres sont disponibles dont trois fonctions principales, l'ajout de texte, l'ajout d'image, l'ajout de dates. Cette api possède également des fonctions de transition et d'ombres pour les objets.
 
+Pour streamer le flux vidéo dans le serveur Wowza, nous avons utiliser le logiciel OBS (Open Broadcaster) qui permet de transcoder des flux vidéo de multiples sources vers un serveur multimédia. D'autres méthode simple sont possible, dont l'utilisation de VLC.
+
+Installation :
+\begin{itemize}
+	\item Dans les services Windows, après l'installation de Wowza, lancer le service Wowza Streaming Engine ainsi que Wowza Streaming Engine Manager.
+	\item Se rendre sur la page Web port 8088 et configurer ce qui est demandé.
+	\item Dans l'onglet application, créer une nouvelle "live application" et lui donner un nom.
+	\item La configuration du serveur Wowza nécessite l'édition du fichier module \url{C:/Program Files (x86)/Wowza Media Systems/Wowza Streaming Engine 4.7.4/conf/nom-app} dans le dossier correspondant au nom de l'application.
+	\item Éditer le fichier de la \autoref{fig:w11} et de la \autoref{fig:w12}. Nous noterons l'ajout de l'objet XML Module qui permet d'instancier Clamp dans la live application. Puis son paramétrage en \autoref{fig:w12}. "Clamp.caption.source.file" permet de spécifier un fichier au lieu de l'interface REST, nous pouvons également spécifier le port et d'autres paramètres comme la calibration qui ajoute une grille de test par dessus la vidéo. Le détails de ses paramètres est spécifié dans la documentation Clamp.
+	\item Finalement, il faut ajouter le code du module Clamp sous la forme d'un .jar dans le dossier "/lib/" de Wowza.
+	\item A des fin de debugging il peut être intéressant de lancer le fichier "startup.bat" se trouvant dans le dossier "/bin/" de Wowza. Celui-ci nous permet de voir la sortie standard de l'application et les éventuelles erreurs d'exécution.
+\end{itemize}
 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.5\linewidth]{fig01/capture10}\label{fig:w10}
-	\mycaption[Wowza - Affichage non supporté.]{Affichage non supporté - Interface test.}
-	\label{fig:wowza2}
+	\includegraphics[width=1\linewidth]{fig01/capture6}
+	\mycaption[Wowza - Flowchart appareils]{Workflow Wowza - Flowchart\label{fig:w6}}
 \end{figure}
 \begin{figure}
 	\centering
-	\includegraphics[width=1\linewidth]{fig01/capture11}\label{fig:w11}
-	\mycaption[Paramétrage du module pour Wowza serveur.]{Paramétrage du module pour Wowza serveur.}
+\includegraphics[width=1\linewidth]{fig01/capture7}
+	\mycaption[Wowza génération du flux d'entrée avec OBS.]{Génération du flux d'entrée de Wowza avec OBS, Open Broadcaster.\label{fig:w7}}
 \end{figure}
 \begin{figure}
 	\centering
-	\includegraphics[width=1\linewidth]{fig01/capture12}\label{fig:w12}
-	\mycaption[Paramétrage du module pour Wowza serveur.]{Paramétrage du module pour Wowza serveur.}
+	\includegraphics[width=1\linewidth]{fig01/capture8}
+	\mycaption[Paramétrage du module Wowza Clamp.]{Paramétrage et test du module Wowza Clamp.\label{fig:w8}}
+\end{figure}
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{fig01/capture10}
+	\mycaption[Wowza - Affichage non supporté.]{Affichage non supporté - Interface test.\label{fig:w10}}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{fig01/capture11}
+	\mycaption[Paramétrage du module pour Wowza serveur.]{Paramétrage du module pour Wowza serveur.\label{fig:w11}}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{fig01/capture12}
+	\mycaption[Paramétrage du module pour Wowza serveur.]{Paramétrage du module pour Wowza serveur.\label{fig:w12}}
 \end{figure}
 	
+	
+Bien qu'en aillant suivit les recommandation du développeur quand a l'installation du module. Lors du visionnage du flux de données, les modifications ne semblent pas être prises en compte. Le problème viendrait du fait que le flux n'est pas transcodé, et que donc les overlays ne peuvent être inséré dans celui-ci. Les lecteurs test inséré dans l'interface graphique de Wowza semblent confirmer cette thèse, ils ne fonctionnent tout simplement pas ( voir \autoref{fig:w10} ). Le module de transcodage Wowza est assez récent et est différent de celui présenté sur le site constructeur de Clamp. Il n'est donc pas possible de suivre leurs recommandation. Dans tout les cas, il n'est pas normal qu'aucun message d'erreur ne soit transmis. Que ce soit au niveau de l'interface graphique de Clamp, de Wowza et même au niveau de la console qui affirme prendre en compte les nouveaux overlays et les ajouter.
 	
 
 
