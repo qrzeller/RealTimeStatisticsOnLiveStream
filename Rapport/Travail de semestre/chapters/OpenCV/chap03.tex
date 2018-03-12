@@ -75,7 +75,7 @@ Nous aurons donc le flux sous le chemin \verb|"/video_feed/"| et la page HTML dé
 
 Dans la partie qui suit nous montrons comment récupérer un flux en entrée et le modifier.
 Ici nous récupérons la caméra directement attachée à l'interface loopback de l'ordinateur. Ce chemin correspond à l'architecture d'un système linux. Pour Windows il faut utiliser la fonction \verb|cv2.VideoCapture(Integer)| afin de choisir un périphérique vidéo d'entrée. OpenCV accepte également un descripteur de flux réseau RTSP\footnote{Real Time Streaming Protocol} dans cet exemple.
-Le gros de la fonction correspond en résumé à une boucle \verb|while()| qui récupère le flux image, les modifies, puis les déposes dans un objet qui sera utilisé par la fonction expliquée précédemment. Les informations sont ajoutées en temps réel grâce a un formulaire texte.
+Le gros de la fonction correspond en résumé à une boucle \verb|while()| qui récupère le flux image, le modifie, puis le dépose dans un objet qui sera utilisé par la fonction expliquée précédemment. Les informations sont ajoutées en temps réel grâce à un formulaire texte.
 Nous voyons par ceci que la modification du flux image par image est celle qui semble la plus simple. De plus, le délai ajouté au flux est quasi inexistant dans le cadre d'un flux "raw" en entrée. Pour un flux réseau cependant, il faut ajouter un petit délais pour prévoir une éventuelle perturbation du réseau, à moins que puissions assurer la qualité de service de celui-ci.
 
 

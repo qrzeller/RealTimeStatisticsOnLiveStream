@@ -3,22 +3,35 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: travail_semestre.aux
 The style file: siam.bst
 I couldn't open database file bibliography.bib
----line 197 of file travail_semestre.aux
+---line 218 of file travail_semestre.aux
  : \bibdata{bibliography
  :                      }
 I'm skipping whatever remains of this command
 I found no database files---while reading file travail_semestre.aux
+Warning--I didn't find a database entry for "grinberg"
+Warning--I didn't find a database entry for "wowza"
+Warning--I didn't find a database entry for "red5-wowza"
+Warning--I didn't find a database entry for "flash_dead"
+Warning--I didn't find a database entry for "IIS_media"
+Warning--I didn't find a database entry for "gstream"
+Warning--I didn't find a database entry for "gstream-ridgerun"
+Warning--I didn't find a database entry for "libav"
+Warning--I didn't find a database entry for "libav_ffmpeg"
+Warning--I didn't find a database entry for "mist"
+Warning--I didn't find a database entry for "opencv_platforms"
 Warning--I didn't find a database entry for "opencv"
 Warning--I didn't find a database entry for "opencv_cuda"
-Warning--I didn't find a database entry for "grinberg"
+Warning--I didn't find a database entry for "book_opencv"
+Warning--I didn't find a database entry for "v4l2loopback"
 Warning--I didn't find a database entry for "OTT"
 Warning--I didn't find a database entry for "operaHBBTV"
 Warning--I didn't find a database entry for "RTS_hbbtv_use"
 Warning--I didn't find a database entry for "swisscom_hbbtv"
 Warning--I didn't find a database entry for "operaEmulator"
+Warning--I didn't find a database entry for "streamtoolbox"
 You've used 0 entries,
             2030 wiz_defined-function locations,
-            509 strings with 3863 characters,
+            523 strings with 4002 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
