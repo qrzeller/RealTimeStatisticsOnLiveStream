@@ -3,37 +3,37 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Schémas de fonctionnement applicatif.}}{2}{figure.1.1}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The easy Flask website MJPEG. - Visualisation Opera}}{11}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces The easy Flask website MJPEG - Visualisation VLC.}}{11}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Burn text on live stream, display on GUI}}{12}{figure.2.3}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The easy Flask website MJPEG. - Visualisation Opera}}{13}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The easy Flask website MJPEG - Visualisation VLC.}}{13}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Burn text on live stream, display on GUI}}{14}{figure.2.3}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces HbbTV Broadband vs Broadcast}}{13}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Opera emulator user interface}}{16}{figure.3.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces }}{16}{figure.3.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces }}{16}{figure.3.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces }}{16}{figure.3.2}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces }}{16}{figure.3.2}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces }}{16}{figure.3.2}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces }}{16}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Opera emulator installation}}{17}{figure.3.3}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces }}{17}{figure.3.3}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces }}{17}{figure.3.3}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces }}{17}{figure.3.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces }}{17}{figure.3.3}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces }}{17}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Opera emulator devlopper tools}}{18}{figure.3.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces }}{18}{figure.3.4}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces }}{18}{figure.3.4}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces }}{18}{figure.3.4}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces }}{18}{figure.3.4}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces }}{18}{figure.3.4}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces HbbTV Broadband vs Broadcast}}{15}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Opera emulator user interface}}{18}{figure.3.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces }}{18}{figure.3.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces }}{18}{figure.3.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces }}{18}{figure.3.2}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces }}{18}{figure.3.2}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces }}{18}{figure.3.2}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces }}{18}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Opera emulator installation}}{19}{figure.3.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces }}{19}{figure.3.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces }}{19}{figure.3.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces }}{19}{figure.3.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces }}{19}{figure.3.3}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces }}{19}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Opera emulator devlopper tools}}{20}{figure.3.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces }}{20}{figure.3.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces }}{20}{figure.3.4}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces }}{20}{figure.3.4}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces }}{20}{figure.3.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces }}{20}{figure.3.4}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Wowza - Flowchart appareils}}{23}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Wowza génération du flux d'entrée avec OBS.}}{24}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Paramétrage du module Wowza Clamp.}}{24}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Wowza - Affichage non supporté.}}{25}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Paramétrage du module pour Wowza serveur.}}{25}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Paramétrage du module pour Wowza serveur.}}{26}{figure.4.6}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Wowza - Flowchart appareils}}{25}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Wowza génération du flux d'entrée avec OBS.}}{26}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Paramétrage du module Wowza Clamp.}}{26}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Wowza - Affichage non supporté.}}{27}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Paramétrage du module pour Wowza serveur.}}{27}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Paramétrage du module pour Wowza serveur.}}{28}{figure.4.6}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
