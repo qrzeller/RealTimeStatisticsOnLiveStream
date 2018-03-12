@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.5)  12 MAR 2018 03:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2018.1.5)  12 MAR 2018 10:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2631,66 +2631,66 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
  This may cause the page layout to be inconsistent, however.
 
 [20])
-<chapters/Wowza/fig01/capture6.png, id=653, 683.55376pt x 587.86292pt>
+<chapters/Wowza/fig01/capture6.png, id=654, 683.55376pt x 587.86292pt>
 File: chapters/Wowza/fig01/capture6.png Graphic file (type png)
 <use chapters/Wowza/fig01/capture6.png>
 Package pdftex.def Info: chapters/Wowza/fig01/capture6.png  used on input line 
-63.
+64.
 (pdftex.def)             Requested size: 448.0pt x 385.29074pt.
 
 
-Package nag Warning: \label in float, but not after \caption on input line 63.
+Package nag Warning: \label in float, but not after \caption on input line 64.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/Wowza/fig01/capture7.png, id=654, 1284.13083pt x 722.03084pt>
+<chapters/Wowza/fig01/capture7.png, id=655, 1284.13083pt x 722.03084pt>
 File: chapters/Wowza/fig01/capture7.png Graphic file (type png)
 <use chapters/Wowza/fig01/capture7.png>
 Package pdftex.def Info: chapters/Wowza/fig01/capture7.png  used on input line 
-68.
+69.
 (pdftex.def)             Requested size: 448.0pt x 251.88828pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 68.
+Package nag Warning: \label in float, but not after \caption on input line 69.
 
-<chapters/Wowza/fig01/capture8.png, id=655, 954.56625pt x 467.07834pt>
+<chapters/Wowza/fig01/capture8.png, id=656, 954.56625pt x 467.07834pt>
 File: chapters/Wowza/fig01/capture8.png Graphic file (type png)
 <use chapters/Wowza/fig01/capture8.png>
 Package pdftex.def Info: chapters/Wowza/fig01/capture8.png  used on input line 
-73.
+74.
 (pdftex.def)             Requested size: 448.0pt x 219.20613pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 73.
+Package nag Warning: \label in float, but not after \caption on input line 74.
 
-<chapters/Wowza/fig01/capture10.png, id=656, 531.9875pt x 551.72792pt>
+<chapters/Wowza/fig01/capture10.png, id=657, 531.9875pt x 551.72792pt>
 File: chapters/Wowza/fig01/capture10.png Graphic file (type png)
 <use chapters/Wowza/fig01/capture10.png>
 Package pdftex.def Info: chapters/Wowza/fig01/capture10.png  used on input line
- 81.
+ 82.
 (pdftex.def)             Requested size: 224.0pt x 232.30502pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 81.
+Package nag Warning: \label in float, but not after \caption on input line 82.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<chapters/Wowza/fig01/capture11.png, id=657, 502.54417pt x 80.96916pt>
+<chapters/Wowza/fig01/capture11.png, id=658, 502.54417pt x 80.96916pt>
 File: chapters/Wowza/fig01/capture11.png Graphic file (type png)
 <use chapters/Wowza/fig01/capture11.png>
 Package pdftex.def Info: chapters/Wowza/fig01/capture11.png  used on input line
- 87.
+ 88.
 (pdftex.def)             Requested size: 448.0pt x 72.18214pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 87.
+Package nag Warning: \label in float, but not after \caption on input line 88.
 
-<chapters/Wowza/fig01/capture12.png, id=658, 914.41624pt x 505.55542pt>
+<chapters/Wowza/fig01/capture12.png, id=659, 914.41624pt x 505.55542pt>
 File: chapters/Wowza/fig01/capture12.png Graphic file (type png)
 <use chapters/Wowza/fig01/capture12.png>
 Package pdftex.def Info: chapters/Wowza/fig01/capture12.png  used on input line
- 92.
+ 93.
 (pdftex.def)             Requested size: 448.0pt x 247.68575pt.
 
-Package nag Warning: \label in float, but not after \caption on input line 92.
+Package nag Warning: \label in float, but not after \caption on input line 93.
 
 )
 File: logos/hepia.jpg Graphic file (type jpg)
@@ -2838,17 +2838,17 @@ haines-[]de-[]la-[]ssr-[]srg/$[][]\T1/fnc/m/n/10.95 (+20) , Ar-ticle,
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 117--118
-[]\T1/fnc/m/sc/10.95 (+20) Mist of-fi-cial \T1/fnc/m/n/10.95 (+20) , \T1/fnc/m/
-it/10.95 (+20) Com-pa-ri-son from Mist webste (bias)\T1/fnc/m/n/10.95 (+20) , [
-][]$\T1/cmtt/m/n/10.95 https : / / mistserver . org /
+Underfull \hbox (badness 3088) in paragraph at lines 99--100
+[]\T1/fnc/m/sc/10.95 (+20) Streamtoolbox.com of-fi-cial\T1/fnc/m/n/10.95 (+20) 
+, \T1/fnc/m/it/10.95 (+20) lamp for Wowza Strea-ming En-gi-ne®\T1/fnc/m/n/10.95
+ (+20) , [][]$\T1/cmtt/m/n/10.95 https : / /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
-[]\T1/fnc/m/sc/10.95 (+20) oodlestechnologies \T1/fnc/m/n/10.95 (+20) , \T1/fnc
-/m/it/10.95 (+20) Red5 Vs Wowza Head To Head \T1/fnc/m/n/10.95 (+20) , [][]$\T1
-/cmtt/m/n/10.95 http : / / www .
+Underfull \hbox (badness 1859) in paragraph at lines 120--121
+[]\T1/fnc/m/sc/10.95 (+20) Mist of-fi-cial \T1/fnc/m/n/10.95 (+20) , \T1/fnc/m/
+it/10.95 (+20) Com-pa-ri-son from Mist webste (bias)\T1/fnc/m/n/10.95 (+20) , [
+][]$\T1/cmtt/m/n/10.95 https : / / mistserver . org /
  []
 
 File: logos/hepia.jpg Graphic file (type jpg)
@@ -2867,18 +2867,25 @@ Package Fancyhdr Warning: \headheight is too small (13.6pt):
 
 [34]
 Underfull \hbox (badness 10000) in paragraph at lines 132--133
+[]\T1/fnc/m/sc/10.95 (+20) oodlestechnologies \T1/fnc/m/n/10.95 (+20) , \T1/fnc
+/m/it/10.95 (+20) Red5 Vs Wowza Head To Head \T1/fnc/m/n/10.95 (+20) , [][]$\T1
+/cmtt/m/n/10.95 http : / / www .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 []\T1/fnc/m/sc/10.95 (+20) Wowza of-fi-cial \T1/fnc/m/n/10.95 (+20) , \T1/fnc/m
 /it/10.95 (+20) How to add gra-phic over-lays to live
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 \T1/fnc/m/it/10.95 (+20) streams with Wowza Trans-co-der \T1/fnc/m/n/10.95 (+20
 ) , [][]$\T1/cmtt/m/n/10.95 https : / / www . wowza . com / docs /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
 \T1/cmtt/m/n/10.95 how-[]to-[]add-[]graphic-[]overlays-[]to-[]live-[]streams-[]
 with-[]wowza-[]transcoder$[][]\T1/fnc/m/n/10.95 (+20) , Site,
  []
@@ -2920,14 +2927,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
 Package rerunfilecheck Info: File `travail_semestre.out' has not changed.
-(rerunfilecheck)             Checksum: A7E3225EC49458C62437BEF157087FCA;1694.
+(rerunfilecheck)             Checksum: 6AB69291606FFB22B2CE6B2400DA4975;1691.
  )
-(\end occurred when \ifx on line 93 was incomplete)
-(\end occurred when \ifx on line 88 was incomplete)
-(\end occurred when \ifx on line 82 was incomplete)
-(\end occurred when \ifx on line 74 was incomplete)
-(\end occurred when \ifx on line 69 was incomplete)
-(\end occurred when \ifx on line 64 was incomplete)
+(\end occurred when \ifx on line 94 was incomplete)
+(\end occurred when \ifx on line 89 was incomplete)
+(\end occurred when \ifx on line 83 was incomplete)
+(\end occurred when \ifx on line 75 was incomplete)
+(\end occurred when \ifx on line 70 was incomplete)
+(\end occurred when \ifx on line 65 was incomplete)
 (\end occurred when \ifx on line 143 was incomplete)
 (\end occurred when \ifx on line 110 was incomplete)
 (\end occurred when \ifx on line 77 was incomplete)
@@ -2935,10 +2942,10 @@ Package rerunfilecheck Info: File `travail_semestre.out' has not changed.
 (\end occurred when \ifx on line 98 was incomplete)
 (\end occurred when \ifx on line 91 was incomplete) 
 Here is how much of TeX's memory you used:
- 32796 strings out of 492980
- 596530 string characters out of 6136208
- 966405 words of memory out of 5000000
- 35067 multiletter control sequences out of 15000+600000
+ 32800 strings out of 492980
+ 596611 string characters out of 6136208
+ 966380 words of memory out of 5000000
+ 35070 multiletter control sequences out of 15000+600000
  92882 words of font info for 280 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
  52i,16n,81p,1204b,1929s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2949,10 +2956,10 @@ r-ms.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb><
 c:/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb><c:/texlive/2017
 /texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb><c:/texlive/2017/texmf-dist/fon
 ts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on travail_semestre.pdf (48 pages, 12693394 bytes).
+Output written on travail_semestre.pdf (48 pages, 12694392 bytes).
 PDF statistics:
- 882 PDF objects out of 1000 (max. 8388607)
- 739 compressed objects within 8 object streams
- 273 named destinations out of 1000 (max. 500000)
+ 886 PDF objects out of 1000 (max. 8388607)
+ 743 compressed objects within 8 object streams
+ 274 named destinations out of 1000 (max. 500000)
  42862 words of extra memory for PDF output out of 42996 (max. 10000000)
 
