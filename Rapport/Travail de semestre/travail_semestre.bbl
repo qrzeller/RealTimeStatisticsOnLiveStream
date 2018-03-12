@@ -14,7 +14,7 @@
 
 
 
-\bibitem{operaHBBTV}
+\bibitem{operaEmulator}
 
 {\scshape Opera Press}, {\em Opera TV Emulator}, The Opera TV emulator introduction, 2 February 2018., pp.~1.
 
@@ -127,6 +127,9 @@ v4l2loopback - a kernel module to create V4L2 loopback devices.}, \url{https://g
 
 \bibitem{red5-wowza}
 {\scshape oodlestechnologies }, {\em Red5 Vs Wowza Head To Head }, \url{http://www.oodlestechnologies.com/blogs/Red5-Vs-Wowza-Head-To-Head}, Site, 12 déc. 2017 
+
+\bibitem{wowza}
+{\scshape Wowza official }, {\em How to add graphic overlays to live streams with Wowza Transcoder }, \url{https://www.wowza.com/docs/how-to-add-graphic-overlays-to-live-streams-with-wowza-transcoder}, Site, 11.13.2017
 
 %% Book
 \bibitem{book_opencv}

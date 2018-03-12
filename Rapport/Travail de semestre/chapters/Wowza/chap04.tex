@@ -6,54 +6,94 @@
 %\let\textcircled=\pgftextcircled
 \chapter{Wowza}
 \label{chap:Wowza}
+\section{Wowza transcoder and overlay}
+\label{sec:sec04a}
+\initial{W}owza est un serveur de distribution multimédia. Il permet aussi de transcoder les flux vidéo cependant les utilisateurs du services semblent préférer à l'heure actuelle la librairie FFmpeg pour une bonne partie des transcodage, Wowza ne supportant que l'encodage en H.264, VP8 et VP9.
+Pour ce qui est du projet, Wowza possède une API de transcodage comportant certaines fonction d'overlays. Leur documentation propose un module exemple qui ajoute du texte dans un flux transcodé par Wowza. Contrairement a la facilité d'implémentation des overlays OpenCV, ici nous nous retrouvons avec plus d'un millier de lignes de code. Cette implémentation propose deux endroit où ajouter les overlays. La première est lors du décodage. Cette méthode à l'avantage d'être plus performante car les transformations sont ajoutée une seule fois à la lecture du flux. Suivant le format, il se peux que le rendu soit détérioré lors de la mise a l'échelle et l'encodage du flux. La deuxième méthode consiste à modifier la vidéo lors de l'encodage. Elle dispose d'un rendu de meilleur qualité car les overlays ajouté sont de la même résolution que le flux sortant. Il faudra cependant beaucoup plus de ressources pour traiter les vidéos si plusieurs flux de sorties sont paramétrés. Il est possible aussi d'avoir des overlays différents suivant les types ou résolutions de flux de sortie.\cite{wowza}
 
-\initial{O}penCV est une librairie multiplate-forme \footnote{MacOS, IOS, Android, Windows, Linuxes,...} et open source prévue pour le machine learning ainsi que pour le traitement d'image (computer vision)\cite{opencv}. Du fait de sa licence BSD, cette librairie est constamment améliorée par le marché et notamment par les plus grosses entreprises du secteur technologique, ce qui en fait une des librairies leader dans ce domaine. En plus d'être disponible sur la quasi totalité des systèmes d'exploitations du marché elle est également disponible dans multiple- langages que sont C++, C, Python, Java and MATLAB à ce jour et sans compter évidemment les différents binding. Nous utiliserons ici la librairie pour Python qui est un langage certes moins optimisé que certains de ses concurrents mais qui à l'instar de Mathlab permet de se concentrer sur le coeur du sujet. Il dispose en outre d'une bonne communauté et d'un bon support.
+Le test du serveur Wowza à été fait avec la version développer de Wowza, donc la licence est disponible pendant 6 mois.
+\begin{itemize}
+	\item Language : Java 8
+	\item OS : Windows 10
+	\item technologie cartes graphiques : Nvidia Cuda + Intel iGPU
+	\item Architecture : Intel x86, i7-6700
+	\item Version : Wowza 4.7
+	\item Visionneuse : VLC
+\end{itemize}
+\  \\
 
-Une autre particularité d'OpenCV et ce qui le rend attractif à l'heure actuelle est sa compatibilité avec les processeurs Nvidia et leurs CUDA \footnote{CUDA : Technologie dite GPGPU (General-Purpose Computing on Graphics Processing Units)} Core\cite{opencv_cuda}. Grâce aux avancées des GPUs a l'heure actuelle, principalement due au jeux vidéo mais aussi et principalement au crypto-monnaie les performances sont accrue d'un facteur 30x dans le pire des cas.
+Le code ci-dessous est un extrait de la classe Java OverlayImage du module exemple, disponible sur le site même de Wowza \footnote{https://www.wowza.com/downloads/forums/transcoderoverlayexamplefiles/TranscoderOverlayExampleFiles.zip}. Cette fonction est appelée sur chaque image présente dans le buffer. Nous remarquons à la ligne 11 qu'il a été décidé d'utiliser la classe Graphics2D standard de Java pour retoucher les images. Cette granularité nous permet de retoucher le flux de la même manière qu'avec OpenCV mais cette fois-ci en utilisant les outils Java standard.
 
 
+
+Dans la section suivante \ref{sec:sec04c}, nous profiterons pour expliquer comment installer des modules dans le serveur Wowza.
+
+
+
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+
+\lstset{language=Java,
+	basicstyle=\ttfamily,
+	keywordstyle=\color{javapurple}\bfseries,
+	stringstyle=\color{javared},
+	commentstyle=\color{javagreen},
+	morecomment=[s][\color{javadocblue}]{/**}{*/},
+	numbers=left,
+	numberstyle=\tiny\color{black},
+	numbersep=10pt,
+	tabsize=4,
+	showspaces=false,
+	showstringspaces=false}
+
+\lstinputlisting[language=Java, firstline=216, lastline=261, caption={Extrait du code d'ajout d'overlay officiel de Wowza. Lignes: 216-261\cite{wowza} \label{wowza-transcoder-code}}]{../../app/wowza_overlay/src/OverlayImage.java}
 
 %=======
-\section{Fonctionnement général}
-\label{sec:sec04a}
-OPENCV
-
-\section{Environnement de développement de l'application test}
-\label{sec:sec04b}
-pycharm opencv, livrairies, flask...
-
-\definecolor{mygreen}{rgb}{0,0.6,0}
-\definecolor{mygray}{rgb}{0.5,0.5,0.5}
-\definecolor{mymauve}{rgb}{0.58,0,0.82}
-\definecolor{deepred}{rgb}{0.6,0,0}
-
-\lstset{
-	language=Python,
-	backgroundcolor=\color{white},   % choose the background color
-	basicstyle=\footnotesize,        % size of fonts used for the code
-	breaklines=true,                 % automatic line breaking only at whitespace
-	captionpos=b,                    % sets the caption-position to bottom
-	commentstyle=\color{mygreen},    % comment style
-	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
-	keywordstyle=\color{blue},       % keyword style
-	emphstyle=\ttb\color{deepred},
-	stringstyle=\color{mymauve},     % string literal style
-}
 
 
-	\lstinputlisting[language=Python, firstline=7, lastline=37, caption={Live streaming MJPEG with Flask, inspired from Miguel Grinberg. \cite{grinberg}}]{../../app/video_streaming_with_flask_example/main.py}
-%	\caption{Live streaming MJPEG with Flask, inspired from Miguel Grinberg. \cite{grinberg}}
-
-
-
-
-
-
-
-\section{Environnement de production}
+\section{Clamp - Module Streamingtoolbox.com}
 \label{sec:sec04c}
-\subsection{The Opera hybrid TV option}
-\label{subsec:subsec04c}
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{fig01/capture6}\label{fig:w6}
+	\mycaption[Wowza - Flowchart appareils]{Workflow Wowza - Flowchart}
+\end{figure}
+\begin{figure}
+	\centering
+\includegraphics[width=1\linewidth]{fig01/capture7}\label{fig:w7}
+	\mycaption[Wowza génération du flux d'entrée avec OBS.]{Génération du flux d'entrée de Wowza avec OBS, Open Broadcaster.}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{fig01/capture8}\label{fig:w8}
+	\mycaption[Paramétrage du module Wowza Clamp.]{Paramétrage et test du module Wowza Clamp.}
+\end{figure}
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{fig01/capture10}\label{fig:w10}
+	\mycaption[Wowza - Affichage non supporté.]{Affichage non supporté - Interface test.}
+	\label{fig:wowza2}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{fig01/capture11}\label{fig:w11}
+	\mycaption[Paramétrage du module pour Wowza serveur.]{Paramétrage du module pour Wowza serveur.}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{fig01/capture12}\label{fig:w12}
+	\mycaption[Paramétrage du module pour Wowza serveur.]{Paramétrage du module pour Wowza serveur.}
+\end{figure}
+	
+	
 
 
 %=========================================================
