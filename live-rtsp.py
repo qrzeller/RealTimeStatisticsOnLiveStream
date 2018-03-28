@@ -12,7 +12,6 @@ import sys
 
 from form import form
 
-
 global cap
 cameraLocation = '/dev/video0'
 #cameraLocation = 'rtsp://192.168.1.103/live1.sdp'
